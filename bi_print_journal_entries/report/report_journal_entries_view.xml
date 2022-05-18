@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+	<data>
+
+		<template id="journal_entry_template_report_view">
+			<t t-call="web.external_layout">
+        		<t t-set="o" t-value="o.with_context({'lang':en_US})"/>
+                <div class="page">
+                    <br/><br/>
+                    <div class="oe_structure"/>
+                        <div>
+                            <h2 class="text-center mb32">
+                                <strong>سند قيد يومية</strong>
+                            </h2>
+                        </div>
+                    <br/>
+
+
+                  <table style="border-collapse: collapse;width: 100%;text;text-align: center;" class="table table-condensed consumed_tbody">
+                    <thead style = "border : none">
+                        <tr>
+                            <th style="width: 25%">الفترة المحاسبية</th>
+                            <th style="width: 25%">المرجع</th>
+                            <th style="width: 25%">دفتر اليومية</th>
+                            <th style="width: 25%"> رقم القيد </th>
+                        </tr>
+                    </thead>
+                    <tbody class="consumed_tbody">
+                        <tr>
+                            <td style="background-color: white;"> <span t-field="o.date"/> </td>
+                            <td> <span t-field="o.ref"/> </td>
+                            <td> <span t-field="o.journal_id"/> </td>
+                            <td style = "background-color: white;"> <span t-field="o.name"/> </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+               <br/>
+                <table style="border-collapse: collapse;width: 100%;" class="table table-condensed consumed_tbody">
+                    <thead>
+                        <tr>
+                            <th>الشرح</th>
+                            <th>الشريك</th>
+                            <th>اسم الحساب</th>
+                            <th>رقم الحساب</th>
+                            <th>مدين</th>
+                            <th>دائن</th>
+                        </tr>
+                    </thead>  
+                    <tbody class="consumed_tbody">
+                        <t t-set="total" t-value="0.0"/>
+                        <t t-set="total1" t-value="0.0"/>
+                        <t t-foreach="o.line_ids" t-as="line">    
+                        <tr>
+                            <td>
+                                <span t-field="line.name" />
+                            </td>
+                            <td>
+                                <span t-field="line.partner_id" />
+                            </td>
+                            <td>
+                                <span t-field="line.account_id.name" />
+                            </td>
+
+                             <td>
+                                <span t-field="line.account_id.code" />
+                            </td>
+                       
+                            <td>
+                                <span t-field="line.debit" />
+                            </td>
+                            <td style="background-color: white;">
+                                <span t-field="line.credit" />
+                            </td>
+                        </tr>
+                        <t t-set="total" t-value="total + line.debit"/>
+                        <t t-set="total1" t-value="total1 + line.credit"/>
+                        </t>
+                        <tr>
+                            
+                         
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><strong>الاجمالي</strong></td>
+                            <td width="10%"><strong>
+                                <span><t t-esc="total"/></span>
+                            </strong></td>
+                             <td style="background-color: white;" width="10%"><strong>
+                                <span><t t-esc="total1"/></span>
+                            </strong></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <br/><br/>
+                <table style="border-collapse: collapse;width: 100%;text;text-align: center;" class="table table-condensed consumed_tbody">
+                    <thead>
+                        <tr>
+                            <th style = "width: 40%;height : 7px">المحاسب</th>
+                            <th style = "width: 20%;height : 7px">المراجعة</th>
+                            <th style = "width: 40%;height : 7px">المدير المالي</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <td style = "height : 20px"></td>
+                            <td style = "height : 20px"></td>
+                            <td style = "height : 20px;background-color: white;"></td>
+                    </tbody>
+                </table>
+                
+               
+                </div>
+            </t>
+		</template>
+
+		<template id="journal_entry_report_template_id">
+			<t t-call="web.html_container">
+				<t t-foreach="docs" t-as="o">
+			<t t-call="bi_print_journal_entries.journal_entry_template_report_view" t-lang="en_US" /> 
+				</t>
+			</t>
+		</template>
+
+	</data>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+    <record id="view_move_form_extend_to_add_customized_field"
+		model="ir.ui.view">
+		<field name="name">view.move.form.extend.to.add.customized.field</field>
+		<field name="model">account.move</field>
+		<field name="inherit_id" ref="account.view_move_form" />
+		<field name="arch" type="xml">
+		<field name="ref" position="after">
+	
+		</field>
+			<page id="other_tab" position="after">
+
+				<page string="Extra Information">
+					<group>
+						<group string="Shipper">
+					       <field name = "create_date"/>
+                 <field name = "create_uid"/>
+                 <field name = "write_date"/>
+                 <field name = "write_uid"/>
+						</group>
+					</group>
+				</page>
+			</page>
+		</field>
+	</record>
+
+</odoo>

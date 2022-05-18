@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="customer_multi_search_view" model="ir.ui.view">
+            <field name="name">Search</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_res_partner_filter"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                    <field name="phone" string="Phone" filter_domain="['|',('phone','ilike', self),('mobile','ilike', self)]"/>
+                    <field name="mobile" string="Mobile" filter_domain="['|',('mobile','ilike', self),('mobile','ilike', self)]"/>
+                
+                 </field>
+
+             </field>
+        </record>
+
+</odoo>

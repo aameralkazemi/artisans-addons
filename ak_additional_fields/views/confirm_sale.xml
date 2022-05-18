@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="confirm_sale_order" model="ir.ui.view">
+            <field name="name">Confirm.sale.order</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+                <button id="action_confirm" position="replace">
+             <button name="action_confirm" id="action_confirm" string="Confirm"
+                     confirm = "Are you sure you want to Confirm"
+                     class="btn-primary" type="object" attrs="{'invisible': [('state', 'not in', ['sent'])]}"/>
+                 </button>
+
+
+
+
+        <button name="action_confirm" position="replace">
+
+              <button name="action_confirm" confirm="Are You Sure you want to Confirm" string="Confirm"  type="object" attrs="{'invisible': [('state', 'not in', ['draft'])]}"/>
+        </button>
+      </field>
+        </record>
+
+
+
+</odoo>
