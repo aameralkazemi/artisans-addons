@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="business_appointment_view_form" model="ir.ui.view">
+        <field name="name">business.appointment.form.time.tracking</field>
+        <field name="model">business.appointment</field>
+        <field name="inherit_id" ref="business_appointment.business_appointment_view_form"/>
+        <field name="arch" type="xml">
+            <header position="inside">
+                <button name="action_start"
+                        type="object"
+                        string="Start Working"
+                        attrs="{'invisible': ['|', ('work_started', '=', True), ('state', '!=', 'reserved')]}"
+                />
+                <button name="action_finish"
+                        type="object"
+                        string="Finish Working"
+                        attrs="{'invisible': [('work_started', '=', False)]}"
+                />
+            </header>
+            <page name="notes" position="after">
+                <page string="Time Tracking" name="side_tracking">
+                    <field name="time_track_ids">
+                        <tree editable="bottom" decoration-danger="not datetime_end">
+                            <field name="datetime_start"/>
+                            <field name="datetime_end"/>
+                            <field name="duration" sum="total" widget="float_time"/>
+                            <field name="user_id"/>
+                        </tree>
+                        <form>
+                            <sheet>
+                                <group>
+                                    <label for="datetime_start"/>
+                                    <div>
+                                        <field name="datetime_start" class="oe_inline" readonly="1"/> to
+                                        <field name="datetime_end" class="oe_inline" readonly="1"/>
+                                    </div>
+                                    <field name="duration" widget="float_time"/>
+                                    <field name="user_id"/>
+                                </group>
+                            </sheet>
+                        </form>
+                    </field>
+                    <group invisible="1">
+                        <field name="work_started"/>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+
+</odoo>

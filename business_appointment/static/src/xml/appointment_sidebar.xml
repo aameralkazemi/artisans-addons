@@ -1,0 +1,97 @@
+<template>
+
+    <div t-extend="CalendarView">
+        <t t-jquery="div.o_calendar_mini" t-operation="after">
+            <div id="resourcetypes">
+            </div>
+        </t>
+    </div>
+    <t t-name="BusinessAppointmentSideBarFilter">
+        <div class="ba_resources_main">
+            <div class="ba_overall_filters">
+                <div class="ba_resource_types ba_section_filters">
+                    <h5>Types</h5>
+                    <t t-if="widget.availableResourceTypes">
+                        <div t-foreach="widget.availableResourceTypes" t-as="resourceType">
+                            <div t-attf-id="#{resourceType.id}" class="ba_resource_type_check ba_hovered ba_element">
+                                <span t-esc="resourceType.text" class="fa"/>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+            <hr/>
+            <div class="ba_states ba_section_filters">
+                <h5>
+                    States
+                    <i class="fa fa-check-square-o all_states ba_fb"></i>
+                    <i class="fa fa-ban clear_states ba_fb"></i>
+                </h5>
+                <t t-if="widget.availableStates">
+                    <div t-foreach="widget.availableStates" t-as="ba_state">
+                        <div class="d-flex mb4">
+                            <span class="ba_state_check ba_hovered ba_element d-flex fa ba_resource_not_chosen o_cw_filter_color_9"
+                                  t-attf-id="#{ba_state[0]}"
+                            >
+                                <span class="o_cw_filter_input_bg ba_checkbox align-items-center d-flex flex-shrink-0 justify-content-center position-relative mr-2">
+                                    <i class="fa fa-check"/>
+                                </span>
+                                <span class="o_cw_filter_title text-truncate flex-grow ba_checkbox_text">
+                                    <t t-esc="ba_state[1]"/>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </t>
+            </div>
+            <div class="save_default ba_section_filters">
+                <a class="save_default_choices pull-right" href="#">save as default</a>
+            </div>
+        </div>
+    </t>
+    <t t-name="BusinessAppointmentResourcesFilters">
+        <div class="ba_resource_and_services">
+            <div class="ba_resources ba_section_filters">
+                <h5>
+                    Resources
+                    <i class="fa fa-check-square-o all_resources ba_fb"></i>
+                    <i class="fa fa-ban clear_resources ba_fb"></i>
+                </h5>
+                <t t-if="widget.availableResources">
+                    <div t-foreach="widget.availableResources" t-as="resource">
+                        <div class="d-flex mb4">
+                            <span t-attf-class="ba_resource_check ba_hovered ba_element d-flex fa ba_resource_not_chosen o_cw_filter_color_#{widget.getColor(resource.id)}"
+                                  t-attf-id="#{resource.id}"
+                            >
+                                <span class="o_cw_filter_input_bg ba_checkbox align-items-center d-flex flex-shrink-0 justify-content-center position-relative mr-2">
+                                    <i class="fa fa-check"/>
+                                </span>
+                                <span class="o_cw_filter_title text-truncate flex-grow ba_checkbox_text">
+                                    <t t-esc="resource.text"/>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </t>
+            </div>
+            <div class="services_append"/>
+        </div>
+    </t>
+    <t t-name="BusinessAppointmentServicesFilters">
+        <div class="ba_services ba_section_filters">
+            <h5>
+                Services <i class="fa fa-ban clear_services ba_fb"></i>
+            </h5>
+            <t t-if="widget.availableServices">
+                <div t-foreach="widget.availableServices" t-as="service">
+                    <div t-attf-id="#{service.id}"
+                         t-attf-class="ba_service_check ba_hovered ba_element #{service.id == widget.activeService and 'ba_active_element' or ''}"
+                    >
+                        <span t-esc="service.text" class="fa"/>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+
+</template>

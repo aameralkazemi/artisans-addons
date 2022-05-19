@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="make_business_appointment_form_view_js" model="ir.ui.view">
+        <field name="name">Schedule Appointment</field>
+        <field name="model">make.business.appointment</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="appointment_id"
+                           options="{'no_create_edit': 1, 'no_quick_create': 1}"
+                           attrs="{'invisible': [('appointment_id', '=', False)]}"
+                           readonly="1"
+                    />
+                    <field name="resource_type_id" options="{'no_create_edit': 1, 'no_quick_create': 1}"/>
+                    <field name="resource_ids"
+                           widget="resource_many2many"
+                           options="{'no_create_edit': 1, 'no_quick_create': 1}"
+                           domain="[('resource_type_id', '=', resource_type_id)]"
+                           attrs="{'invisible': [('allocation_type', '=', 'automatic')], 'required': [('allocation_type', '=', 'manual')]}"
+                    />
+                    <field name="service_id"
+                           options="{'no_create_edit': 1, 'no_quick_create': 1}"
+                           domain="[('id', 'in', available_service_ids)]"
+                           attrs="{'invisible': [('make_services_visible', '=', False)], 'required': [('make_services_visible', '=', True)]}"
+                    />
+                    <field name="product_price" 
+                           class="oe_inline text-muted"
+                           attrs="{'invisible': [('product_price', '=', '')]}"
+                           string=" "
+                    />
+                    <field name="pricelist_id" 
+                           groups="product.group_product_pricelist,product.group_sale_pricelist" 
+                           options="{'no_open':True, 'no_create': True}"
+                    />
+                    <label for="duration" attrs="{'invisible': ['|', ('manual_duration', '=', False), ('service_id', '=', False)]}"/>
+                    <div attrs="{'invisible': ['|', ('manual_duration', '=', False), ('service_id', '=', False)]}">
+                        <field name="duration"
+                               widget="float_time"
+                               attrs="{'invisible': [('duration_uom', '!=', 'hours')]}"
+                               class="oe_inline"
+                        />
+                        <field name="duration_days"
+                               attrs="{'invisible': [('duration_uom', '!=', 'days')]}"
+                               class="oe_inline"
+                        />
+                        <field name="duration_uom" class="oe_inline" readonly="1"
+                        />
+                    </div>
+                    <label for="date_start"/>
+                    <div>
+                         <field name="date_start" class="oe_inline"/>
+                         <field name="date_end" class="oe_inline"/>
+                    </div>
+                </group>
+                <group invisible="1">
+                    <field name="allocation_type"/>
+                    <field name="available_service_ids" widget="many2many_tags"/>
+                    <field name="make_services_visible"/>
+                    <field name="manual_duration"/>
+                    <field name="number_of_appointments"/>
+                </group>
+                <field name="timeslots" widget="timeSlotsWidget"/>
+            </form>
+        </field>
+    </record>
+
+</odoo>

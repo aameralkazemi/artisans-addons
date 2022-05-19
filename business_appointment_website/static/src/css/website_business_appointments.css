@@ -1,0 +1,92 @@
+.ba_hidden {display: none}
+@media screen and (max-width: 540px) {
+    .ba_hidden_mobile {display: none !important}
+}
+@media screen and (min-width: 540px) and (max-width: 860px) {
+    .ba_hidden_tablet {display: none !important}
+}
+.ba_portal_row {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.ba_portal_searchbar {padding-left: 10px;}
+.ba_website_grid {padding: 0px 15px;}
+.ba_website_item_box {
+    background-color: white;
+    background-clip: content-box;
+    cursor: pointer;
+    min-height: 120px;
+    padding: 8px;
+    height: 90%;
+}
+.ba_website_item_box:hover {text-decoration: none;}
+.ba_website_item_box_active {background-color: #f2fae8;}
+.ba_item_footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    padding-right: 32px;
+    padding-bottom: 8px;
+}
+.ba_open_full_details {padding-left: 10px}
+.ba_website_item_header {
+    overflow-wrap: break-word;
+    padding: 4px 4px 0px 4px;
+}
+.ba_website_image {padding: 8px}
+.ba_website_item_text {
+    overflow: hidden;
+    overflow-wrap: break-word;
+    padding: 0px 4px 0px 4px;
+}
+.ba_website_price_block {padding: 0px 4px 0px 4px}
+/* Progress bar (steps) */
+.ba_progress_container {
+    border-top: 2px solid #dce0dd;
+    display: flex;
+}
+.ba_progress_step {
+    padding: 0;
+    flex: 1 1 0;
+    text-align: center;
+}
+.ba_progress_step:hover {text-decoration: none}
+.ba_progress_step.ba_progress_complete {color: #28a745}
+.ba_progress_step.ba_progress_active {color: #00A09D}
+.ba_progress_step.ba_progress_return {color: #00A09D}
+.ba_progress_step.ba_progress_disabled {
+    pointer-events: none;
+    color: #9299a1;
+}
+.ba_progress_dot {
+    margin-top: -18px; 
+    font-size: 24px;
+}
+.ba_progress_header {font-size: 14px}
+.ba_progress_step.ba_progress_active > .ba_progress_header {color: black}
+.ba_progress_step.ba_progress_return > .ba_progress_header {color: black}
+.fa_ba_white {background: radial-gradient(white 50%, transparent 50%)}
+.ba_chosen_resources_container {
+    min-height: 50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #dee2e6 !important;
+}
+.ba_chosen_resources_section_1 {padding-left: 0}
+.btn_forward_checkout {
+    background-color: #dc3545 !important;
+    border: 1px solid transparent;
+}
+.ba_chosen_resources_section_2 {
+    text-align: right;
+    padding-right: 0;
+}
+.ba_chosen_resource {
+    font-size: 14px;
+    overflow-wrap: break-word;
+    white-space: inherit;
+}
+.ba_white_color {color: white}
+.not_confirmed_agreement {border: 1px solid #dc3545}

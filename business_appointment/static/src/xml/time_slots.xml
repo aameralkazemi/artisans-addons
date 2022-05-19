@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="TimeSlotsTable">
+        <div class="time_slots_header">
+            <t t-if="chosenAppointments">
+                <div class="chosen_appointments">
+                    <t t-foreach="chosenAppointments" t-as="choice">
+                        <div t-attf-id="#{choice.id}" class="chosen_box">
+                            <t t-esc="choice.title"/>
+                            <i class="fa fa-times remove_chosen pull-right"
+                               t-attf-id="#{choice.id}"
+                            />
+                        </div>
+                    </t>
+                    <div class="chosen_box forward_checkout">
+                        <span>
+                            <i class="fa fa-forward"/> Forward <i class="fa fa-forward"/>
+                        </span>
+                    </div>
+                </div>
+            </t>
+            <div class="timezone_header">
+                <t t-if="!no_tz and tz_options">
+                    <select id="select_tz" class="ba_o_input">
+                        <t t-foreach="tz_options" t-as="tz_option">
+                            <option t-attf-selected="#{default_tz == tz_option[0] and 'selected' or null}"
+                                    t-attf-value="#{tz_option[0]}">
+                                    <t t-esc="tz_option[1]" />
+                            </option>
+                        </t>
+                    </select>
+                </t>
+                <t t-if="no_tz">
+                    <small><i><span t-esc="default_tz"/></i></small>
+                </t>
+            </div>
+            <t t-if="unique_years">
+                <div class="year_selector_header">
+                    <select id="select_year_switcher" class="ba_o_input">
+                        <t t-foreach="unique_years" t-as="switch_year">
+                            <option t-attf-selected="#{activeYear == switch_year and 'selected' or null}"
+                                    t-attf-value="#{switch_year}">
+                                    <t t-esc="switch_year" />
+                            </option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+            <t t-if="unique_months">
+                <div class="month_selector_header">
+                    <t t-foreach="unique_months" t-as="unique_month">
+                        <div t-attf-class="timeslots_month_switcher #{active_month == unique_month and 'active_month_switcher' or ''} #{date_constructor(unique_month, 'year')}"
+                             t-attf-id="#{unique_month}"
+                        >
+                            <span t-esc="date_constructor(unique_month,'month')"/>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </div>
+        <div class="time_slots_container">
+            <t t-if="day_slots">
+                <t t-foreach="day_slots" t-as="slot_day">
+                    <div class="day_slot_div" t-attf-style="background-color:#{slot_day_index % 2 and '#f2f4f5' or '#f5f8fa'};">
+                        <h5>
+                            <span t-esc="slot_day.day"/>
+                            <span t-esc="date_constructor(slot_day.slots[0].day_to_sort,'weekday')"/>
+                        </h5>
+                        <t t-foreach="slot_day.slots" t-as="slot">
+                            <div class="timeslot_box"
+                                 t-attf-id="#{slot.real_start_utc}"
+                                 t-att-data-id="slot.resource_ids"
+                                 t-attf-title="#{slot.resource_names}: #{slot.title}"
+                            >
+                                <span t-esc="slot.start" t-att-data-id="slot.resource_ids"/> -
+                                <span t-esc="slot.end" t-att-data-id="slot.resource_ids"/>
+                            </div>
+                        </t>
+                    </div>
+                </t>
+            </t>
+            <t t-if="not_found">
+                <div class="ml8 mt8">
+                    <i>No appointments are possible. Try to select different dates</i>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="TimeSlotsTableShort">
+        <div class="time_slots_header">
+            <t t-if="chosenAppointments">
+                <div class="chosen_appointments">
+                    <t t-foreach="chosenAppointments" t-as="choice">
+                        <div t-attf-id="#{choice.id}" class="chosen_box">
+                            <t t-esc="choice.title"/>
+                            <i class="fa fa-times remove_chosen pull-right" t-attf-id="#{choice.id}"/>
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </div>
+    </t>
+
+    <t t-name="suggested_products_dialog" title="Complementary Products">
+        <div>
+            <div class="row col-md-12" t-if="widget.suggested_products">
+                <table class="mb16 table table-striped table-sm" id="suggested_products_lines">
+                    <thead>
+                        <tr>
+                            <th class="td-img">Product</th>
+                            <th></th>
+                            <th class="text-center td-price" t-if="widget.pricelist_id">Unit Price</th>
+                            <th class="text-center td-qty">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>                
+                        <t t-foreach="widget.suggested_products" t-as="product">
+                            <tr>
+                                <td align="center">
+                                    <t t-if="product.image_small">
+                                        <img t-attf-src="data:image/png;base64,#{product.image_small}" class="rounded"/>
+                                    </t>
+                                </td>
+                                <td class=''>
+                                    <strong t-esc="product.name"/>
+                                </td>
+                                <td class="text-center" name="price" t-if="widget.pricelist_id">
+                                    <span class="ba_price_column" t-att-id="product.id"/>
+                                </td>
+                                <td class="text-center">
+                                    <div class="input-group mx-auto oe_website_spinner ba_css_quantity">
+                                        <div class="input-group-prepend">
+                                            <a t-attf-href="#" 
+                                               class="btn btn-link d-none d-md-inline-block remove_ba_pr_item" 
+                                               aria-label="Remove one" 
+                                               title="Remove one"
+                                            >
+                                                <i class="fa fa-minus"></i>
+                                            </a>
+                                        </div>
+                                        <input type="text" 
+                                               class="form-control ba_js_quantity" 
+                                               t-att-id="product.id" 
+                                               t-att-value="0" 
+                                        />
+                                        <div class="input-group-append">
+                                            <a t-attf-href="#" 
+                                               class="btn btn-link float_left d-none d-md-inline-block add_ba_pr_item" 
+                                               aria-label="Add one" 
+                                               title="Add one"
+                                            >
+                                                <i class="fa fa-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="product_price_ba_item" title="Price">
+        <span t-if="price" t-esc="price" />        
+    </t>
+
+</templates>

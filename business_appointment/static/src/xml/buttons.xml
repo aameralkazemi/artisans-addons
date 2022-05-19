@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="Ba.ListView.buttons">
+        <div class="o_list_buttons" role="toolbar" aria-label="Main actions">
+            <t t-if="widget.is_action_enabled('create')">
+                <button type="button" class="btn btn-primary o_list_button_add" accesskey="c">
+                    Schedule
+                </button>
+            </t>
+        </div>
+    </t>
+
+</templates>

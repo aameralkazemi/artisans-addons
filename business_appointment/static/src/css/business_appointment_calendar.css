@@ -1,0 +1,24 @@
+.ba_section_filters {margin-top: 15px}
+.ba_element {
+    color: #212529;
+    font-size: 14px;
+    margin-left: 3%;
+}
+.ba_hovered:hover {cursor: pointer}
+.ba_active_element {background-color: #e9ecef}
+.ba_fb {
+    color: #666666;
+    cursor: pointer;
+    font-size: 9pt;
+    padding-left: 3px;
+}
+.ba_checkbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+}
+.ba_resource_not_chosen > * > .fa-check {display: none !important}
+.ba_resource_not_chosen > .ba_checkbox {background-color: inherit !important}
+.ba_checkbox_text {padding-top: 1px}

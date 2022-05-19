@@ -1,0 +1,9 @@
+.ba_kanban_main {flex-flow: row nowrap !important}
+.ba_kanban_box {flex: 1 0 auto !important}
+.ba_kanban_primary_left {padding-left: 0 !important}
+.ba_primary {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.ba_kanban_content {display: block !important}
+.ba_kanban_details {text-align: right !important}

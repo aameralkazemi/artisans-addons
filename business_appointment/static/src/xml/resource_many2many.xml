@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="FieldMany2ManyTagResource">
+        <button type="button" class="btn btn-primary all_ba_resources">any</button>
+        <t t-call="FieldMany2ManyTag"/>
+    </t>
+
+</templates>
