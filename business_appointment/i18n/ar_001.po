@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 15.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-18 17:04+0000\n"
-"PO-Revision-Date: 2022-05-18 17:04+0000\n"
+"POT-Creation-Date: 2022-06-01 15:35+0000\n"
+"PO-Revision-Date: 2022-06-01 15:35+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -444,7 +444,7 @@ msgstr ""
 #: code:addons/business_appointment/static/src/js/slots_widget_core.js:0
 #, python-format
 msgid "Add"
-msgstr "إضافة"
+msgstr ""
 
 #. module: business_appointment
 #. openerp-web
@@ -2207,12 +2207,12 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__appointment_duration
 msgid "Appointment Default Duration"
-msgstr ""
+msgstr "مدة الحجز الافتراضية"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__ba_description
 msgid "Appointment Description"
-msgstr ""
+msgstr "وصف الموعد"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_appointment_group
@@ -2277,7 +2277,7 @@ msgstr "المواعيد"
 #: model:ir.model,name:business_appointment.model_appointment_analytic
 #: model:ir.ui.menu,name:business_appointment.menu_business_analytic
 msgid "Appointments Analysis"
-msgstr ""
+msgstr "تحليل المواعيد"
 
 #. module: business_appointment
 #: model:mail.message.subtype,name:business_appointment.mt_business_appointment_cancel
@@ -3339,12 +3339,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__service_ids
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__service_ids
 msgid "Available Services"
-msgstr ""
+msgstr "مقدمين الخدمات المتاحة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__available_service_ids
 msgid "Available services"
-msgstr ""
+msgstr "مقدمين الخدمات المتاحة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__rating_satisfaction
@@ -3579,7 +3579,7 @@ msgstr ""
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.appointment_product_action
 msgid "Click 'Create' to add a new service used for appointments"
-msgstr ""
+msgstr "انقر فوق "إنشاء" لإضافة خدمة جديدة تستخدم للمواعيد"
 
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.business_resource_type_action
@@ -3652,7 +3652,7 @@ msgstr "ضبط الاعدادات"
 #: model:ir.ui.menu,name:business_appointment.menu_business_appointments_conf
 #: model:ir.ui.menu,name:business_appointment.menu_res_config_settings_appointment
 msgid "Configuration"
-msgstr ""
+msgstr "إعدادات التكوين"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__safe_file_name
@@ -3788,7 +3788,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__default_alarm_ids
 msgid "Default Alarms"
-msgstr ""
+msgstr "الإنذارات الافتراضية"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__resource_calendar_id
@@ -3835,14 +3835,14 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_form
 msgid "Description"
-msgstr ""
+msgstr "الوصف"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/ba_popups.js:0
 #, python-format
 msgid "Details"
-msgstr ""
+msgstr "التفاصيل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__business_appointment_timezone_option
@@ -3982,7 +3982,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_appointments_email_templates
 msgid "Email Templates"
-msgstr ""
+msgstr "قوالب البريد الإلكتروني"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_hr
@@ -4683,7 +4683,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__extra_working_calendar_id
 msgid "Extra Calendar Restriction"
-msgstr ""
+msgstr "قيود التقويم الإضافية"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
@@ -5263,7 +5263,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__location
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__location
 msgid "Location"
-msgstr ""
+msgstr "الموقع"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__met
@@ -5504,7 +5504,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "My Appointments"
-msgstr ""
+msgstr "المواعيد الخاصة بي"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__nz
@@ -5556,7 +5556,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "Next 7 days"
-msgstr ""
+msgstr "خلال الاسبوع القادم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_calendar_event_id
@@ -5633,7 +5633,7 @@ msgstr ""
 #: model:ir.ui.menu,name:business_appointment.menu_ba_templates
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
 msgid "Notifications"
-msgstr ""
+msgstr "إشعارات"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_group__appointment_len
@@ -6066,7 +6066,7 @@ msgstr ""
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "Planned Appointments"
-msgstr ""
+msgstr "المواعيد المقررة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__pricing_method__per_planned_duration
@@ -6095,7 +6095,7 @@ msgstr ""
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "Planned but Already Late"
-msgstr ""
+msgstr "مخطط ولكن متأخر "
 
 #. module: business_appointment
 #: code:addons/business_appointment/wizard/choose_appointment_customer.py:0
@@ -6144,7 +6144,7 @@ msgstr ""
 #: model:ir.model,name:business_appointment.model_business_appointment_core
 #, python-format
 msgid "Pre-Reservation"
-msgstr "الحجز المسبق"
+msgstr "ما قبل الحجز"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_appointment__state
@@ -6165,7 +6165,7 @@ msgstr ""
 #: model:ir.ui.menu,name:business_appointment.menu_business_appointments_core
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 msgid "Pre-Reservations"
-msgstr ""
+msgstr "ما قبل الحجز"
 
 #. module: business_appointment
 #. openerp-web
@@ -6364,12 +6364,12 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_appointments_appointment_alarms
 msgid "Reminders"
-msgstr ""
+msgstr "التذكير"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.alarm_task_action
 msgid "Reminders Queue"
-msgstr ""
+msgstr "قائمة انتظار التذكيرات"
 
 #. module: business_appointment
 #. openerp-web
@@ -6399,17 +6399,17 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allowed_from
 msgid "Reservation should be done in"
-msgstr ""
+msgstr "يجب أن يتم الحجز في"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allowed_to
 msgid "Reservation should not be done after"
-msgstr ""
+msgstr "لا ينبغي أن يتم الحجز بعد"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.business_appointment_core_action
 msgid "Reservations"
-msgstr ""
+msgstr "الحجوزات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
@@ -6443,12 +6443,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
 msgid "Resource"
-msgstr ""
+msgstr "مقدم الخدمة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allocation_method
 msgid "Resource Allocation Method"
-msgstr ""
+msgstr "طريقة تخصيص الموارد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_rating_rating__resource_id_int
@@ -6475,7 +6475,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allocation_type
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__allocation_type
 msgid "Resource Selection"
-msgstr ""
+msgstr "طريقة اختيار الموارد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__resource_type_id
@@ -6485,18 +6485,18 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Resource Type"
-msgstr ""
+msgstr "نوع الخدمة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_kanban
 msgid "Resource Type Image"
-msgstr ""
+msgstr "صورة نوع الخدمة"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.business_resource_type_action
 #: model:ir.ui.menu,name:business_appointment.menu_business_resource_types
 msgid "Resource Types"
-msgstr ""
+msgstr "نوع الخدمات"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.rating_rating_action_view_business_resource_type
@@ -6511,7 +6511,7 @@ msgstr "فترة عمل المورد"
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
 msgid "Resource type"
-msgstr ""
+msgstr "نوع الخدمات"
 
 #. module: business_appointment
 #. openerp-web
@@ -6524,7 +6524,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_kanban
 #, python-format
 msgid "Resources"
-msgstr "موارد"
+msgstr "مقدم الخدمات"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__user_id
@@ -6579,7 +6579,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:business_appointment.sms_template_action
 #: model:ir.ui.menu,name:business_appointment.menu_appointments_sms_templates
 msgid "SMS Templates"
-msgstr ""
+msgstr "قوالب الرسائل القصيرة"
 
 #. module: business_appointment
 #. openerp-web
@@ -6620,7 +6620,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__date_start
 msgid "Search in dates"
-msgstr ""
+msgstr "البحث في التواريخ"
 
 #. module: business_appointment
 #: model:ir.actions.server,name:business_appointment.cron_reminder_alarm_task_ir_actions_server
@@ -6671,7 +6671,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__service_method
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
 msgid "Service Method"
-msgstr ""
+msgstr "طريقة الخدمة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
@@ -6734,7 +6734,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
 msgid "Settings"
-msgstr ""
+msgstr "إعدادات"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__singapore
@@ -6871,7 +6871,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__success_mail_template_id
 msgid "Success Email"
-msgstr ""
+msgstr "بريد النجاح"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource__sucess_email_partner_ids
@@ -6919,13 +6919,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "This Month"
-msgstr ""
+msgstr "هذا الشهر"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "This Year"
-msgstr ""
+msgstr "هذه السنة"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__tz
@@ -7000,7 +7000,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "Today"
-msgstr ""
+msgstr "اليوم"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_search
@@ -7086,12 +7086,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__resource_type_id
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_alarm_view_search
 msgid "Type"
-msgstr ""
+msgstr "نوع"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__type_available_service_ids
 msgid "Type Services"
-msgstr ""
+msgstr "نوع الخدمة"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__activity_exception_decoration
@@ -7363,18 +7363,18 @@ msgstr "تفاصيل العمل"
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Working Calendar"
-msgstr ""
+msgstr "اوقات العمل"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_working_calendar
 msgid "Working Calendars"
-msgstr ""
+msgstr "اوقات العمل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__resource_calendar_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__resource_calendar_id
 msgid "Working Hours"
-msgstr ""
+msgstr "ساعات العمل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__day_year
@@ -7476,12 +7476,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_form
 msgid "resource reference"
-msgstr ""
+msgstr "اسم مقدم الخدمة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
 msgid "resource type reference"
-msgstr ""
+msgstr "اسم الخدمة"
 
 #. module: business_appointment
 #. openerp-web
