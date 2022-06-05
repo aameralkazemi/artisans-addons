@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="ba_services" name="Service" inherit_id="business_appointment_website.ba_services">
+        <h5 id="item_header_span" position="after">
+            <t t-call="business_appointment_website_sale.ba_service_price"/>
+        </h5>
+    </template>                                   
+
+    <template id="service_searchbar" inherit_id="business_appointment_website.service_searchbar">
+        <div id="ba_pager" position="before">
+            <div class="form-inline">
+                <t t-call="business_appointment_website_sale.ba_pricelist_list">
+                    <t t-set="_classes">ml-2</t>
+                </t>
+            </div>
+        </div>
+    </template>
+
+
+</odoo>

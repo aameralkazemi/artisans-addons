@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="appointment_analytic_view_search" model="ir.ui.view">
+        <field name="name">appointment.analytic.search.sale</field>
+        <field name="model">appointment.analytic</field>
+        <field name="inherit_id" ref="business_appointment.appointment_analytic_view_search"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="order_id"/>
+            </field>
+            <filter name="my_appointments" position="after">
+                <separator/>
+                <filter string="With Sale Order"
+                        name="with_sale_order"
+                        domain="[('order_id', '!=', False)]"
+                />    
+            </filter>
+            <filter name="company" position="before">
+                <filter string="Sale State" 
+                        name="group_by_sale_state" 
+                        context="{'group_by': 'sale_state'}"
+                />
+                <filter string="Invoice Status" 
+                        name="group_by_invoice_status" 
+                        context="{'group_by': 'invoice_status'}"
+                />
+            </filter>
+        </field>
+    </record>
+
+</odoo>

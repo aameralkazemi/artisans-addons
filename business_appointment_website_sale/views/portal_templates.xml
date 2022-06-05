@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="portal_appointment_page" inherit_id="business_appointment_website.portal_appointment_page" name="My Appointment">
+        <div id="ba_right_column" position="after">
+            <div class="col-md-6" id="ba_order_sale" t-if="show_order">
+                <strong>Order:</strong>
+                <a t-attf-href="/my/orders/#{ba_appointment_id.sudo().order_id.id}">
+                    <t t-esc="ba_appointment_id.sudo().order_id.name"/>
+                </a>
+            </div>       
+        </div>
+    </template>
+
+</odoo>

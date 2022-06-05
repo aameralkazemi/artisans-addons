@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="ba_pricelist_list" name="Pricelists Dropdown">
+        <t t-if="ba_pricelists_prices">
+            <t t-set="ba_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)" />
+            <div t-attf-class="btn-group ml2 dropdown#{'' if ba_sale_pricelists and len(ba_sale_pricelists)&gt;1 else ' d-none'} #{_classes}" >
+                <t t-set="curr_pl" t-value="website.ba_get_cur_pricelist(session_appointment_id)" />
+                <a role="button" 
+                   href="#" 
+                   class="dropdown-toggle btn btn-secondary btn-sm" 
+                   data-toggle="dropdown"
+                 >
+                    <t t-esc="curr_pl and curr_pl.name or ' - '" />
+                </a>
+                <div class="dropdown-menu" role="menu">
+                    <t t-foreach="ba_sale_pricelists" t-as="pl">
+                        <a role="menuitem" 
+                           t-att-href="'/appointments/change_pricelist/%s' % pl.id" 
+                           class="dropdown-item"
+                         >
+                            <span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-esc="pl.name" />
+                        </a>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+    <template id="ba_service_price" name="Price Block">
+        <div id="ba_price_block" 
+             class="ba_website_price_block text-black"
+             t-if="ba_pricelists_prices and service.sudo().product_id"
+        >
+            <t t-set="combination_info" 
+               t-value="service.sudo().product_id._get_combination_info_variant(pricelist=website.pricelist_id)"
+            />
+            <del t-attf-class="text-danger mr8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" 
+                 style="white-space: nowrap;" 
+                 t-esc="combination_info['list_price']" 
+                 t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" 
+            />
+            <span t-if="combination_info['price']" 
+                  t-esc="combination_info['price']" 
+                  t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"
+            />
+            <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+
+            <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+        </div>
+    </template>
+
+    <template id="ba_products_full" inherit_id="business_appointment_website.ba_products_full" name="Service">
+        <xpath expr="//h1[@id='ba_type_header']" position="before">
+            <div class="pull-right">
+                <t t-call="business_appointment_website_sale.ba_pricelist_list">
+                    <t t-set="_classes">ml-2</t>
+                </t>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='ba_price_full_section']" position="inside">
+            <div class="mb4">
+                <t t-call="business_appointment_website_sale.ba_service_price">
+                    <t t-set="service" t-value="main_object"/>
+                </t>
+            </div>
+        </xpath>        
+    </template>
+
+</odoo>

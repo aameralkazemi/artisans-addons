@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.business.appointment.website.sale</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="business_appointment_website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='public_extra_products_option']" position="after">
+                <div name="public_pricelists_option"
+                     class="col-xs-12 col-md-6 o_setting_box"
+                     attrs="{'invisible': [('ba_turn_on_appointments', '=', False)]}"
+                >
+                    <div name="public_pricelists_option_1" class="o_setting_left_pane">
+                        <field name="ba_pricelists_prices"/>
+                    </div>
+                    <div name="public_pricelists_option_2" class="o_setting_right_pane">
+                        <label for="ba_pricelists_prices"/>
+                        <div class="text-muted">
+                            If turned on, service cards would contain price information according to the customer price list
+                        </div>                             
+                    </div>
+                </div>              
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
