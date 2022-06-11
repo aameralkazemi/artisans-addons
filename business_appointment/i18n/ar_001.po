@@ -4,72 +4,57 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-01 15:35+0000\n"
-"PO-Revision-Date: 2022-06-01 15:35+0000\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
-
-#. module: business_appointment
-#: model:ir.model.fields,help:business_appointment.field_appointment_product__start_round_rule
-msgid ""
-"\n"
-"            Define how appointment start time should be rounded. E.g. appointments are available now from 14:12 \n"
-"            tomorrow. Then:\n"
-"             * 0:05 - rounding for 5 minutes - would round start to 14:15\n"
-"             * 0:10 - rounding for 10 minutes - would round start to 14:20\n"
-"             * 0:30 - rounding for 30 minutes - would round start to 14:30\n"
-"             * 1:00 - rounding for an hour - would round start to 15:00\n"
-"             * 02:00 - rounding for 2 hours - would round start to 16:00\n"
-"             * 24:00 - rounding for a day - would round start to 00:00\n"
-"             * 32:00 - rounding for a day and 8 hours - would round to 08:00 the next day\n"
-"            Take into account: ROUNDING IS DONE IN WORKING CALENDAR TIMEZONE\n"
-"        "
-msgstr ""
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.1\n"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/alarm_task.py:0
 #, python-format
 msgid " Contact: {}"
-msgstr "اتصال: {}"
+msgstr "جهة الاتصال: {}"
 
 #. module: business_appointment
 #: model:sms.template,body:business_appointment.sms_template_default_reminder
 msgid ""
-" Hello. This is the reminder about the appointment {{ object.name or '' }} "
-"scheduled to  {{ object.return_scheduled_time_tz(True) or ''}}"
+" Hello. This is the reminder about the appointment {{ object.name or '' }} scheduled to  {{ object."
+"return_scheduled_time_tz(True) or ''}}"
 msgstr ""
+" مرحبًا. هذا تذكير بالموعد {{object.name or ''}} المجدول لـ {{object.return_scheduled_time_tz (True) or ''}}"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/alarm_task.py:0
 #, python-format
 msgid " Resource: {};"
-msgstr "المورد: {} "
+msgstr "المتخصص: {};"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/alarm_task.py:0
 #, python-format
 msgid " Service: {};"
-msgstr "خدمة: {}؛"
+msgstr "خدمة"
 
 #. module: business_appointment
 #: model:mail.template,subject:business_appointment.email_template_successful_appointment
 msgid ""
-" {{ ctx['target_company'].name }}: Appointment {{ ctx[\"reshedule\"] and "
-"'Re-Scheduled' or 'Confirmed' }}"
+" {{ ctx['target_company'].name }}: Appointment {{ ctx[\"reshedule\"] and 'Re-Scheduled' or 'Confirmed' }}"
 msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__extra_working_calendar_id
 msgid ""
 "\"If defined, this service would be available only in intervals that simultaneously suit this calendar\n"
-"        and appointment resource calendar"
+"and appointment resource calendar"
 msgstr ""
+"\"إذا تم تحديد هذه الخدمة ، فلن تكون متاحة إلا في فترات زمنية تتناسب مع هذا التقويم في نفس الوقت\n"
+"وتقويم مورد المواعيد"
 
 #. module: business_appointment
 #: model:mail.template,report_name:business_appointment.email_template_successful_appointment
@@ -81,28 +66,29 @@ msgstr ""
 #: code:addons/business_appointment/static/src/js/slots_widget_core.js:0
 #, python-format
 msgid "'%s' is not a correct datetime"
-msgstr ""
+msgstr "'%s' تاريخ غير صحيح"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "(10 Euro extra) is required"
-msgstr ""
+msgstr "مطلوب (10 يورو إضافي)"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "(48 Euros extra) is required"
-msgstr ""
+msgstr "(48 يورو إضافية) مطلوب"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "(99 Euro extra) is required"
-msgstr ""
+msgstr "مطلوب (99 يورو إضافي)"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid ""
 "(distributed free) is required. \n"
-"                                    The app 'HR' would be automatically installed in your database."
+"The app 'HR' would be automatically installed in your database."
 msgstr ""
 
 #. module: business_appointment
@@ -140,11 +126,13 @@ msgstr ""
 msgid ""
 "<div>\n"
 "<t t-set=\"access_token\" t-value=\"object.rating_get_access_token()\"/>             \n"
-"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"width:100%; margin:0px auto;"
+"\">\n"
 "<tbody>\n"
 "    <tr>\n"
 "        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; "
+"background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
 "                <tbody>\n"
 "                    <tr>\n"
 "                        <td valign=\"top\" style=\"font-size: 13px;\">\n"
@@ -157,22 +145,27 @@ msgid ""
 "                                    <t t-out=\"object.contact_name\"/>,\n"
 "                                </t>\n"
 "                                <br/>\n"
-"                                Please take a moment to rate our services related to the appointment \"<strong><t t-out=\"object.name\"/></strong>\":                            \n"
+"                                Please take a moment to rate our services related to the appointment "
+"\"<strong><t t-out=\"object.name\"/></strong>\":                            \n"
 "                                <br/>\n"
 "                                <ul>\n"
 "                                    <li>Resource: <t t-out=\"object.resource_id.name or ''\"/></li>\n"
 "                                    <li>Service: <t t-out=\"object.service_id.name or ''\"/></li>\n"
-"                                    <li t-if=\"object.resource_id.location or object.service_id.location\">\n"
-"                                        <t t-out=\"bject.service_id.location or object.resource_id.location or ''\"/>\n"
+"                                    <li t-if=\"object.resource_id.location or object.service_id.location"
+"\">\n"
+"                                        <t t-out=\"bject.service_id.location or object.resource_id.location "
+"or ''\"/>\n"
 "                                    </li>\n"
-"                                    <li>Scheduled Time: <t t-out=\"object.return_scheduled_time_tz(True) or ''\"/></li>\n"
+"                                    <li>Scheduled Time: <t t-out=\"object.return_scheduled_time_tz(True) or "
+"''\"/></li>\n"
 "                                </ul>\n"
 "                            </div>\n"
 "                        </td>\n"
 "                    </tr>\n"
 "                    <tr>\n"
 "                        <td style=\"text-align:center;\">\n"
-"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;"
+"clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
 "                        </td>\n"
 "                    </tr>\n"
 "                </tbody>\n"
@@ -181,7 +174,8 @@ msgid ""
 "    </tr>\n"
 "    <tr>\n"
 "        <td style=\"text-align: center; min-width: 590px;\">\n"
-"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" summary=\"o_mail_notification\" style=\"width:100%; margin: 32px 0px 32px 0px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" summary="
+"\"o_mail_notification\" style=\"width:100%; margin: 32px 0px 32px 0px;\">\n"
 "                <tr>\n"
 "                    <td style=\"font-size: 13px;\">\n"
 "                        <strong>Tell us how you feel about our service</strong><br/>\n"
@@ -194,17 +188,20 @@ msgid ""
 "                            <tr>\n"
 "                                <td>\n"
 "                                    <a t-attf-href=\"/rating/#{access_token}/10\">\n"
-"                                        <img alt=\"Satisfied\" src=\"/rating/static/src/img/rating_5.png\" title=\"Satisfied\"/>\n"
+"                                        <img alt=\"Satisfied\" src=\"/rating/static/src/img/rating_5.png\" "
+"title=\"Satisfied\"/>\n"
 "                                    </a>\n"
 "                                </td>\n"
 "                                <td>\n"
 "                                    <a t-attf-href=\"/rating/#{access_token}/5\">\n"
-"                                        <img alt=\"Okay\" src=\"/rating/static/src/img/rating_3.png\" title=\"Okay\"/>\n"
+"                                        <img alt=\"Okay\" src=\"/rating/static/src/img/rating_3.png\" title="
+"\"Okay\"/>\n"
 "                                    </a>\n"
 "                                </td>\n"
 "                                <td>\n"
 "                                    <a t-attf-href=\"/rating/#{access_token}/1\">\n"
-"                                        <img alt=\"Dissatisfied\" src=\"/rating/static/src/img/rating_1.png\" title=\"Dissatisfied\"/>\n"
+"                                        <img alt=\"Dissatisfied\" src=\"/rating/static/src/img/rating_1.png"
+"\" title=\"Dissatisfied\"/>\n"
 "                                    </a>\n"
 "                                </td>\n"
 "                            </tr>\n"
@@ -237,8 +234,8 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_kanban
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_kanban
 msgid ""
-"<i class=\"fa fa-smile-o\" role=\"img\" aria-label=\"Percentage of "
-"satisfaction\" title=\"Percentage of satisfaction\"/>"
+"<i class=\"fa fa-smile-o\" role=\"img\" aria-label=\"Percentage of satisfaction\" title=\"Percentage of "
+"satisfaction\"/>"
 msgstr ""
 
 #. module: business_appointment
@@ -247,6 +244,8 @@ msgid ""
 "<span class=\"fa fa-edit ba_icon\"> </span>\n"
 "                                <span>Re-Schedule</span>"
 msgstr ""
+"<span class=\"fa fa-edit ba_icon\"> </span>\n"
+"                                <span>اعادة جدوله</span>"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_form
@@ -257,42 +256,52 @@ msgstr ""
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.report_business_appointment_single
+#, fuzzy
 msgid "<strong> Location:</strong>"
-msgstr ""
+msgstr "<strong> الموقع:</strong>"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.report_business_appointment_single
+#, fuzzy
 msgid "<strong>Resource:</strong>"
-msgstr ""
+msgstr "<strong>التخصص:</strong>"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.report_business_appointment_single
 msgid "<strong>Scheduled Time:</strong>"
-msgstr ""
+msgstr "<strong>الوقت المحدد:</strong>"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.report_business_appointment_single
+#, fuzzy
 msgid "<strong>Service:</strong>"
-msgstr ""
+msgstr "<strong>الخدمة:</strong>"
 
 #. module: business_appointment
 #: model:mail.template,body_html:business_appointment.email_template_successful_appointment
 msgid ""
-"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tbody><tr><td align=\"center\">\n"
-"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: "
+"#F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"
+"\"><tbody><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-"
+"color: white; color: #454748; border-collapse:separate;\">\n"
 "<tbody>\n"
 "    <tr>\n"
 "        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; "
+"background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
 "                <tbody>\n"
 "                    <tr>\n"
 "                        <td valign=\"middle\" align=\"right\">\n"
-"                            <img t-attf-src=\"#{ctx['base_url']}/logo.png?company=#{ctx['target_company'].id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"#{ctx['target_company'].name}\"/>\n"
+"                            <img t-attf-src=\"#{ctx['base_url']}/logo.png?company=#{ctx['target_company']."
+"id}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"#{ctx['target_company']."
+"name}\"/>\n"
 "                        </td>\n"
 "                    </tr>\n"
 "                    <tr>\n"
 "                        <td colspan=\"2\" style=\"text-align:center;\">\n"
-"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;"
+"clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
 "                        </td>\n"
 "                    </tr>\n"
 "                </tbody>\n"
@@ -301,7 +310,8 @@ msgid ""
 "    </tr>\n"
 "    <tr>\n"
 "        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; "
+"background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
 "                <tbody>\n"
 "                    <tr>\n"
 "                        <td valign=\"top\" style=\"font-size: 13px;\">\n"
@@ -325,11 +335,14 @@ msgid ""
 "                                <br/>\n"
 "                                <ul>\n"
 "                                    <li>Reference: <t t-out=\"object.name  or ''\"/></li>\n"
-"                                    <li>Scheduled Time: <t t-out=\"object.return_scheduled_time_tz(True) or ''\"/></li>\n"
+"                                    <li>Scheduled Time: <t t-out=\"object.return_scheduled_time_tz(True) or "
+"''\"/></li>\n"
 "                                    <li>Resource: <t t-out=\"object.resource_id.name or ''\"/></li>\n"
 "                                    <li>Service: <t t-out=\"object.service_id.name or ''\"/></li>\n"
-"                                    <li t-if=\"object.resource_id.location or object.service_id.location\">\n"
-"                                        <t t-out=\"bject.service_id.location or object.resource_id.location or ''\"/>\n"
+"                                    <li t-if=\"object.resource_id.location or object.service_id.location"
+"\">\n"
+"                                        <t t-out=\"bject.service_id.location or object.resource_id.location "
+"or ''\"/>\n"
 "                                    </li>\n"
 "                                </ul>\n"
 "                            </div>\n"
@@ -337,7 +350,8 @@ msgid ""
 "                    </tr>\n"
 "                    <tr>\n"
 "                        <td style=\"text-align:center;\">\n"
-"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;"
+"clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
 "                        </td>\n"
 "                    </tr>\n"
 "                </tbody>\n"
@@ -346,7 +360,8 @@ msgid ""
 "    </tr>\n"
 "    <tr>\n"
 "        <td align=\"center\" style=\"min-width: 590px;\">\n"
-"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; "
+"background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
 "                <tbody>\n"
 "                    <tr>\n"
 "                        <td valign=\"middle\" align=\"left\">\n"
@@ -358,7 +373,8 @@ msgid ""
 "                        <t t-out=\"ctx['target_company'].phone\"/>\n"
 "                        <t t-if=\"ctx['target_company'].email\">\n"
 "                            | \n"
-"                            <a t-attf-href=\"'mailto:%s' % #{ctx['target_company'].email}\" style=\"color: #454748;\">\n"
+"                            <a t-attf-href=\"'mailto:%s' % #{ctx['target_company'].email}\" style=\"color: "
+"#454748;\">\n"
 "                                <t t-out=\"ctx['target_company'].email\"/>\n"
 "                            </a>\n"
 "                        </t>\n"
@@ -385,14 +401,14 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__message_needaction
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "تحتاج اجراء"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__active
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__active
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__active
 msgid "Active"
-msgstr ""
+msgstr "نشظ"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_ids
@@ -401,7 +417,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_ids
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "النشاطات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_search
@@ -410,7 +426,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Activities Todo"
-msgstr ""
+msgstr "أنشطة لتفعلها"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_exception_decoration
@@ -419,7 +435,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_exception_decoration
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "زخرفة استثناء النشاط"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_state
@@ -427,8 +443,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__activity_state
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_state
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_state
+#, fuzzy
 msgid "Activity State"
-msgstr ""
+msgstr "حالة البيع"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_type_icon
@@ -436,19 +453,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__activity_type_icon
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_type_icon
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_type_icon
+#, fuzzy
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "رمز نوع النشاط"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/slots_widget_core.js:0
-#, python-format
+#, fuzzy, python-format
 msgid "Add"
-msgstr ""
+msgstr "أضف"
 
 #. module: business_appointment
 #. openerp-web
-#: code:addons/business_appointment/static/src/xml/time_slots.xml:0
 #: code:addons/business_appointment/static/src/xml/time_slots.xml:0
 #, python-format
 msgid "Add one"
@@ -841,14 +858,12 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_res_config_settings__ba_confirmation_retry_trials
 msgid "After exceeding the button 'Resend Code' would not be shown"
-msgstr ""
+msgstr "بعد تجاوز الزر ، لن يتم عرض \"إعادة إرسال الرمز"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_res_config_settings__ba_max_approval_trials
-msgid ""
-"After exceeding this number all steps would be cancelled and should be "
-"started from scratch"
-msgstr ""
+msgid "After exceeding this number all steps would be cancelled and should be started from scratch"
+msgstr "بعد تجاوز هذا الرقم ، سيتم إلغاء جميع الخطوات ويجب أن تبدأ من نقطة الصفر"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_res_config_settings__ba_max_approval_time
@@ -865,14 +880,14 @@ msgstr "وافق على الشروط والأحكام"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_res_config_settings__ba_confirmation_retry_period
-msgid "Agter this period it would be possible to resend the confirmation code"
+msgid "After this period it would be possible to resend the confirmation code"
 msgstr "بعد هذه الفترة سيكون من الممكن إعادة إرسال رمز التأكيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_alarm_task__alarm_id
 #: model_terms:ir.ui.view,arch_db:business_appointment.alarm_task_view_search
 msgid "Alarm"
-msgstr "إنذار"
+msgstr "التنبيه"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_alarm_task__alarm_time
@@ -883,58 +898,59 @@ msgstr "وقت التنبيه"
 #: model:ir.actions.act_window,name:business_appointment.appointment_alarm_action
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__alarm_ids
 msgid "Alarms"
-msgstr "إنذارات"
+msgstr "التنبيهات"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__recipients__portal
 msgid "All external followers (portal)"
-msgstr ""
+msgstr "جميع المتابعين الخارجيين (البوابة)"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__recipients__everybody
 msgid "All followers"
-msgstr ""
+msgstr "حميع المتابعين"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__recipients__internal
 msgid "All internal followers"
-msgstr ""
+msgstr "جميع المتابعين الداخليين"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__allocation_factor
+#, fuzzy
 msgid "Allocation Factor"
-msgstr ""
+msgstr "عامل التخصيص"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
+#, fuzzy
 msgid "Allocation Type"
-msgstr ""
+msgstr "نوع التخصيص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__manual_duration
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__manual_duration
+#, fuzzy
 msgid "Allow Manual Duration"
-msgstr ""
+msgstr "سماح المدة اليدوي"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__manual_duration
 #: model:ir.model.fields,help:business_appointment.field_make_business_appointment__manual_duration
-msgid ""
-"Allow users to define appointment duration. Otherwise, it would be always "
-"default"
-msgstr ""
+msgid "Allow users to define appointment duration. Otherwise, it would be always default"
+msgstr "السماح للمستخدمين بتحديد مدة الموعد. خلاف ذلك ، سيكون دائمًا افتراضيًا"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_resource_type.py:0
 #: model:ir.model.constraint,message:business_appointment.constraint_business_resource_type_allowed_to_check
 #, python-format
 msgid "Allowed after period should be positive!"
-msgstr ""
+msgstr "يجب أن يكون مسموحًا به بعد فترة إيجابية!"
 
 #. module: business_appointment
 #: model:ir.model.constraint,message:business_appointment.constraint_business_resource_type_allowed_from_check
 msgid "Allowed before period should be positive!"
-msgstr ""
+msgstr "يجب أن تكون الفترة المسموح بها قبل الفترة إيجابية!"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__america/adak
@@ -2191,18 +2207,21 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__appointment_id
 #: model_terms:ir.ui.view,arch_db:business_appointment.alarm_task_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
+#, fuzzy
 msgid "Appointment"
-msgstr ""
+msgstr "المواعيد"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_appointment_alarm
+#, fuzzy
 msgid "Appointment Alarm"
-msgstr ""
+msgstr " انذار المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__ir_ui_view__type__appointment_calendar
+#, fuzzy
 msgid "Appointment Calendar"
-msgstr ""
+msgstr "تقويم المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__appointment_duration
@@ -2218,38 +2237,43 @@ msgstr "وصف الموعد"
 #: model:ir.model,name:business_appointment.model_appointment_group
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__reservation_group_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__reservation_group_id
+#, fuzzy
 msgid "Appointment Group"
-msgstr ""
+msgstr "مجموعة الميعاد"
 
 #. module: business_appointment
 #: model:mail.message.subtype,name:business_appointment.mt_appointment_rating
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_rating
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_type_rating
+#, fuzzy
 msgid "Appointment Rating"
-msgstr ""
+msgstr "تقييم الميعاد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__name
+#, fuzzy
 msgid "Appointment Reference"
-msgstr ""
+msgstr "مرجع الميعاد"
 
 #. module: business_appointment
 #: model:mail.template,subject:business_appointment.email_template_rating_appointment
+#, fuzzy
 msgid "Appointment Satisfaction Survey"
-msgstr ""
+msgstr "استبيان الرضا عن المواعيد"
 
 #. module: business_appointment
 #: model:mail.message.subtype,description:business_appointment.mt_business_appointment_reserved_time_change
 #: model:mail.message.subtype,description:business_appointment.mt_business_resource_reserved_time_change
 #: model:mail.message.subtype,description:business_appointment.mt_business_resource_type_reserved_time_change
+#, fuzzy
 msgid "Appointment Update"
-msgstr ""
+msgstr "تحديث الموعد"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment_core.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "Appointment for {} by {}"
-msgstr ""
+msgstr "موعد من أجل {} بواسطة {}"
 
 #. module: business_appointment
 #. openerp-web
@@ -2283,34 +2307,40 @@ msgstr "تحليل المواعيد"
 #: model:mail.message.subtype,name:business_appointment.mt_business_appointment_cancel
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_cancel
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_type_cancel
+#, fuzzy
 msgid "Appointments Cancellation"
-msgstr ""
+msgstr "لاغي المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_partner__appointments_len
 #: model:ir.model.fields,field_description:business_appointment.field_res_users__appointments_len
+#, fuzzy
 msgid "Appointments Count"
-msgstr ""
+msgstr "عدد المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__rating_option
+#, fuzzy
 msgid "Appointments Customer Rating"
-msgstr ""
+msgstr "المواعيد تقيمات العملاء"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.rating_rating_action_business_appointment
+#, fuzzy
 msgid "Appointments Ratings"
-msgstr ""
+msgstr "تقيمات المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_website
+#, fuzzy
 msgid "Appointments in Portal and Website"
-msgstr ""
+msgstr "المواعيد في البوابة والموقع الإلكتروني"
 
 #. module: business_appointment
 #: model:res.groups,name:business_appointment.group_ba_admin
+#, fuzzy
 msgid "Appointments: Administrator"
-msgstr ""
+msgstr "التعيينات: مسئول"
 
 #. module: business_appointment
 #: model:mail.template,name:business_appointment.email_template_default_reminder
@@ -2324,18 +2354,21 @@ msgstr ""
 
 #. module: business_appointment
 #: model:res.groups,name:business_appointment.group_ba_user
+#, fuzzy
 msgid "Appointments: Only Own"
-msgstr ""
+msgstr "المواعيد: ملك فقط"
 
 #. module: business_appointment
 #: model:mail.template,name:business_appointment.email_template_rating_appointment
+#, fuzzy
 msgid "Appointments: Rating Template"
-msgstr ""
+msgstr "المواعيد: نموذج التصنيف"
 
 #. module: business_appointment
 #: model:mail.template,name:business_appointment.email_template_successful_appointment
+#, fuzzy
 msgid "Appointments: Success Email Template"
-msgstr ""
+msgstr "المواعيد: قالب البريد الإلكتروني للنجاح"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_search
@@ -3051,9 +3084,7 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__start_round_rule_days
-msgid ""
-"At which time daily services should start (defined in working calendar time "
-"zone)"
+msgid "At which time daily services should start (defined in working calendar time zone)"
 msgstr ""
 
 #. module: business_appointment
@@ -3312,53 +3343,58 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_auto_sale_order__confirmed
+#, fuzzy
 msgid "Auto Confirmed Sale Order"
-msgstr ""
+msgstr "أمر بيع مؤكد تلقائيًا"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_auto_sale_order__draft
+#, fuzzy
 msgid "Auto Draft Sale Order"
-msgstr ""
+msgstr "أمر بيع الي Draft"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_auto_sale_order
+#, fuzzy
 msgid "Auto Sale Order"
-msgstr ""
+msgstr "امر بيع الي"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allocation_type__automatic
 msgid "Automatic"
-msgstr ""
+msgstr "الي"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
+#, fuzzy
 msgid "Automatic Resource Allocation"
-msgstr ""
+msgstr "التخصيص التلقائي للموارد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__service_ids
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__service_ids
 msgid "Available Services"
-msgstr "مقدمين الخدمات المتاحة"
+msgstr "الخدمات المتاحة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__available_service_ids
 msgid "Available services"
-msgstr "مقدمين الخدمات المتاحة"
+msgstr "الخدمات المتاحة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__rating_satisfaction
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__rating_satisfaction
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__rating_satisfaction
+#, fuzzy
 msgid "Average Rating"
-msgstr ""
+msgstr "التقييم"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment_core.py:0
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #, python-format
 msgid "Awaiting Confirmation"
-msgstr ""
+msgstr "في انتظار التاكيد"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__brazil/acre
@@ -3392,38 +3428,44 @@ msgstr ""
 #: model:ir.module.category,name:business_appointment.module_category_business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_calendar
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "Business Appointments"
-msgstr ""
+msgstr "مواعيد العمل"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "Business Appointments Options"
-msgstr ""
+msgstr "خيارات مواعيد العمل"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_business_resource
+#, fuzzy
 msgid "Business Resource"
-msgstr ""
+msgstr "موارد الأعمال"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_business_resource_type
+#, fuzzy
 msgid "Business Resource Type"
-msgstr ""
+msgstr "نوع موارد الأعما"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allocation_method__by_number
+#, fuzzy
 msgid "By Appointments Number"
-msgstr ""
+msgstr " ب رقم المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allocation_method__by_order
+#, fuzzy
 msgid "By Order"
-msgstr ""
+msgstr "بالاوردر "
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allocation_method__by_workload
 msgid "By Workload"
-msgstr ""
+msgstr "علي حسب عبء العمل"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__cet
@@ -3442,18 +3484,19 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__pricing_method
 msgid "Calculate price for"
-msgstr ""
+msgstr "احسب سعر ل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_partner__ba_calendar_defaults
 #: model:ir.model.fields,field_description:business_appointment.field_res_users__ba_calendar_defaults
+#, fuzzy
 msgid "Calendar Defaults"
-msgstr ""
+msgstr "افتراضيات التقويم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__calendar_event_workload
 msgid "Calendar Events as Busy Time"
-msgstr ""
+msgstr "أحداث التقويم كوقت مشغول"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__canada/atlantic
@@ -3523,20 +3566,21 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
 #, python-format
 msgid "Cancel"
-msgstr ""
+msgstr "الغي"
 
 #. module: business_appointment
 #: model:ir.actions.server,name:business_appointment.cron_clean_prereservation_ir_actions_server
 #: model:ir.cron,cron_name:business_appointment.cron_clean_prereservation
 #: model:ir.cron,name:business_appointment.cron_clean_prereservation
+#, fuzzy
 msgid "Cancel expired pre-reservations"
-msgstr ""
+msgstr "إلغاء الحجوزات منتهية الصلاحية"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment.py:0
 #, python-format
 msgid "Canceled"
-msgstr ""
+msgstr "الغيت"
 
 #. module: business_appointment
 #: model:mail.message.subtype,description:business_appointment.mt_business_appointment_cancel
@@ -3562,9 +3606,9 @@ msgstr ""
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/time_slots.js:0
-#, python-format
+#, fuzzy, python-format
 msgid "Choose Contact and Confirm"
-msgstr ""
+msgstr "اختر جهة اتصال واكد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__city
@@ -3574,25 +3618,21 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.choose_appointment_customert_form_view
 msgid "City"
-msgstr ""
+msgstr "المدينه"
 
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.appointment_product_action
 msgid "Click 'Create' to add a new service used for appointments"
-msgstr "انقر فوق "إنشاء" لإضافة خدمة جديدة تستخدم للمواعيد"
+msgstr "انقر فوق \"إنشاء\" لإضافة خدمة جديدة تستخدم للمواعيد"
 
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.business_resource_type_action
-msgid ""
-"Click 'Create' to add new resource types, e.g. 'Therapists', 'Conference "
-"Rooms', 'Factory Equipment'"
+msgid "Click 'Create' to add new resource types, e.g. 'Therapists', 'Conference Rooms', 'Factory Equipment'"
 msgstr ""
 
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.business_resource_action
-msgid ""
-"Click 'Create' to add new resource, e.g. 'Doctor Brown', 'Room 212', "
-"'Milling machine 909'"
+msgid "Click 'Create' to add new resource, e.g. 'Doctor Brown', 'Room 212', 'Milling machine 909'"
 msgstr ""
 
 #. module: business_appointment
@@ -3601,7 +3641,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__color
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__color
 msgid "Color"
-msgstr ""
+msgstr "اللون"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__company_id
@@ -3611,8 +3651,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__company_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__company_id
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
+#, fuzzy
 msgid "Company"
-msgstr ""
+msgstr "الشركة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__partner_name
@@ -3636,12 +3677,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__extra_product_ids
 #, python-format
 msgid "Complementary Products"
-msgstr ""
+msgstr "المنتجات التكميلية"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_extra_products_backend
 msgid "Complementary Products Offer"
-msgstr ""
+msgstr "عرض المنتجات التكميلية"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_res_config_settings
@@ -3652,12 +3693,13 @@ msgstr "ضبط الاعدادات"
 #: model:ir.ui.menu,name:business_appointment.menu_business_appointments_conf
 #: model:ir.ui.menu,name:business_appointment.menu_res_config_settings_appointment
 msgid "Configuration"
-msgstr "إعدادات التكوين"
+msgstr "إعدادات"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__safe_file_name
+#, fuzzy
 msgid "Confimration File Name"
-msgstr ""
+msgstr "اسم ملف التاكيد"
 
 #. module: business_appointment
 #. openerp-web
@@ -3666,12 +3708,13 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #, python-format
 msgid "Confirm"
-msgstr ""
+msgstr "اكد"
 
 #. module: business_appointment
 #: model:ir.actions.report,name:business_appointment.action_report_business_appointment
+#, fuzzy
 msgid "Confirmation"
-msgstr ""
+msgstr "التاكيد"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_res_partner
@@ -3688,16 +3731,18 @@ msgstr "جهة الاتصال"
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_appointment_contact_info
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
+#, fuzzy
 msgid "Contact Info"
-msgstr ""
+msgstr "معلومات جهة الاتصال"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__contact_name
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__contact_name
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__contact_name
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__contact_name
+#, fuzzy
 msgid "Contact Name"
-msgstr ""
+msgstr "اسم جهة الاتصال"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__country_id
@@ -3723,7 +3768,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__create_uid
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "أنشئ بواسطة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_alarm_task__create_date
@@ -3739,12 +3784,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__create_date
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__create_date
 msgid "Created on"
-msgstr ""
+msgstr "أنشئ في"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
 msgid "Creation Date"
-msgstr ""
+msgstr "تاريخ الانشاء"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__cuba
@@ -3760,30 +3805,32 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_business_appointment_custom_search
+#, fuzzy
 msgid "Custom Search"
-msgstr ""
+msgstr "بحث مخصص"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.rating_rating_action_business_resource_report
 #: model:ir.ui.menu,name:business_appointment.menu_business_ratings
 msgid "Customer Ratings"
-msgstr ""
+msgstr "تقيم العميل"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
 msgid "Date"
-msgstr ""
+msgstr "التاريخ"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__day_date
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__day_date
+#, fuzzy
 msgid "Day"
-msgstr ""
+msgstr "اليوم"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__duration_uom__days
 msgid "Day(s)"
-msgstr ""
+msgstr "الايام"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__default_alarm_ids
@@ -3793,20 +3840,19 @@ msgstr "الإنذارات الافتراضية"
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__resource_calendar_id
 #: model:ir.model.fields,help:business_appointment.field_business_resource__resource_calendar_id
+#, fuzzy
 msgid "Define the schedule of resource"
-msgstr ""
+msgstr "تحديد الجدول الزمني للموارد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Define time zone to show time slots"
-msgstr ""
+msgstr "حدد المنطقة الزمنية لإظهار الفترات الزمنية"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_res_config_settings__ba_auto_sale_order
-msgid ""
-"Define wheter sale order should be auto created / confirmed, when "
-"appointment is confirmed"
-msgstr ""
+msgid "Define wheter sale order should be auto created / confirmed, when appointment is confirmed"
+msgstr "يجب إنشاء / تأكيد أمر البيع المباشر تلقائيًا ، عند تأكيد الموعد"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__duration_uom
@@ -3819,14 +3865,14 @@ msgstr ""
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Define whether website / portal visitor should confirm appointment"
-msgstr ""
+msgstr "حدد ما إذا كان يجب على زائر الموقع / البوابة تأكيد الموعد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_kanban
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_kanban
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_kanban
 msgid "Delete"
-msgstr ""
+msgstr "مسح"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__description
@@ -3846,8 +3892,9 @@ msgstr "التفاصيل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__business_appointment_timezone_option
+#, fuzzy
 msgid "Different Time Zones"
-msgstr ""
+msgstr "مناطق زمنية مختلفة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_alarm_task__display_name
@@ -3864,18 +3911,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__display_name
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "اسم العرض"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "Done"
-msgstr ""
+msgstr "تم"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
+#, fuzzy
 msgid "Done Appointments"
-msgstr ""
+msgstr "المواعيد التامة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__duration_minutes
@@ -3883,33 +3931,36 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__duration
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__duration
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__duration
+#, fuzzy
 msgid "Duration"
-msgstr ""
+msgstr "المدة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__duration_uom
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__duration_uom
+#, fuzzy
 msgid "Duration UoM"
-msgstr ""
+msgstr "وحدة مدة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__appointment_duration_days
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__duration_days
+#, fuzzy
 msgid "Duration of Appointment"
-msgstr ""
+msgstr "مدة الميعاد"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_product.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "Duration should be positive"
-msgstr ""
+msgstr "يجب أن تكون المدة موجبة!"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_alarm.py:0
 #: model:ir.model.constraint,message:business_appointment.constraint_appointment_alarm_allowed_duration
-#, python-format
+#, fuzzy, python-format
 msgid "Duration should be positive!"
-msgstr ""
+msgstr "يجب أن تكون المدة موجبة!"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__eet
@@ -3955,10 +4006,9 @@ msgstr ""
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment_core.py:0
-#: code:addons/business_appointment/models/business_appointment_core.py:0
 #, python-format
 msgid "Either contact or contact name should be defined!"
-msgstr ""
+msgstr "يجب تحديد اسم جهة الاتصال أو جهة الاتصال!"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__email
@@ -3966,18 +4016,21 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__email
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__email
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__ttype__email
+#, fuzzy
 msgid "Email"
-msgstr ""
+msgstr "بريد"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_approval_type__email
+#, fuzzy
 msgid "Email Confirmation"
-msgstr ""
+msgstr "ايميل التاكيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__mail_template_id
+#, fuzzy
 msgid "Email Template"
-msgstr ""
+msgstr "قوالب البريد الإلكتروني"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_appointments_email_templates
@@ -3986,8 +4039,9 @@ msgstr "قوالب البريد الإلكتروني"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_hr
+#, fuzzy
 msgid "Employees as Resources"
-msgstr ""
+msgstr "موظف كمتخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__etc/gmt
@@ -4678,7 +4732,7 @@ msgstr ""
 #. module: business_appointment
 #: model:mail.message.subtype,name:business_appointment.mt_reminder_external
 msgid "External Reminder"
-msgstr ""
+msgstr "مذكر خارجي"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__extra_working_calendar_id
@@ -4687,18 +4741,21 @@ msgstr "قيود التقويم الإضافية"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "Extra Features"
-msgstr ""
+msgstr "مميزات اضافيه"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
+#, fuzzy
 msgid "Extra Products"
-msgstr ""
+msgstr "المنتجات الاضافيه"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.report_business_appointment_single
+#, fuzzy
 msgid "Extra products"
-msgstr ""
+msgstr "المنتجات الاضافيه"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_custom_search__custom_field_id
@@ -4707,8 +4764,9 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_choose_appointment_customer
+#, fuzzy
 msgid "Finish Scheduling"
-msgstr ""
+msgstr "انهاء الجدولة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_follower_ids
@@ -4756,7 +4814,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Future Activities"
-msgstr ""
+msgstr "النشاطات المستقبليه"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__gb
@@ -4852,16 +4910,12 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__multiple_manual_duration
-msgid ""
-"How manual duration should be rounded. E.g. 0:15 means rounding for 15 "
-"minutes: 0:17 > 0:30"
+msgid "How manual duration should be rounded. E.g. 0:15 means rounding for 15 minutes: 0:17 > 0:30"
 msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__multiple_manual_duration_days
-msgid ""
-"How manual duration should be rounded. E.g. 2 means rounding for 2 days: 3 >"
-" 4"
+msgid "How manual duration should be rounded. E.g. 2 means rounding for 2 days: 3 > 4"
 msgstr ""
 
 #. module: business_appointment
@@ -4913,9 +4967,7 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__calendar_event_workload
-msgid ""
-"If checked, for periods when a responsible user has meetings, appointments "
-"would not be possible"
+msgid "If checked, for periods when a responsible user has meetings, appointments would not be possible"
 msgstr ""
 
 #. module: business_appointment
@@ -4960,9 +5012,7 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__success_mail_template_id
-msgid ""
-"If not defined, standard 'Appointments: Success Email Template' would be "
-"used"
+msgid "If not defined, standard 'Appointments: Success Email Template' would be used"
 msgstr ""
 
 #. module: business_appointment
@@ -4981,8 +5031,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource__active
 msgid ""
-"If the active field is set to False, it will allow you to hide the resource "
-"record without removing it."
+"If the active field is set to False, it will allow you to hide the resource record without removing it."
 msgstr ""
 
 #. module: business_appointment
@@ -5163,7 +5212,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__function
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__function
 msgid "Job Position"
-msgstr ""
+msgstr "الوظيفه"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__kwajalein
@@ -5238,14 +5287,16 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
+#, fuzzy
 msgid "Late Activities"
-msgstr ""
+msgstr "النشاطات المتاخره "
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__late_to_know
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__late_to_know
+#, fuzzy
 msgid "Late but yet Planned"
-msgstr ""
+msgstr "مخطط ولكن متأخر "
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__libya
@@ -5257,7 +5308,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_sale
 msgid "Link Appointments to Sale Orders"
-msgstr ""
+msgstr "ربط مواعيد ب اوامر بيع"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__location
@@ -5306,73 +5357,80 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid ""
 "Make time zone available for selection while scheduling an appointment.\n"
-"                                    Otherwise, all time slots would be shown always in the same timezone taken from a\n"
+"                                    Otherwise, all time slots would be shown always in the same timezone "
+"taken from a\n"
 "                                    current company."
 msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allocation_type__manual
 msgid "Manual"
-msgstr ""
+msgstr "يدوي"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
+#, fuzzy
 msgid "Manual Resource Allocation"
-msgstr ""
+msgstr "تخصيص يدوي للمتخصصين"
 
 #. module: business_appointment
 #: model:ir.actions.server,name:business_appointment.action_mass_appointments_done
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
+#, fuzzy
 msgid "Mark Done"
-msgstr ""
+msgstr "علم انه تم"
 
 #. module: business_appointment
 #: model:ir.actions.server,name:business_appointment.action_mass_appointments_missed
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
 msgid "Mark Missed"
-msgstr ""
+msgstr "علم انه فائت"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__max_manual_duration_days
+#, fuzzy
 msgid "Max Duration Days"
-msgstr ""
+msgstr "اقصي مدة بالايام"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__max_manual_duration
+#, fuzzy
 msgid "Max Duration Hours"
-msgstr ""
+msgstr "اقصي مدة بالساعات"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_max_multi_scheduling
+#, fuzzy
 msgid "Maximum Appointments (Backend)"
-msgstr ""
+msgstr "الحد الأقصى من المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_max_approval_trials
 msgid "Maximum Number of Attempts to Confirm"
-msgstr ""
+msgstr "اقصي عدد من المحاولات للتاكيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_confirmation_retry_trials
 msgid "Maximum Number of Code Refreshing"
-msgstr ""
+msgstr "اقصي عدد لتجديد الكود"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_max_approval_time
 msgid "Maximum Period for Confirmation (h.)"
-msgstr ""
+msgstr "المدة القصوي للتاكيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_max_preresevation_time
+#, fuzzy
 msgid "Maximum Period for Pre-Reservation"
-msgstr ""
+msgstr "المدة القصوى للحجز المسبق"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/slots_widget_core.js:0
-#, python-format
+#, fuzzy, python-format
 msgid "Maximum number of appointments"
-msgstr ""
+msgstr "العدد الأقصى من المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_has_error
@@ -5415,13 +5473,15 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__min_manual_duration_days
+#, fuzzy
 msgid "Min Duration Days"
-msgstr ""
+msgstr "الحد الأدنى من الأيام"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__min_manual_duration
+#, fuzzy
 msgid "Min Duration Hours"
-msgstr ""
+msgstr " الحد الادني بالساعات"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_product.py:0
@@ -5432,13 +5492,13 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__duration_uom__minutes
 msgid "Minute(s)"
-msgstr ""
+msgstr "الدقائق"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment.py:0
 #, python-format
 msgid "Missed"
-msgstr ""
+msgstr "الفائت"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__mobile
@@ -5446,49 +5506,55 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__mobile
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__mobile
 msgid "Mobile"
-msgstr ""
+msgstr "الهاتف"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_custom_search__model
 msgid "Model"
-msgstr ""
+msgstr "نموذج"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__day_month
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__day_month
+#, fuzzy
 msgid "Month"
-msgstr ""
+msgstr "الشهر"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_multi_scheduling
+#, fuzzy
 msgid "Multi Scheduling"
-msgstr ""
+msgstr "جدولة متعددة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "Multiple Services Prices"
-msgstr ""
+msgstr "أسعار خدمات متعددة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__multiple_manual_duration_days
+#, fuzzy
 msgid "Multiple for Days"
-msgstr ""
+msgstr "متعدد لايام"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__multiple_manual_duration
+#, fuzzy
 msgid "Multiple for Hours"
-msgstr ""
+msgstr "متعدد لساعات العمل"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_product.py:0
 #, python-format
 msgid "Multiple should positive and less than max"
-msgstr ""
+msgstr "يجب أن يكون العدد المضاعف موجبًا وأقل من الحد الأقصى"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
+#, fuzzy
 msgid "My"
-msgstr ""
+msgstr "لي"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__my_activity_date_deadline
@@ -5496,8 +5562,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__my_activity_date_deadline
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__my_activity_date_deadline
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__my_activity_date_deadline
+#, fuzzy
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "الموعد النهائي لنشاطي"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
@@ -5523,8 +5590,9 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__name
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__name
+#, fuzzy
 msgid "Name"
-msgstr ""
+msgstr "الاسم"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__navajo
@@ -5537,26 +5605,28 @@ msgstr ""
 #: model:mail.message.subtype,name:business_appointment.mt_business_appointment_new
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_new
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_type_new
+#, fuzzy
 msgid "New Appointments and Recovering"
-msgstr ""
+msgstr "المواعيد الجديدة والتعافي"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_confirmation_retry_period
 msgid "New Confirmation Code Minimum Period (s.)"
-msgstr ""
+msgstr "الحد الأدنى لفترة (فترات) رمز التأكيد الجديد"
 
 #. module: business_appointment
 #: model:mail.message.subtype,description:business_appointment.mt_business_appointment_new
 #: model:mail.message.subtype,description:business_appointment.mt_business_resource_new
 #: model:mail.message.subtype,description:business_appointment.mt_business_resource_type_new
+#, fuzzy
 msgid "New appointment"
-msgstr ""
+msgstr "موعد جديد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 msgid "Next 7 days"
-msgstr "خلال الاسبوع القادم"
+msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_calendar_event_id
@@ -5565,7 +5635,7 @@ msgstr "خلال الاسبوع القادم"
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_calendar_event_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "النشاط التالي حدث التقويم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_date_deadline
@@ -5573,8 +5643,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__activity_date_deadline
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_date_deadline
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_date_deadline
+#, fuzzy
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "الموعد النهائي للنشاط التالي"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_summary
@@ -5582,8 +5653,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__activity_summary
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_summary
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_summary
+#, fuzzy
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "ملخص النشاط التالي"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_type_id
@@ -5591,25 +5663,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__activity_type_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_type_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_type_id
+#, fuzzy
 msgid "Next Activity Type"
-msgstr ""
+msgstr "نوع النشاط التالي"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_auto_sale_order__no
 msgid "No Auto Creation"
-msgstr ""
+msgstr "لا إنشاء تلقائي"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_approval_type__no
+#, fuzzy
 msgid "No Confirmation"
-msgstr ""
+msgstr "لا تأكيد"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/time_slots.xml:0
 #, python-format
 msgid "No appointments are possible. Try to select different dates"
-msgstr ""
+msgstr "لا توجد مواعيد ممكنة. حاول تحديد تواريخ مختلفة"
 
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.rating_rating_action_appointment_product
@@ -5617,7 +5691,7 @@ msgstr ""
 #: model_terms:ir.actions.act_window,help:business_appointment.rating_rating_action_business_resource
 #: model_terms:ir.actions.act_window,help:business_appointment.rating_rating_action_business_resource_report
 msgid "No customer ratings yet"
-msgstr ""
+msgstr "لا توجد تقييمات العملاء حتى الآن"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__description
@@ -5627,7 +5701,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
 msgid "Notes"
-msgstr ""
+msgstr "ملاحظات"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_ba_templates
@@ -5638,7 +5712,7 @@ msgstr "إشعارات"
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_group__appointment_len
 msgid "Number"
-msgstr ""
+msgstr "رقم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_needaction_counter
@@ -5647,15 +5721,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__message_needaction_counter
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "عدد الاجراءات"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__appointment_len
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__appointment_len
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__appointment_len
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__number_of_appointments
+#, fuzzy
 msgid "Number of appointments"
-msgstr ""
+msgstr "عدد المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_has_error_counter
@@ -5664,7 +5739,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__message_has_error_counter
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "عدد الأخطاء"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__message_needaction_counter
@@ -5673,7 +5748,7 @@ msgstr ""
 #: model:ir.model.fields,help:business_appointment.field_business_resource__message_needaction_counter
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__message_needaction_counter
 msgid "Number of messages which requires an action"
-msgstr ""
+msgstr "عدد الرسائل التي تتطلب اتخاذ إجراء"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__message_has_error_counter
@@ -5682,12 +5757,13 @@ msgstr ""
 #: model:ir.model.fields,help:business_appointment.field_business_resource__message_has_error_counter
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "عدد الرسائل التي بها خطأ في التسليم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__resource_len
+#, fuzzy
 msgid "Number of resources"
-msgstr ""
+msgstr "عدد المتخصصين"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__message_unread_counter
@@ -5696,19 +5772,20 @@ msgstr ""
 #: model:ir.model.fields,help:business_appointment.field_business_resource__message_unread_counter
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__message_unread_counter
 msgid "Number of unread messages"
-msgstr ""
+msgstr "عدد الرسائل غير المقروءة"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/ba_popups.js:0
 #, python-format
 msgid "OK"
-msgstr ""
+msgstr "موافق"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__recipients__user_id
+#, fuzzy
 msgid "Only responsible"
-msgstr ""
+msgstr "المسئول فقط"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_form
@@ -6041,7 +6118,7 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_group__partner_id
 msgid "Partner"
-msgstr ""
+msgstr "شريك"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment_core.py:0
@@ -6055,13 +6132,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__phone
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__phone
 msgid "Phone"
-msgstr ""
+msgstr "هاتف"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "Planned"
-msgstr ""
+msgstr "مخطط "
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
@@ -6070,27 +6147,31 @@ msgstr "المواعيد المقررة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__pricing_method__per_planned_duration
+#, fuzzy
 msgid "Planned Duration"
-msgstr ""
+msgstr "المدة المقررة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__report_duration_days
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__report_duration_days
+#, fuzzy
 msgid "Planned Duration (days)"
-msgstr ""
+msgstr "المدة المخطط لها (أيام)"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__report_duration_hours
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__report_duration_hours
+#, fuzzy
 msgid "Planned Duration (hours)"
-msgstr ""
+msgstr "المدة المخطط لها (ساعات)"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__planned_appointment_len
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__planned_appointment_len
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__planned_appointment_len
+#, fuzzy
 msgid "Planned appointments"
-msgstr ""
+msgstr "المواعيد المخططه"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
@@ -6101,7 +6182,7 @@ msgstr "مخطط ولكن متأخر "
 #: code:addons/business_appointment/wizard/choose_appointment_customer.py:0
 #, python-format
 msgid "Please select a contact and appointments"
-msgstr ""
+msgstr "الرجاء تحديد جهة اتصال والمواعيد"
 
 #. module: business_appointment
 #. openerp-web
@@ -6124,13 +6205,14 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_alarm_task__notified_partner_ids
+#, fuzzy
 msgid "Popup is done for"
-msgstr ""
+msgstr "يجب أن يتم الحجز في"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_custom_fields_website
 msgid "Portal and Website Custom Fields"
-msgstr ""
+msgstr "الحقول المخصصة للبوابة والموقع الإلكتروني"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__portugal
@@ -6144,7 +6226,7 @@ msgstr ""
 #: model:ir.model,name:business_appointment.model_business_appointment_core
 #, python-format
 msgid "Pre-Reservation"
-msgstr "ما قبل الحجز"
+msgstr "حجز مسبق"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_appointment__state
@@ -6158,21 +6240,22 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__start_slot_datetime
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
+#, fuzzy
 msgid "Pre-Reservation Datetime"
-msgstr ""
+msgstr "تاريخ الحجز المسبق"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_business_appointments_core
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 msgid "Pre-Reservations"
-msgstr "ما قبل الحجز"
+msgstr "الحجز المسبق"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/time_slots.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Price"
-msgstr ""
+msgstr "السعر"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__pricelist_id
@@ -6181,31 +6264,32 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__pricelist_id
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__pricelist_id
 msgid "Pricelist"
-msgstr ""
+msgstr "قائمة الاسعار"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_business_services_pricelists
 msgid "Pricelists"
-msgstr ""
+msgstr "قائمة الاسعار"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment_core.py:0
 #, python-format
 msgid "Processed"
-msgstr ""
+msgstr "حول"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/time_slots.xml:0
 #: model:ir.model.fields,field_description:business_appointment.field_associated_product_line__product_id
-#, python-format
+#, fuzzy, python-format
 msgid "Product"
-msgstr ""
+msgstr "المنتج"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_kanban
+#, fuzzy
 msgid "Product:"
-msgstr ""
+msgstr "المنتج"
 
 #. module: business_appointment
 #. openerp-web
@@ -6213,7 +6297,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_associated_product_line__product_uom_qty
 #, python-format
 msgid "Quantity"
-msgstr ""
+msgstr "الكميه"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__roc
@@ -6238,44 +6322,52 @@ msgstr "التقييم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__rating_avg
+#, fuzzy
 msgid "Rating Average"
-msgstr ""
+msgstr "متوسط التقييم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__rating_mail_template_id
+#, fuzzy
 msgid "Rating Email"
-msgstr ""
+msgstr "ايميل التقييم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__rating_last_feedback
+#, fuzzy
 msgid "Rating Last Feedback"
-msgstr ""
+msgstr "تقييم اخر ملاحظة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__rating_last_image
+#, fuzzy
 msgid "Rating Last Image"
-msgstr ""
+msgstr "صورة اخر تقييم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__rating_last_value
+#, fuzzy
 msgid "Rating Last Value"
-msgstr ""
+msgstr "قيمة اخر تقييم"
 
 #. module: business_appointment
 #: model:mail.message.subtype,description:business_appointment.mt_business_resource_rating
 #: model:mail.message.subtype,description:business_appointment.mt_business_resource_type_rating
+#, fuzzy
 msgid "Rating Request"
-msgstr ""
+msgstr "طلب التقيم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__rating_count
+#, fuzzy
 msgid "Rating count"
-msgstr ""
+msgstr "عداد التقييم"
 
 #. module: business_appointment
 #: model:res.groups,name:business_appointment.group_business_appointment_rating
+#, fuzzy
 msgid "Rating for Business Appointments"
-msgstr ""
+msgstr "التصنيف لمواعيد العمل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__rating_ids
@@ -6283,47 +6375,54 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__rating_ids
 #: model:mail.message.subtype,description:business_appointment.mt_appointment_rating
 msgid "Ratings"
-msgstr ""
+msgstr "التقيمات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
 msgid "Re-Plan"
-msgstr ""
+msgstr "إعادة التخطيط"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/business_appointment_formcontroller.js:0
 #, python-format
 msgid "Re-schedule / Re-assign appointment"
-msgstr ""
+msgstr "اعادة جدوله / اعادة تعين للميعاد"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/business_appointment_calendarcontroller.js:0
 #, python-format
 msgid "Re-shedule / Re-assign appointment"
-msgstr ""
+msgstr "اعادة جدوله / اعادة تعين للميعاد"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_appointment__rating_last_feedback
+#, fuzzy
 msgid "Reason of the rating"
-msgstr ""
+msgstr "سبب التقييم"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__recipients
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_alarm_view_search
 msgid "Recipients"
-msgstr ""
+msgstr "الاستقبال"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__name
+#, fuzzy
 msgid "Reference"
-msgstr ""
+msgstr "المرجع"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__product_id
+#, fuzzy
 msgid "Related Product"
 msgstr ""
+"سيتم استخدام وحدة قياس بيع المنتج ذي الصلة في أمر المبيعات.\n"
+"        تأكد من أنه يتوافق مع طريقة تسعير المواعيد ووحدة قياس المدة\n"
+"        * حسب المدة - سيتم مضاعفة الساعات / الأيام بسعر المنتج ذي الصلة\n"
+"        * لكل وحدة - سعر الموعد الفردي هو مجرد سعر منتج"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__pricing_method
@@ -6333,6 +6432,10 @@ msgid ""
 "        * Per Duration - hours/days would be multiplied to related product price\n"
 "        * Per Units - the price for single appointment is just a product price"
 msgstr ""
+"سيتم استخدام وحدة قياس بيع المنتج ذي الصلة في أمر المبيعات.\n"
+"        تأكد من أنه يتوافق مع طريقة تسعير المواعيد ووحدة قياس المدة\n"
+"        * حسب المدة - سيتم مضاعفة الساعات / الأيام بسعر المنتج ذي الصلة\n"
+"        * لكل وحدة - سعر الموعد الفردي هو مجرد سعر منتج"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_appointment__user_id
@@ -6344,22 +6447,23 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__duration
 msgid "Remind Before"
-msgstr ""
+msgstr "تذكر قبل"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_alarm_tasks
+#, fuzzy
 msgid "Reminder Queue"
-msgstr ""
+msgstr "قائمة انتظار التذكيرات"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_alarm_task
 msgid "Reminder Task"
-msgstr ""
+msgstr "مهمة التذكير"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.alarm_task_view_search
 msgid "Reminder Time"
-msgstr ""
+msgstr "وقت التذكير"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_appointments_appointment_alarms
@@ -6374,10 +6478,9 @@ msgstr "قائمة انتظار التذكيرات"
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/time_slots.xml:0
-#: code:addons/business_appointment/static/src/xml/time_slots.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Remove one"
-msgstr ""
+msgstr "أضف واحدا"
 
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_business_appointments_reports
@@ -6388,13 +6491,15 @@ msgstr "التقارير"
 #: model:mail.message.subtype,name:business_appointment.mt_business_appointment_reserved_time_change
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_reserved_time_change
 #: model:mail.message.subtype,name:business_appointment.mt_business_resource_type_reserved_time_change
+#, fuzzy
 msgid "Rescheduling / Resource Update"
-msgstr ""
+msgstr "إعادة الجدولة / تحديث التخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_associated_product_line__appointment_core_id
+#, fuzzy
 msgid "Reservation"
-msgstr ""
+msgstr "الحجز"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allowed_from
@@ -6413,22 +6518,24 @@ msgstr "الحجوزات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
+#, fuzzy
 msgid "Reserved Appointments"
-msgstr ""
+msgstr "المواعيد المحجوزة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__datetime_start
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__datetime_start
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__datetime_start
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
+#, fuzzy
 msgid "Reserved Time"
-msgstr ""
+msgstr "الوقت المحجوز"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__datetime_end
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__datetime_end
 msgid "Reserved Time End"
-msgstr ""
+msgstr "الوقت المحجوز"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__resource_id
@@ -6443,39 +6550,43 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
 msgid "Resource"
-msgstr "مقدم الخدمة"
+msgstr " المتخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allocation_method
 msgid "Resource Allocation Method"
-msgstr "طريقة تخصيص الموارد"
+msgstr "طريقة تعين التخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_rating_rating__resource_id_int
+#, fuzzy
 msgid "Resource ID"
-msgstr ""
+msgstr "المتخصص: {} "
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_kanban
+#, fuzzy
 msgid "Resource Image"
-msgstr ""
+msgstr "صورة المتخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__resource_type
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
+#, fuzzy
 msgid "Resource Kind"
-msgstr ""
+msgstr "نوع المتخصص"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.rating_rating_action_business_resource
+#, fuzzy
 msgid "Resource Ratings"
-msgstr ""
+msgstr "تقييمات المتخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allocation_type
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__allocation_type
 msgid "Resource Selection"
-msgstr "طريقة اختيار الموارد"
+msgstr "اختيار التخصص"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__resource_type_id
@@ -6485,33 +6596,34 @@ msgstr "طريقة اختيار الموارد"
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Resource Type"
-msgstr "نوع الخدمة"
+msgstr "نوع التخصص"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_kanban
 msgid "Resource Type Image"
-msgstr "صورة نوع الخدمة"
+msgstr "صورة نوع التخصص"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.business_resource_type_action
 #: model:ir.ui.menu,name:business_appointment.menu_business_resource_types
 msgid "Resource Types"
-msgstr "نوع الخدمات"
+msgstr "أنواع الخدمات"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.rating_rating_action_view_business_resource_type
+#, fuzzy
 msgid "Resource Types Rating"
-msgstr ""
+msgstr "تقيم أنواع الخدمة"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_resource_calendar
 msgid "Resource Working Time"
-msgstr "فترة عمل المورد"
+msgstr "فترة عمل المتخصص"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
 msgid "Resource type"
-msgstr "نوع الخدمات"
+msgstr "نوع التخصص"
 
 #. module: business_appointment
 #. openerp-web
@@ -6524,7 +6636,7 @@ msgstr "نوع الخدمات"
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_kanban
 #, python-format
 msgid "Resources"
-msgstr "مقدم الخدمات"
+msgstr "المتخصصين"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__user_id
@@ -6534,7 +6646,7 @@ msgstr "مقدم الخدمات"
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_analytic_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Responsible"
-msgstr ""
+msgstr "المسئول"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__activity_user_id
@@ -6542,24 +6654,27 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__activity_user_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__activity_user_id
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__activity_user_id
+#, fuzzy
 msgid "Responsible User"
-msgstr ""
+msgstr "المسئول"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_product.py:0
 #, python-format
 msgid "Round rule should be positive"
-msgstr ""
+msgstr "يجب أن تكون قاعدة التقريب موجبة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_alarm__ttype__sms
+#, fuzzy
 msgid "SMS"
-msgstr ""
+msgstr "الرسائل القصيرة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_approval_type__sms
+#, fuzzy
 msgid "SMS Confirmation"
-msgstr ""
+msgstr "تاكيد الرسائل القصيرة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_has_sms_error
@@ -6567,13 +6682,15 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__message_has_sms_error
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__message_has_sms_error
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__message_has_sms_error
+#, fuzzy
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "خطأ في تسليم الرسائل القصيرة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__sms_template_id
+#, fuzzy
 msgid "SMS Template"
-msgstr ""
+msgstr "قوالب الرسائل "
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.sms_template_action
@@ -6587,35 +6704,35 @@ msgstr "قوالب الرسائل القصيرة"
 #: code:addons/business_appointment/static/src/xml/buttons.xml:0
 #, python-format
 msgid "Schedule"
-msgstr ""
+msgstr "جدول"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/business_appointment_calendarcontroller.js:0
 #: model:ir.model,name:business_appointment.model_make_business_appointment
-#, python-format
+#, fuzzy, python-format
 msgid "Schedule Appointment"
-msgstr ""
+msgstr "جدولة موعد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__schedule_datetime
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__schedule_datetime
 msgid "Schedule Datetime"
-msgstr ""
+msgstr "جدولة التاريخ والوقت"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/business_appointment_formcontroller.js:0
 #: code:addons/business_appointment/static/src/js/business_appointment_list_controller.js:0
-#, python-format
+#, fuzzy, python-format
 msgid "Schedule appointment"
-msgstr ""
+msgstr "حدد موعدًا"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/alarm_task.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "Scheduled time: {};{}{}{}"
-msgstr ""
+msgstr "جدول زمني: {}؛{}{}{}"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__date_start
@@ -6632,14 +6749,14 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__ba_auto_sale_order__sent
 msgid "Sent Quotation (ready to accept and pay)"
-msgstr ""
+msgstr "عرض أسعار مرسل (جاهز للقبول والدفع)"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__sequence
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__sequence
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "التسلسل"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_appointment_product
@@ -6653,18 +6770,21 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.rating_rating_view_search_resource_type
+#, fuzzy
 msgid "Service"
-msgstr ""
+msgstr "الخدمة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_rating_rating__service_id_int
+#, fuzzy
 msgid "Service ID"
-msgstr ""
+msgstr "معرف الخدمة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_kanban
+#, fuzzy
 msgid "Service Image"
-msgstr ""
+msgstr "صورة الخدمة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__service_method
@@ -6675,43 +6795,49 @@ msgstr "طريقة الخدمة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
+#, fuzzy
 msgid "Service Method: Multiple"
-msgstr ""
+msgstr "طريقة الخدمة: متعددة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
+#, fuzzy
 msgid "Service Method: Single"
-msgstr ""
+msgstr "طريقة الخدمة: مفرد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__name
+#, fuzzy
 msgid "Service Name"
-msgstr ""
+msgstr "اسم الخدمة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__product_price
+#, fuzzy
 msgid "Service Price"
-msgstr ""
+msgstr "سعر الخدمة"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.rating_rating_action_appointment_product
+#, fuzzy
 msgid "Service Ratings"
-msgstr ""
+msgstr "تقييمات الخدمة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__service_method__single
 msgid "Service is always the same for all resources and appointments"
-msgstr ""
+msgstr "الخدمة هي نفسها دائمًا لجميع المتخصصين والمواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__make_services_visible
+#, fuzzy
 msgid "Service is visible"
-msgstr ""
+msgstr "الخدمة مرئية"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__service_method__multiple
 msgid "Service should be selected for resources and for appointment"
-msgstr ""
+msgstr "يجب اختيار الخدمة للموارد وللتعيين"
 
 #. module: business_appointment
 #. openerp-web
@@ -6722,12 +6848,13 @@ msgstr ""
 #: model:ir.ui.menu,name:business_appointment.menu_business_services
 #, python-format
 msgid "Services"
-msgstr "خدمات"
+msgstr "الخدمات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
+#, fuzzy
 msgid "Services and Resources"
-msgstr ""
+msgstr "الخدمات و التخصصات"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.res_config_settings_business_appointment_action
@@ -6741,20 +6868,20 @@ msgstr "إعدادات"
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment_core__tz__singapore
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__appoin_comp_tz__singapore
 msgid "Singapore"
-msgstr ""
+msgstr "سنغافورة"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/ba_popups.js:0
 #, python-format
 msgid "Snooze"
-msgstr ""
+msgstr "غفوة"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment_core.py:0
 #, python-format
 msgid "Sorry, this appointment might not be confirmed due to its expiration"
-msgstr ""
+msgstr "عذرًا ، قد لا يتم تأكيد هذا الموعد بسبب انتهاء صلاحيته"
 
 #. module: business_appointment
 #. openerp-web
@@ -6762,49 +6889,50 @@ msgstr ""
 #: code:addons/business_appointment/static/src/js/slots_widget_core.js:0
 #, python-format
 msgid "Sorry, this time slot has been just reserved"
-msgstr ""
+msgstr "عذرا ، هذه الفترة الزمنية تم حجزها للتو"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/js/slots_widget_core.js:0
 #, python-format
-msgid ""
-"Sorry, you can not schedule more appointments: the maximum number is reached"
-msgstr ""
+msgid "Sorry, you can not schedule more appointments: the maximum number is reached"
+msgstr "عذرًا ، لا يمكنك جدولة المزيد من المواعيد: تم الوصول إلى الحد الأقصى لعدد المواعيد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__state
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__state
 msgid "Stage"
-msgstr ""
+msgstr "المرحلة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_tree
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_tree
+#, fuzzy
 msgid "Start"
-msgstr ""
+msgstr "ابدء"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
+#, fuzzy
 msgid "Start Date"
-msgstr ""
+msgstr "تاريخ البدء"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__start_round_rule
 msgid "Start Round"
-msgstr ""
+msgstr "ابدأ الجولة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__start_round_rule_days
 msgid "Start Time"
-msgstr ""
+msgstr "وقت البدء"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_product.py:0
 #, python-format
 msgid "Start time should be within 0:00 and 23:59"
-msgstr ""
+msgstr "يجب أن يكون وقت البدء بين 0:00 و 23:59"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_analytic__state
@@ -6817,15 +6945,16 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.choose_appointment_customert_form_view
+#, fuzzy
 msgid "State"
-msgstr ""
+msgstr "الحالة"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/appointment_sidebar.xml:0
 #, python-format
 msgid "States"
-msgstr ""
+msgstr "الولايات"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__activity_state
@@ -6839,6 +6968,8 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"النشاطات المستقبليهالحالة على أساس الأنشطة \\ nمتأخر: تاريخ الاستحقاق فات بالفعل \\ nاليوم: تاريخ النشاط هو "
+"اليوم \\ n"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__street
@@ -6846,19 +6977,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__street
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__street
 msgid "Street"
-msgstr ""
+msgstr "شارع"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.choose_appointment_customert_form_view
 msgid "Street 2..."
-msgstr ""
+msgstr "شارع2"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.choose_appointment_customert_form_view
 msgid "Street..."
-msgstr ""
+msgstr "شارع..."
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_contact_info__street2
@@ -6866,7 +6997,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__street2
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__street2
 msgid "Street2"
-msgstr ""
+msgstr "شارع2"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__success_mail_template_id
@@ -6875,15 +7006,14 @@ msgstr "بريد النجاح"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource__sucess_email_partner_ids
-msgid ""
-"Success email would be also sent for those partners as a copy of a client "
-"success email"
-msgstr ""
+msgid "Success email would be also sent for those partners as a copy of a client success email"
+msgstr "سيتم أيضًا إرسال بريد إلكتروني للنجاح إلى هؤلاء الشركاء كنسخة من البريد الإلكتروني الخاص بنجاح العميل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__sucess_email_partner_ids
+#, fuzzy
 msgid "Success emails CC"
-msgstr ""
+msgstr "بريد النجاح"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_choose_appointment_customer__appointments
@@ -6893,12 +7023,13 @@ msgstr ""
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__template_name
 msgid "Template"
-msgstr ""
+msgstr "قالب"
 
 #. module: business_appointment
 #: model:ir.actions.act_window,name:business_appointment.action_mail_template_ba
+#, fuzzy
 msgid "Templates"
-msgstr ""
+msgstr " القوالب"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_contact_info__partner_name
@@ -6908,12 +7039,13 @@ msgstr ""
 msgid ""
 "The name of the company which would be created when appointment is confirmed\n"
 "        Leave it empty if a contact is an individual"
-msgstr ""
+msgstr "اسم الشركة التي سيتم إنشاؤها عند تأكيد الموعد \\ nاتركه فارغًا إذا كان جهة الاتصال فردًا"
 
 #. module: business_appointment
 #: model_terms:ir.actions.act_window,help:business_appointment.rating_rating_action_view_business_resource_type
+#, fuzzy
 msgid "There is no rating for this appointment at the moment"
-msgstr ""
+msgstr "لا يوجد تصنيف لهذا الموعد في الوقت الحالي"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
@@ -6930,16 +7062,14 @@ msgstr "هذه السنة"
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__tz
 #: model:ir.model.fields,help:business_appointment.field_business_resource__tz
-msgid ""
-"This field is used in order to define in which timezone the resources will "
-"work."
-msgstr ""
+msgid "This field is used in order to define in which timezone the resources will work."
+msgstr "يُستخدم هذا الحقل لتحديد المنطقة الزمنية التي ستعمل فيها المتخصصين."
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/alarm_task.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "This is the SMS sent to {}: <br/>"
-msgstr ""
+msgstr "قوالب الرسائل القصيرة"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_res_config_settings__ba_max_multi_scheduling
@@ -6947,31 +7077,36 @@ msgid ""
 "This setting is applied only to backend. \n"
 "        For portal and website maximum number, please look at website specific options"
 msgstr ""
+"يتم تطبيق هذا الإعداد على الخلفية فقط. \\ nللحصول على الحد الأقصى لعدد البوابة والموقع الإلكتروني ، يرجى "
+"الاطلاع على الخيارات الخاصة بالموقع"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__date_end
 msgid "Till"
-msgstr ""
+msgstr "حتي"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
+#, fuzzy
 msgid "Time Requirements"
-msgstr ""
+msgstr "فترة عمل المورد"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_make_business_appointment__timeslots
+#, fuzzy
 msgid "Time Slots"
-msgstr ""
+msgstr "وقت التنبيه"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_time_tracking
+#, fuzzy
 msgid "Time Tracking"
-msgstr ""
+msgstr "تتبع الوقت"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 msgid "Timeline"
-msgstr ""
+msgstr "الجدول الزمني"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__tz
@@ -6989,12 +7124,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.choose_appointment_customert_form_view
 msgid "Title"
-msgstr ""
+msgstr " العنوان"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__allowed_to_uom
 msgid "To UoM"
-msgstr ""
+msgstr "الي وحدة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_search
@@ -7008,8 +7143,9 @@ msgstr "اليوم"
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_search
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
+#, fuzzy
 msgid "Today Activities"
-msgstr ""
+msgstr "نشاطات اليوم"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__turkey
@@ -7023,24 +7159,24 @@ msgstr ""
 msgid ""
 "Turn on to add custom fields for appointments, resource types, resources, and \n"
 "                                    services. The tool"
-msgstr ""
+msgstr "قم بتشغيل لإضافة حقول مخصصة للمواعيد وأنواع التخصصات والمتخصصين و \\ nالخدمات. الأداة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Turn on to create sale orders for appointments. The tool"
-msgstr ""
+msgstr "قم بتشغيل لإنشاء أوامر بيع للمواعيد. الأداة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Turn on to let portal or/and website visitors to schedule appointments"
-msgstr ""
+msgstr "قم بتشغيل للسماح لزوار البوابة الإلكترونية و / و موقع الويب بجدولة المواعيد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid ""
 "Turn on to link HR employees to resources and use their work time and leaves. The\n"
 "                                    tool"
-msgstr ""
+msgstr "تشغيل لربط موظفي المتخصصين البشرية بالمتخصصين واستخدام وقت العمل والإجازات. The \\ nأداة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
@@ -7048,11 +7184,13 @@ msgid ""
 "Turn on to link portal sale order with appointments and to have a possibility to \n"
 "                                    show service prices and pricelists on appointment pages. The tool"
 msgstr ""
+"قم بتشغيل لربط أمر بيع المدخل بالمواعيد ولديك إمكانية \\ nعرض أسعار الخدمة وقوائم الأسعار في صفحات "
+"المواعيد. الأداة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Turn on to log actual time spent on appointment"
-msgstr ""
+msgstr "قم بتشغيل لتسجيل الوقت الفعلي الذي يقضيه في الموعد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
@@ -7060,11 +7198,13 @@ msgid ""
 "Turn on to offer managers complementary products while scheduling a time slot.\n"
 "                                    Such products would be shown if any are associated with reserved service"
 msgstr ""
+"قم بتشغيل لعرض منتجات تكميلية للمديرين أثناء جدولة فترة زمنية. \\ nسيتم عرض هذه المنتجات إذا كان أي منها "
+"مرتبطًا بالخدمة المحجوزة"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__rating_option
 msgid "Turn on to send rating request when appointment is marked done"
-msgstr ""
+msgstr "قم بتشغيل لإرسال طلب التصنيف عندما يتم وضع علامة على الموعد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
@@ -7072,12 +7212,13 @@ msgid ""
 "Turn on to send rating requests when appointments are done. This option might be \n"
 "                                    turned on or off per each resource type"
 msgstr ""
+"قم بتشغيل لإرسال طلبات التصنيف عند الانتهاء من المواعيد. قد يكون هذا الخيار \\ nقيد التشغيل أو الإيقاف لكل "
+"نوع مورد"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
-msgid ""
-"Turn on to show custom fields for portal and website visitors. The tool"
-msgstr ""
+msgid "Turn on to show custom fields for portal and website visitors. The tool"
+msgstr "قم بتشغيل لإظهار الحقول المخصصة لزوار البوابة وموقع الويب. الأداة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_alarm__ttype
@@ -7105,9 +7246,9 @@ msgstr ""
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/appointment_sidebar.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Types"
-msgstr ""
+msgstr "نوع الخدمات"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__uct
@@ -7205,66 +7346,68 @@ msgstr ""
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment_core__tz__utc
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__appoin_comp_tz__utc
 msgid "UTC"
-msgstr ""
+msgstr "التوقيت العالمي"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_search
 msgid "Unassigned"
-msgstr ""
+msgstr "غير معين"
 
 #. module: business_appointment
 #. openerp-web
 #: code:addons/business_appointment/static/src/xml/time_slots.xml:0
-#, python-format
+#, fuzzy, python-format
 msgid "Unit Price"
-msgstr ""
+msgstr "سعر الوحدة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__pricing_method__per_unit
+#, fuzzy
 msgid "Units"
-msgstr ""
+msgstr "الوحدات"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment__tz__universal
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_appointment_core__tz__universal
 #: model:ir.model.fields.selection,name:business_appointment.selection__res_config_settings__appoin_comp_tz__universal
-msgid "Universal"
+msgid "عالمي"
 msgstr ""
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Universal Appointments: Custom Fields"
-msgstr ""
+msgstr "المواعيد العامة: الحقول المخصصة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Universal Appointments: Custom Fields for Website and Portal"
-msgstr ""
+msgstr "المواعيد العامة: الحقول المخصصة لموقع الويب والبوابة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Universal Appointments: HR Bridge"
-msgstr ""
+msgstr "المواعيد العالمية: جسر الموارد البشرية"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Universal Appointments: Portal and Website"
-msgstr ""
+msgstr "المواعيد العالمية: البوابة والموقع الإلكتروني"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "Universal Appointments: Sales"
-msgstr ""
+msgstr "المواعيد العامة: المبيعات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Universal Appointments: Time Tracking"
-msgstr ""
+msgstr "المواعيد العامة: تتبع الوقت"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid "Universal Appointments: Website Sales"
-msgstr ""
+msgstr "المواعيد العامة: مبيعات الموقع"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_unread
@@ -7273,7 +7416,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__message_unread
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__message_unread
 msgid "Unread Messages"
-msgstr ""
+msgstr "الرسائل غير المقرؤة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__message_unread_counter
@@ -7282,12 +7425,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__message_unread_counter
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__message_unread_counter
 msgid "Unread Messages Counter"
-msgstr ""
+msgstr "عداد الرسائل غير المقروءة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__group_business_appointment_rating
+#, fuzzy
 msgid "Use Rating for Appointments"
-msgstr ""
+msgstr "استخدام التصنيف للمواعيد"
 
 #. module: business_appointment
 #: model:ir.model,name:business_appointment.model_ir_ui_view
@@ -7316,8 +7460,9 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__ba_approval_type
+#, fuzzy
 msgid "Website / Portal Confirmation"
-msgstr ""
+msgstr "تأكيد الموقع / البوابة"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__website_message_ids
@@ -7325,18 +7470,21 @@ msgstr ""
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__website_message_ids
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource__website_message_ids
 #: model:ir.model.fields,field_description:business_appointment.field_business_resource_type__website_message_ids
+#, fuzzy
 msgid "Website Messages"
-msgstr ""
+msgstr " رسائل الموقع الإلكتروني"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_res_config_settings__module_business_appointment_website_sale
+#, fuzzy
 msgid "Website Sales"
-msgstr ""
+msgstr "مبيعات الموقع الإلكتروني"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
+#, fuzzy
 msgid "Website Specific Options"
-msgstr ""
+msgstr "خيارات خاصة بالموقع الإلكتروني"
 
 #. module: business_appointment
 #: model:ir.model.fields,help:business_appointment.field_appointment_product__website_message_ids
@@ -7344,14 +7492,16 @@ msgstr ""
 #: model:ir.model.fields,help:business_appointment.field_business_appointment_core__website_message_ids
 #: model:ir.model.fields,help:business_appointment.field_business_resource__website_message_ids
 #: model:ir.model.fields,help:business_appointment.field_business_resource_type__website_message_ids
+#, fuzzy
 msgid "Website communication history"
-msgstr ""
+msgstr "سجل اتصال الموقع"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
 msgid ""
 "When a user selects a time slot it becomes unavailable for other reservation.\n"
-"                                    However, if scheduling is not complete, Odoo should unblock this time slot. Define\n"
+"                                    However, if scheduling is not complete, Odoo should unblock this time "
+"slot. Define\n"
 "                                    when unblocking should take place"
 msgstr ""
 
@@ -7368,7 +7518,7 @@ msgstr "اوقات العمل"
 #. module: business_appointment
 #: model:ir.ui.menu,name:business_appointment.menu_working_calendar
 msgid "Working Calendars"
-msgstr "اوقات العمل"
+msgstr "تقويم العمل"
 
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_appointment_product__resource_calendar_id
@@ -7379,8 +7529,9 @@ msgstr "ساعات العمل"
 #. module: business_appointment
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment__day_year
 #: model:ir.model.fields,field_description:business_appointment.field_business_appointment_core__day_year
+#, fuzzy
 msgid "Year"
-msgstr ""
+msgstr "السنة"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
@@ -7408,31 +7559,35 @@ msgstr ""
 #: code:addons/business_appointment/static/src/xml/resource_many2many.xml:0
 #, python-format
 msgid "any"
-msgstr ""
+msgstr "اي واحدة"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_product__duration_uom__days
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_from_uom__days
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_to_uom__days
+#, fuzzy
 msgid "days"
-msgstr ""
+msgstr "الايام"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_form
+#, fuzzy
 msgid "description"
-msgstr ""
+msgstr "الوصف"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.choose_appointment_customert_form_view
+#, fuzzy
 msgid "extra notes..."
-msgstr ""
+msgstr "ملاحظات إضافية..."
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__appointment_product__duration_uom__hours
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_from_uom__hours
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_to_uom__hours
+#, fuzzy
 msgid "hours"
-msgstr ""
+msgstr "ساعات"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
@@ -7440,6 +7595,8 @@ msgid ""
 "is required (distributed free).\n"
 "                                    The app 'Sales' would be automatically installed in your database."
 msgstr ""
+"مطلوب (موزعة مجانًا).\n"
+"سيتم تثبيت التطبيق \"المبيعات\" تلقائيًا في قاعدة البيانات الخاصة بك."
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.res_config_settings_view_form
@@ -7458,14 +7615,15 @@ msgstr ""
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_from_uom__minutes
+#, fuzzy
 msgid "minutes"
-msgstr ""
+msgstr "الدقائق"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_from_uom__months
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_to_uom__months
 msgid "months"
-msgstr ""
+msgstr "اشهر"
 
 #. module: business_appointment
 #: model:ir.actions.report,print_report_name:business_appointment.action_report_business_appointment
@@ -7476,12 +7634,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:business_appointment.appointment_product_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_form
 msgid "resource reference"
-msgstr "اسم مقدم الخدمة"
+msgstr "مرجع المتخصص"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
 msgid "resource type reference"
-msgstr "اسم الخدمة"
+msgstr "مرجع نوع المتخصص"
 
 #. module: business_appointment
 #. openerp-web
@@ -7494,39 +7652,39 @@ msgstr "إحفظ كافتراضي"
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_type_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_resource_view_form
 msgid "short description"
-msgstr ""
+msgstr "وصف قصير"
 
 #. module: business_appointment
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_core_view_form
 #: model_terms:ir.ui.view,arch_db:business_appointment.business_appointment_view_form
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_from_uom__weeks
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_to_uom__weeks
 msgid "weeks"
-msgstr ""
+msgstr "أسابيع"
 
 #. module: business_appointment
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_from_uom__years
 #: model:ir.model.fields.selection,name:business_appointment.selection__business_resource_type__allowed_to_uom__years
 msgid "years"
-msgstr ""
+msgstr "سنوات"
 
 #. module: business_appointment
 #: model:mail.template,subject:business_appointment.email_template_default_reminder
 msgid "{{ ctx['target_company'].name }}: Appointment Reminder"
-msgstr ""
+msgstr "{{ctx ['target_company'].name}}: تذكير بالموعد"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/business_appointment.py:0
 #, python-format
 msgid "{} for {} by {}"
-msgstr ""
+msgstr "{} لـ {} بواسطة {}"
 
 #. module: business_appointment
 #: code:addons/business_appointment/models/appointment_product.py:0
-#, python-format
+#, fuzzy, python-format
 msgid "{} per {}"
-msgstr ""
+msgstr "{} لكل {}"

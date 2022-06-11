@@ -1,0 +1,187 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* business_appointment_time_tracking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220530\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-09 08:51+0000\n"
+"PO-Revision-Date: 2022-06-10 02:06+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.1\n"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model,name:business_appointment_time_tracking.model_business_appointment
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__appointment_id
+#, fuzzy
+msgid "Appointment"
+msgstr "الميعاد"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model,name:business_appointment_time_tracking.model_ba_time_track
+#, fuzzy
+msgid "Appointment Time Track"
+msgstr "مسار وقت الميعاد"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model,name:business_appointment_time_tracking.model_appointment_analytic
+msgid "Appointments Analysis"
+msgstr "تحليل المواعيد"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model,name:business_appointment_time_tracking.model_business_resource_type
+msgid "Business Resource Type"
+msgstr "نوع تخصص الأعمال"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_business_resource_type__pricing_method
+msgid "Calculate price for"
+msgstr "احسب سعر ل"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__duration
+#, fuzzy
+msgid "Duration"
+msgstr "المدة"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__datetime_end
+#, fuzzy
+msgid "End Time"
+msgstr "وقت النتهاء"
+
+#. module: business_appointment_time_tracking
+#: code:addons/business_appointment_time_tracking/models/ba_time_track.py:0
+#: model:ir.model.constraint,message:business_appointment_time_tracking.constraint_ba_time_track_dates_check
+#, python-format
+msgid "End time should be after start time!"
+msgstr "يجب أن يكون وقت الانتهاء بعد وقت البدء!"
+
+#. module: business_appointment_time_tracking
+#: model_terms:ir.ui.view,arch_db:business_appointment_time_tracking.business_appointment_view_form
+#, fuzzy
+msgid "Finish Working"
+msgstr "المنهي العمل"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__id
+msgid "ID"
+msgstr ""
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: business_appointment_time_tracking
+#: model_terms:ir.ui.view,arch_db:business_appointment_time_tracking.appointment_analytic_view_search
+#, fuzzy
+msgid "No Zero Tracked Duration"
+msgstr "لا توجد مدة متتبعه ب صفر"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,help:business_appointment_time_tracking.field_business_resource_type__pricing_method
+msgid ""
+"Related product sale unit of measure would be used in sales order.\n"
+"        Make sure that it corresponds with appointments pricing method and "
+"duration unit of measure   \n"
+"        * Per Duration - hours/days would be multiplied to related product "
+"price\n"
+"        * Per Units - the price for single appointment is just a product price"
+msgstr ""
+"سيتم استخدام وحدة قياس بيع المنتج ذي الصلة في أمر المبيعات. \\ nتأكد من أنها "
+"تتوافق مع طريقة تسعير المواعيد ووحدة قياس المدة \\ n* حسب المدة - يمكن مضاعفة "
+"الساعات / الأيام بسعر المنتج ذي الصلة \\ n* لكل وحدة - سعر الموعد الفردي هو "
+"مجرد سعر منتج"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__user_id
+msgid "Responsible"
+msgstr "المسئول"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_ba_time_track__datetime_start
+msgid "Start Time"
+msgstr "وقت البدء"
+
+#. module: business_appointment_time_tracking
+#: model_terms:ir.ui.view,arch_db:business_appointment_time_tracking.business_appointment_view_form
+#, fuzzy
+msgid "Start Working"
+msgstr "ابدا العمل"
+
+#. module: business_appointment_time_tracking
+#: code:addons/business_appointment_time_tracking/models/business_appointment.py:0
+#, python-format
+msgid "The work has been already started"
+msgstr "العمل قد بدا بالفعل"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_business_appointment__time_track_ids
+#: model_terms:ir.ui.view,arch_db:business_appointment_time_tracking.business_appointment_view_form
+#, fuzzy
+msgid "Time Tracking"
+msgstr "تتبع الوقت"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_business_appointment__total_real_duration
+#, fuzzy
+msgid "Total Duration"
+msgstr "المدة الإجمالية"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_appointment_analytic__total_real_duration
+#: model:ir.model.fields.selection,name:business_appointment_time_tracking.selection__business_resource_type__pricing_method__per_real_duration
+#, fuzzy
+msgid "Tracked Duration"
+msgstr "المده المتتبعه"
+
+#. module: business_appointment_time_tracking
+#: model:ir.model.fields,field_description:business_appointment_time_tracking.field_business_appointment__work_started
+#, fuzzy
+msgid "Work Started"
+msgstr "بدأ العمل"
+
+#. module: business_appointment_time_tracking
+#: model_terms:ir.ui.view,arch_db:business_appointment_time_tracking.business_appointment_view_form
+msgid "to"
+msgstr "الي"
+
+#. module: business_appointment_time_tracking
+#: model_terms:ir.ui.view,arch_db:business_appointment_time_tracking.business_appointment_view_form
+#, fuzzy
+msgid "total"
+msgstr "الاجمالي"

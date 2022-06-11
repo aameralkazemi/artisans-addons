@@ -1,0 +1,1606 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* business_appointment_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220530\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-09 08:53+0000\n"
+"PO-Revision-Date: 2022-06-10 03:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.1\n"
+
+#. module: business_appointment_website
+#. openerp-web
+#: code:addons/business_appointment_website/static/src/js/slots.js:0
+#, python-format
+msgid " seconds"
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "&amp;times;"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource_type__allowed_cancellation
+msgid ""
+"* Set zero to allow at any moment before appointment\n"
+"        * Set minus 1 to forbid cancellation and re-schedule at all"
+msgstr ""
+"* تعيين صفر للسماح في أي لحظة قبل الموعد \ n"
+"* اضبط ناقص 1 لمنع الإلغاء وإعادة الجدولة على الإطلاق"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<i class=\"fa fa-clock-o\"/> Re-Schedule"
+msgstr "\"<i class = \" fa fa-clock-o \\ \"/> إعادة الجدولة\""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.communication_appointment
+msgid "<i class=\"fa fa-comment\"/> Send message"
+msgstr "<i class=\"fa fa-comment\"/> أرسل رسالة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<i class=\"fa fa-copy\"/> Repeat"
+msgstr "<i class=\"fa fa-copy\"/> كرر"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<i class=\"fa fa-edit\"/> Complementaries"
+msgstr "<i class=\"fa fa-edit\"/> المكملات"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resource_selection
+msgid "<i class=\"fa fa-forward\"/> <strong>Select</strong> <i class=\"fa fa-forward\"/>"
+msgstr "<i class=\"fa fa-forward\"/> <strong>اختر</strong> <i class=\"fa fa-forward\"/>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+msgid "<i class=\"fa fa-long-arrow-right\"> more details</i>"
+msgstr "<i class=\"fa fa-long-arrow-right\"> مزيد من التفاصيل </ i>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<i class=\"fa fa-plus-square-o\"/> Schedule New"
+msgstr "<i class=\"fa fa-plus-square-o\"/> جدولة جديدة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+msgid "<i class=\"fa fa-plus-square-o\"/> Schedule New Appointment"
+msgstr "<i class=\"fa fa-plus-square-o\"/> جدولة ميعاد جديد"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.print_appointment
+msgid "<i class=\"fa fa-print\"/> Print Confirmation"
+msgstr "<i class=\"fa fa-print\"/> اطبع التاكيد"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<i class=\"fa fa-times\"/> Cancel"
+msgstr "<i class=\"fa fa-times\"/> الغاء"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_progress_timer
+msgid ""
+"<span class=\"expired_prereserv ba_hidden\">\n"
+"                    Pre-reservations are expired.\n"
+"                </span>"
+msgstr ""
+"<span class=\"expired_prereserv ba_hidden\">\n"
+"                    الحجز المسبق انتهت صلاحيته.\n"
+"                </span>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_confirmation_page
+msgid ""
+"<span class=\"fa fa-refresh\"/>\n"
+"                                            Resend Code"
+msgstr ""
+"<span class=\"fa fa-refresh\"/>\n"
+"                                            اعد ارسال الكود "
+
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.communication_appointment
+msgid "<strong class=\"text-muted\">Your Contact</strong>"
+msgstr "<strong class=\"text-muted\">جهة اتصالك</strong>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resource_selection
+msgid "<strong>Any</strong> <i class=\"fa fa-fast-forward\"/>"
+msgstr "<strong> اي متخصص</strong> <i class=\"fa fa-fast-forward\"/>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<strong>Extra comments:</strong>"
+msgstr "<strong> تعليقات إضافية: </ strong>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "<strong>Extra products:</strong>"
+msgstr "<strong> منتجات إضافية: </ strong>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+#, fuzzy
+msgid "<strong>Resource:</strong>"
+msgstr "<strong> المورد: </ strong>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resource_full
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resource_type_full
+msgid "<strong>Schedule</strong> <i class=\"fa fa-arrow-circle-right\"/>"
+msgstr "<strong> الجدول الزمني </strong> <i class=\"fa fa-arrow-circle-right\"/>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+#, fuzzy
+msgid "<strong>Service:</strong>"
+msgstr "<strong> الخدمة: </strong>"
+
+#. module: business_appointment_website
+#: model:mail.template,body_html:business_appointment_website.email_ba_public_invitation
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:"
+"Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tbody><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-"
+"color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td valign=\"middle\" align=\"right\">\n"
+"                            <img t-attf-src=\"#{ctx['base_url']}/logo.png?company=#{object.website_id.company_id.id}\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"#{object.website_id.company_id.name}\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-"
+"color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                            <div>\n"
+"                                Hello \n"
+"                                <t t-if=\"object.partner_id\">\n"
+"                                    <t t-out=\"object.partner_id.name\"/>,\n"
+"                                </t>\n"
+"                                <t t-else=\"\">\n"
+"                                    <t t-out=\"object.contact_name\"/>,\n"
+"                                </t>\n"
+"                                <br/>\n"
+"                                To control your appointments, please finish registration. To this end please follow <a t-"
+"attf-href=\"#{ctx['token_url']}\">this link</a> and set a password up.    \n"
+"                            </div>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td style=\"text-align:center;\">\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-"
+"color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td valign=\"middle\" align=\"left\">\n"
+"                            <t t-out=\"object.website_id.company_id.name\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                <tr>\n"
+"                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                        <t t-out=\"object.website_id.company_id.phone\"/>\n"
+"                        <t t-if=\"object.website_id.company_id.email\">\n"
+"                            | \n"
+"                            <a t-attf-href=\"'mailto:%s' % #{object.website_id.company_id.email}\" style=\"color: #454748;"
+"\">\n"
+"                                <t t-out=\"object.website_id.company_id.email\"/>\n"
+"                            </a>\n"
+"                        </t>\n"
+"                        | \n"
+"                        <a t-attf-href=\"#{ctx['website_http_domain']}\" style=\" color: #454748;\">\n"
+"                            <t t-out=\"ctx['website_http_domain']\"/>\n"
+"                        </a>\n"
+"                    </td>\n"
+"                </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr></tbody></table>   \n"
+"            "
+msgstr ""
+
+#. module: business_appointment_website
+#: model:mail.template,body_html:business_appointment_website.email_template_confirmation_code
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: #F1F1F1; font-family:"
+"Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;\"><tbody><tr><td align=\"center\">\n"
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; background-color: white; color: "
+"#454748; border-collapse:separate;\">\n"
+"<tbody>\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-"
+"color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td valign=\"middle\" align=\"right\">\n"
+"                            <img t-attf-src=\"#{ctx['base_url']}/logo.png?company=#{object.website_id.company_id.id}\" style="
+"\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-attf-alt=\"#{object.website_id.company_id.name}\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td colspan=\"2\" style=\"text-align:center;\">\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin:16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-"
+"color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                            <div>\n"
+"                                Hello \n"
+"                                <t t-if=\"object.partner_id\">\n"
+"                                    <t t-out=\"object.partner_id.name\"/>,\n"
+"                                </t>\n"
+"                                <t t-else=\"\">\n"
+"                                    <t t-out=\"object.contact_name\"/>,\n"
+"                                </t>\n"
+"                                <br/>\n"
+"                                Your confirmation code is:<br/>\n"
+"                                <table style=\"width:100%;text-align:center;font-size: 20px;\">\n"
+"                                    <tbody>\n"
+"                                        <tr>\n"
+"                                            <td>   \n"
+"                                                <strong>\n"
+"                                                    <t t-out=\"object.confirmation_code\"/>\n"
+"                                                </strong>\n"
+"                                            </td>\n"
+"                                        </tr>\n"
+"                                    </tbody>\n"
+"                                </table>  \n"
+"                                Please insert this code on the <a t-attf-href=\"#{ctx['website_http_domain']}/appointments/"
+"confirm?confirmation_code=#{object.confirmation_code}\">confirmation page</a>.    \n"
+"                            </div>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <tr>\n"
+"                        <td style=\"text-align:center;\">\n"
+"                            <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium none;clear:both;"
+"display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: 590px; background-"
+"color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <tr>\n"
+"                        <td valign=\"middle\" align=\"left\">\n"
+"                            <t t-out=\"object.website_id.company_id.name\"/>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                <tr>\n"
+"                    <td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                        <t t-out=\"object.website_id.company_id.phone\"/>\n"
+"                        <t t-if=\"object.website_id.company_id.email\">\n"
+"                            | \n"
+"                            <a t-attf-href=\"'mailto:%s' % #{object.website_id.company_id.email}\" style=\"color: #454748;"
+"\">\n"
+"                                <t t-out=\"object.website_id.company_id.email\"/>\n"
+"                            </a>\n"
+"                        </t>\n"
+"                        | \n"
+"                        <a t-attf-href=\"#{ctx['website_http_domain']}\" style=\" color: #454748;\">\n"
+"                            <t t-out=\"ctx['website_http_domain']\"/>\n"
+"                        </a>\n"
+"                    </td>\n"
+"                </tr>\n"
+"                </tbody>\n"
+"            </table>\n"
+"        </td>\n"
+"    </tr>\n"
+"</tbody>\n"
+"</table>\n"
+"</td></tr></tbody></table>   \n"
+"            "
+msgstr ""
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "A-Z"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__access_warning
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__access_warning
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__access_warning
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__access_warning
+msgid "Access Warning"
+msgstr "تحذير الوصول"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__active_step
+msgid "Active Step"
+msgstr "الخطوة النشطة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.done_search_appointments
+msgid "Active filters: \""
+msgstr "عوامل التصفية النشطة: \\ \""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.done_search_appointments
+#, fuzzy
+msgid "Active search: \""
+msgstr "البحث النشط: \\ \""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_progress_timer
+msgid "After this period pre-reservations will be canceled."
+msgstr "بعد هذه الفترة سيتم إلغاء الحجوزات المسبقة."
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_agree_to_terms_and_conditions
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_agree_to_terms_and_conditions
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__agree_terms
+msgid "Agree on terms and conditions"
+msgstr "وافق على الشروط والأحكام"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_agree_to_terms_text
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_agree_to_terms_text
+#, fuzzy
+msgid "Agree on terms text"
+msgstr "الموافقة على نص الشروط"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "All"
+msgstr "كل"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__all2choose_rtype_ids
+msgid "All Resources"
+msgstr "جميع التخصصات"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_business_appointment
+#, fuzzy
+msgid "Appointment"
+msgstr "ميعاد"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/models/website.py:0
+#, python-format
+msgid "Appointments"
+msgstr "المواعيد"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_appointment_analytic
+msgid "Appointments Analysis"
+msgstr "تحليل المواعيد"
+
+#. module: business_appointment_website
+#: model:mail.template,name:business_appointment_website.email_template_confirmation_code
+#: model:sms.template,name:business_appointment_website.sms_template_ba_confirmation_code
+msgid "Appointments: Confirmation Code"
+msgstr "المواعيد: رمز التأكيد"
+
+#. module: business_appointment_website
+#: model:mail.template,name:business_appointment_website.email_ba_public_invitation
+#, fuzzy
+msgid "Appointments: Portal Invitation"
+msgstr "المواعيد: دعوة البوابة"
+
+#. module: business_appointment_website
+#. openerp-web
+#: code:addons/business_appointment_website/static/src/js/slots.js:0
+#, python-format
+msgid "Are you sure you want to cancel this appointment?"
+msgstr "هل أنت متأكد أنك تريد إلغاء هذا الموعد؟"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_business_resource
+msgid "Business Resource"
+msgstr "تخصص  الأعمال"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_business_resource_type
+msgid "Business Resource Type"
+msgstr "نوع تخصص الأعمال"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_turn_on_appointments
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_turn_on_appointments
+#, fuzzy
+msgid "Business appointments in portal"
+msgstr "مواعيد العمل في الموقع"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_turn_on_appointments_public
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_turn_on_appointments_public
+#, fuzzy
+msgid "Business appointments on website"
+msgstr "مواعيد العمل على الموقع"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "By name"
+msgstr "بالاسم"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__can_publish
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__can_publish
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__can_publish
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__can_publish
+msgid "Can Publish"
+msgstr "يمكن نشره"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "Canceled"
+msgstr "الغي"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__allowed_cancellation_uom
+msgid "Cancellation UoM"
+msgstr "إلغاء UoM"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__city
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "City"
+msgstr "المدينه"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+#, fuzzy
+msgid "Clear search"
+msgstr "محو البحث"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+msgid "Click"
+msgstr "اضغط"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointment_page
+msgid "Close"
+msgstr "اغلق"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__confirmation_refresh_attempts
+#, fuzzy
+msgid "Code Refreshing Done"
+msgstr "تجديد الكود تم"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.communication_appointment
+msgid "Communication"
+msgstr "التواصل"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__partner_name
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+#, fuzzy
+msgid "Company Name"
+msgstr "اسم الشركه"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_extra_products_frontend
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_extra_products_frontend
+#, fuzzy
+msgid "Complementary Products for Reservation"
+msgstr "المنتجات التكميلية للحجز"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_confirmation_page
+msgid ""
+"Confirm\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"تاكيد\n"
+"                                        <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid ""
+"Confirm\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+msgstr ""
+"تاكيد\n"
+"                                <span class=\"fa fa-long-arrow-right\"/>"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__confirmation_attempts
+msgid "Confirmation Attempts"
+msgstr "محاولات التأكيد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__confirmation_code
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_confirmation_page
+#, fuzzy
+msgid "Confirmation Code"
+msgstr "كود التاكيد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__confirmation_retrial_time
+msgid "Confirmation Re-Trial Time"
+msgstr "وقت إعادة المحاولة للتأكيد"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Confirmation code is not valid!"
+msgstr "كود التأكيد غير صالح!"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.communication_appointment
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__contact_name
+#, fuzzy
+msgid "Contact Name"
+msgstr "اسم جهة الاتصال"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__country_id
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Country"
+msgstr "البلد"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Country..."
+msgstr "البلد..."
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_portal_appointments_filters_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_portal_appointments_filters_ids
+msgid "Custom Portal Appointment Filters"
+msgstr "عوامل تصفية مواعيد البوابةالمحدد "
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_portal_appointments_search_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_portal_appointments_search_ids
+msgid "Custom Portal Appointment Search"
+msgstr "البحث عن موعد البوابة المحدد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_resources_portal_filters_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_resources_portal_filters_ids
+msgid "Custom Portal Resource Filters"
+msgstr "عوامل تصفية موارد المدخل المخصصة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_resources_portal_search_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_resources_portal_search_ids
+msgid "Custom Portal Resource Search"
+msgstr "بحث عن تخصص  المدخل المخصص"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_rtypes_portal_filters_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_rtypes_portal_filters_ids
+msgid "Custom Portal Resource Types Filters"
+msgstr "عوامل تصفية أنواع تخصصات المدخل المخصصة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_rtypes_portal_search_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_rtypes_portal_search_ids
+msgid "Custom Portal Resource Types Search"
+msgstr "البحث عن أنواع تخصصات المدخل المخصصة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_services_portal_filters_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_services_portal_filters_ids
+msgid "Custom Portal Service Filters"
+msgstr "عوامل تصفية خدمة المدخل المخصصة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_service_portal_search_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_service_portal_search_ids
+msgid "Custom Portal Service Search"
+msgstr "بحث خدمة المدخل المخصص"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_appointment_product__access_url
+#: model:ir.model.fields,help:business_appointment_website.field_business_appointment__access_url
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource__access_url
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource_type__access_url
+msgid "Customer Portal URL"
+msgstr "عنوان URL لبوابة العميل"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "Define how each step of scheduling appointment should be called."
+msgstr "حدد كيف يجب استدعاء كل خطوة من خطوات تحديد الموعد."
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_res_config_settings__ba_max_multi_scheduling_portal
+#: model:ir.model.fields,help:business_appointment_website.field_website__ba_max_multi_scheduling_portal
+msgid "Define how many time slots might be selected during scheduling"
+msgstr "حدد عدد الفترات الزمنية التي يمكن تحديدها أثناء الجدولة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "Define how many time slots might be selected during scheduling on website"
+msgstr "حدد عدد الفترات الزمنية التي يمكن تحديدها أثناء الجدولة على موقع الويب"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid ""
+"Define whether contact details page should include obligatory agreement to terms and\n"
+"                            conditions"
+msgstr "حدد ما إذا كان يجب أن تتضمن صفحة تفاصيل الاتصال اتفاقية إلزامية على البنود \\ n                            الظروف"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid ""
+"Define which contact details should be mandatory or optionally filled to schedule \n"
+"                            appointment (name and email are always required)"
+msgstr ""
+"تحديد تفاصيل الاتصال التي يجب أن تكون إلزامية أو معبأة اختياريًا للجدولة \\ nموعد (الاسم والبريد الإلكتروني مطلوبان دائمًا)"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__donotshow_full_description
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__donotshow_full_description
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__donotshow_full_description
+msgid "Do not show website full description"
+msgstr "لا تعرض تفاصيل الموقع الكامله"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_time_slots
+#, fuzzy
+msgid "Duration:"
+msgstr "المدة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__email
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+#, fuzzy
+msgid "Email"
+msgstr "البريد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__error
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__error
+msgid "Error"
+msgstr "خطأ"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__error_message
+msgid "Error Message"
+msgstr "رسالة خطأ"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__error_vals
+msgid "Error Vals"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_business_appointment__error
+msgid "Error: tech field for the website"
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+#, fuzzy
+msgid "Extra comments"
+msgstr "ملاحظات اضافيه"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Function"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:sms.template,body:business_appointment_website.sms_template_ba_confirmation_code
+msgid "Hello. Your confirmation code is {{ object.confirmation_code }}. {{ object.website_id.company_id.name }}"
+msgstr "مرحبًا. رمز التأكيد الخاص بك هو {{object.confirmation_code}}. {{object.website_id.company_id.name}}"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__id
+msgid "ID"
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "If checked appointments would be shown for all visitors of the current website"
+msgstr "إذا تم تحديد المواعيد ستظهر لجميع زوار الموقع الحالي"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "If checked appointments would be shown for portal users of the current website"
+msgstr "إذا تم تحديد المواعيد ستظهر لمستخدمي بوابة الموقع الحالي"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid ""
+"If turned on, each found resource type would have a link for full details which you \n"
+"                            may update on website. Full description might be turned off for a specific type"
+msgstr ""
+"إذا تم تشغيله ، فسيكون لكل نوع مورد تم العثور عليه ارتباط للحصول على التفاصيل الكاملة التي \\ nقد يتم تحديثه على موقع الويب. "
+"قد يتم إيقاف الوصف الكامل لنوع معين"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid ""
+"If turned on, each found resource would have a link for full details which you \n"
+"                            may update on website. Full description might be turned off for a specific resource"
+msgstr ""
+"إذا تم تشغيله ، فسيكون لكل مورد تم العثور عليه ارتباط للحصول على التفاصيل الكاملة التي \\ nقد يتم تحديثه على موقع الويب. قد "
+"يتم إيقاف الوصف الكامل لمورد معين"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid ""
+"If turned on, each found service would have a link for full details which you \n"
+"                            may update on website. Full description might be turned off for a specific service"
+msgstr ""
+"إذا تم تشغيله ، فسيكون لكل خدمة تم العثور عليها ارتباط للحصول على التفاصيل الكاملة التي \\ nقد يتم تحديثه على موقع الويب. قد "
+"يتم إيقاف الوصف الكامل لخدمة معينة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "If turned on, suggested products would be shown for customers after selecting a time slot for reservation"
+msgstr "في حالة التشغيل ، ستظهر المنتجات المقترحة للعملاء بعد تحديد فترة زمنية للحجز"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_layout
+msgid "If you want to just schedule a new appointment: click"
+msgstr "إذا كنت تريد فقط تحديد موعد جديد ، فانقر فوق"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "In description"
+msgstr "في الوصف"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "In services"
+msgstr "في خدمات"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Invalid Email! Please enter a valid email address."
+msgstr "بريد إلكتروني خاطئ! رجاء قم بإدخال بريد الكتروني صحيح."
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Invalid Mobile! {}"
+msgstr "nvalid موبايل! {}"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Invalid Phone! {}"
+msgstr "هاتف غير صالح! {}"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__is_published
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__is_published
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__is_published
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__is_published
+msgid "Is Published"
+msgstr "هل نشر"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__function
+msgid "Job Position"
+msgstr "الوظيفه"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_step1
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_step1
+msgid "Label for step 1: Choose resource type"
+msgstr "تسمية الخطوة 1: اختر نوع التخصص"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_step2
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_step2
+msgid "Label for step 2: Choose resource"
+msgstr "تسمية الخطوة 2: اختر المتخصص"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_step3
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_step3
+msgid "Label for step 3: Choose service"
+msgstr "تسمية الخطوة 3: اختر الخدمة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_step4
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_step4
+msgid "Label for step 4: Chose time"
+msgstr "تسمية الخطوة 4: اختر الوقت"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_step5
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_step5
+msgid "Label for step 5: Account Details"
+msgstr "تسمية الخطوة 5: تفاصيل الحساب"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_step6
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_step6
+msgid "Label for step 6: Confirmation"
+msgstr "تسمية الخطوة 6: التأكيد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+msgid "Last filters: \""
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+#, fuzzy
+msgid "Last search: \""
+msgstr "البحث الأخير: \\ \""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_contact_info_mandatory_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_contact_info_mandatory_ids
+#, fuzzy
+msgid "Mandatory Account Details"
+msgstr "تفاصيل الحساب الإلزامية"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_max_multi_scheduling_portal
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_max_multi_scheduling_portal
+#, fuzzy
+msgid "Maximum Appointments (Portal)"
+msgstr "الحد الأقصى من المواعيد (البوابة)"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__mobile
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Mobile"
+msgstr "موبايل"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_layout
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_my_home_vendor
+msgid "My Appointments"
+msgstr "المواعيد الخاصة بي"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__description
+msgid "Notes"
+msgstr "ملاحظات"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_contact_info_optional_ids
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_contact_info_optional_ids
+#, fuzzy
+msgid "Optional Account Details"
+msgstr "تفاصيل الحساب الاختياري"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__parent_company_id
+msgid "Parent company"
+msgstr "الشركه الام"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__partner_id
+msgid "Partner"
+msgstr "الشريك"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__phone
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Phone"
+msgstr "الهاتف"
+
+#. module: business_appointment_website
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__access_url
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__access_url
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__access_url
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__access_url
+#, fuzzy, python-format
+msgid "Portal Access URL"
+msgstr "عنوان URL للوصول إلى المدخل"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__allowed_cancellation
+msgid "Portal: Cancellation/Re-Schedule might be done in"
+msgstr "البوابة الإلكترونية: يمكن أن يتم الإلغاء / إعادة الجدولة في"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_business_appointment_core
+msgid "Pre-Reservation"
+msgstr "الحجز المسبق"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__url_reservation_ids
+#, fuzzy
+msgid "Pre-reservations"
+msgstr "الحجز المسبق"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__prereservation_timer
+msgid "Prereservation Timer"
+msgstr "مؤقت الحفظ"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__pricelist_id
+msgid "Pricelist"
+msgstr "قائمة الاسعار"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__progress_step
+msgid "Progress Step"
+msgstr "خطوة التقدم"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__public_partner_id
+msgid "Public Partner"
+msgstr "الشريك العام"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__resechedule_id
+msgid "Re-Scheduled Appointment"
+msgstr "اعادة جدولىة الميعاد"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+#, fuzzy
+msgid "Reference"
+msgstr "المرجع"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+#, python-format
+msgid "Resource"
+msgstr "المتخصص"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__url_ba_type_id
+#, python-format
+msgid "Resource Type"
+msgstr "نوع التخصص"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__url_resource_ids
+msgid "Resources"
+msgstr "المتخصصين"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_appointment_product__website_id
+#: model:ir.model.fields,help:business_appointment_website.field_business_appointment__website_id
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource__website_id
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource_type__website_id
+msgid "Restrict publishing to this website."
+msgstr "تقييد النشر على هذا الموقع."
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__is_seo_optimized
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__is_seo_optimized
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__is_seo_optimized
+msgid "SEO optimized"
+msgstr "تحسين محركات البحث"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_my_home_vendor
+#, fuzzy
+msgid "Schedule Appointment"
+msgstr "جدولة الميعاد"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.done_search_appointments
+#, fuzzy
+msgid "Schedule new appointment"
+msgstr "حدد موعدًا جديدًا"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+#, fuzzy
+msgid "Scheduled Time"
+msgstr "الوقت المجدول"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_time_slots
+#, fuzzy
+msgid "Search in dates:"
+msgstr "البحث في التواريخ"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__access_token
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__access_token
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__access_token
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "Select website to configure business appointments"
+msgstr "حدد موقع الويب لتكوين مواعيد العمل"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__seo_name
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__seo_name
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__seo_name
+#, fuzzy
+msgid "Seo name"
+msgstr "اسم seo"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#: model:ir.model,name:business_appointment_website.model_appointment_product
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__url_service_id
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+#, fuzzy, python-format
+msgid "Service"
+msgstr " الخدمة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__show_ba_resource_full_details
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__show_ba_resource_full_details
+msgid "Show resources full details pages"
+msgstr "إظهار صفحات التفاصيل الكاملة للتخصصات"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__show_ba_services_full_details
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__show_ba_services_full_details
+msgid "Show services full details pages"
+msgstr "إظهار صفحات التفاصيل الكاملة للخدمات"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__show_ba_rtypes_full_details
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__show_ba_rtypes_full_details
+msgid "Show types full details pages"
+msgstr "إظهار أنواع صفحات التفاصيل الكاملة"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Some required fields are empty."
+msgstr "بعض الحقول المطلوبة فارغة."
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Sorry, but the user with the same email, phone, or mobile already exists! Please change or log in!"
+msgstr "عذرًا ، ولكن المستخدم بنفس البريد الإلكتروني أو الهاتف أو الهاتف المحمول موجود بالفعل! الرجاء التغيير أو تسجيل الدخول!"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/models/business_appointment.py:0
+#, python-format
+msgid "Sorry, but this appointment cannot be canceled"
+msgstr "عذرا ، لكن هذا الموعد لا يمكن إلغاؤه"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Standard"
+msgstr "اساسي"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__state_id
+#, fuzzy
+msgid "State"
+msgstr "الحالة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+#, fuzzy
+msgid "State / Province"
+msgstr "الولاية / المقاطعة"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__street
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Street"
+msgstr "الشارع"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Street 2"
+msgstr "الشارع2"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__street2
+msgid "Street2"
+msgstr "الشارع2"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__success
+#, fuzzy
+msgid "Success"
+msgstr "نجاح"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_business_appointment__success
+msgid "Sucess: tech field for the website"
+msgstr "النجاح: المجال التقني للموقع"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__ba_agree_to_terms_public_only
+#: model:ir.model.fields,field_description:business_appointment_website.field_website__ba_agree_to_terms_public_only
+msgid "Terms for public users only"
+msgstr "شروط للمستخدمين العموميين فقط"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+msgid "Thanks!"
+msgstr "شكرا!"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+#, fuzzy
+msgid "The appointment"
+msgstr "الميعاد"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/models/business_appointment.py:0
+#, fuzzy, python-format
+msgid "The appointment is successfully canceled"
+msgstr "تم الغاء الحجز بنجاح"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+#, fuzzy
+msgid "The appointments"
+msgstr "المواعيد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_appointment_product__website_url
+#: model:ir.model.fields,help:business_appointment_website.field_business_appointment__website_url
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource__website_url
+#: model:ir.model.fields,help:business_appointment_website.field_business_resource_type__website_url
+msgid "The full URL to access the document through the website."
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,help:business_appointment_website.field_website_business_appointment__partner_name
+msgid ""
+"The name of the company which would be created when appointment is confirmed\n"
+"        Leave it empty if a contact is an individual"
+msgstr "اسم الشركة التي سيتم إنشاؤها عند تأكيد الموعد \\ nاتركه فارغًا إذا كان جهة الاتصال فردًا"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.portal_appointments
+msgid "There are currently no appointments found by your criteria."
+msgstr "لا يوجد حاليا أي مواعيد وجدت وفقا للمعايير الخاصة بك."
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+msgid "There are no records found by your criteria. Push"
+msgstr "لا توجد سجلات وجدت حسب المعايير الخاصة بك. يدفع"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__title
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Title"
+msgstr "عنوان"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Title..."
+msgstr "عنوان..."
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.res_config_settings_view_form
+msgid "Turn on if terms should be agreed only by public visitors (not by portal users)"
+msgstr "قم بتشغيل إذا كان يجب الموافقة على الشروط فقط من قبل الزوار العموميين (وليس من قبل مستخدمي البوابة)"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_published
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__website_published
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_published
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_published
+msgid "Visible on current website"
+msgstr "مرئي في الموقع الحالي"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_analytic__website_id
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_id
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__website_id
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment_core__website_id
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_id
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_id
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__website_id
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.appointment_analytic_view_search
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.appointment_product_view_form
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.business_resource_type_view_form
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.business_resource_view_form
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__full_website_description
+#, fuzzy
+msgid "Website Appointments Description"
+msgstr "وصف ميعاد الموقع الالكتروني"
+
+#. module: business_appointment_website
+#: model:ir.actions.server,name:business_appointment_website.ba_appointment_product_publish
+#, fuzzy
+msgid "Website Appointments Publish"
+msgstr "نشر مواعيد الموقع الالكتروني"
+
+#. module: business_appointment_website
+#: model:ir.actions.server,name:business_appointment_website.ba_appointment_product_ubpublish
+#, fuzzy
+msgid "Website Appointments Unpublish"
+msgstr "عدم نشر مواعيد الالكتروني"
+
+#. module: business_appointment_website
+#: model:ir.model,name:business_appointment_website.model_website_business_appointment
+#, fuzzy
+msgid "Website Business Appointment"
+msgstr "مواعيد عمل الموقع الالكتروني"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__full_website_description
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__full_website_description
+#, fuzzy
+msgid "Website Description"
+msgstr "وصف الموقع"
+
+#. module: business_appointment_website
+#: model:ir.actions.server,name:business_appointment_website.business_resource_publish
+#: model:ir.actions.server,name:business_appointment_website.business_resource_type_publish
+msgid "Website Publish"
+msgstr "نشر الموقع"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_url
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_appointment__website_url
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_url
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_url
+msgid "Website URL"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.actions.server,name:business_appointment_website.business_resource_type_ubpublish
+#: model:ir.actions.server,name:business_appointment_website.business_resource_ubpublish
+msgid "Website Unpublish"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_res_config_settings__appointment_website_id
+#, fuzzy
+msgid "Website for appointments"
+msgstr "الموقع الالكتروني للمواعيد"
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_meta_description
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_meta_description
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_meta_keywords
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_meta_keywords
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_meta_title
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_meta_title
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_meta_title
+msgid "Website meta title"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_appointment_product__website_meta_og_img
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource__website_meta_og_img
+#: model:ir.model.fields,field_description:business_appointment_website.field_business_resource_type__website_meta_og_img
+#, fuzzy
+msgid "Website opengraph image"
+msgstr "صورة نوع الخدمة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_layout
+msgid "You are re-scheduling the appointment"
+msgstr "أنت تعيد جدولة الموعد"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_progress_timer
+msgid "You have"
+msgstr "انت لديك"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/models/website_business_appointment.py:0
+#, python-format
+msgid "You have {} attempt(s) to insert the correct code"
+msgstr "لديك {} محاولة (محاولات) لإدخال الرمز الصحيح"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_confirmation_page
+msgid "You will be able to resend the code in"
+msgstr "ستتمكن من إعادة إرسال الرمز بتنسيق"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+#, fuzzy
+msgid "Your Name"
+msgstr "اسمك"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, python-format
+msgid "Z-A"
+msgstr ""
+
+#. module: business_appointment_website
+#: model:ir.model.fields,field_description:business_appointment_website.field_website_business_appointment__zipcode
+msgid "Zip"
+msgstr ""
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "Zip / Postal Code"
+msgstr ""
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "by reference"
+msgstr "بالمرجع"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "by resource"
+msgstr "بالتخصص"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "by resource type"
+msgstr "بنوع التخصص"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/controllers/main.py:0
+#, fuzzy, python-format
+msgid "by service"
+msgstr "بالخدمة"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+#, fuzzy
+msgid "clean search"
+msgstr "نظف البحث"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.done_search_appointments
+#, fuzzy
+msgid "clear search"
+msgstr "نظف البحث"
+
+#. module: business_appointment_website
+#: model:ir.model.fields.selection,name:business_appointment_website.selection__business_resource_type__allowed_cancellation_uom__days
+#, fuzzy
+msgid "days"
+msgstr "الايام"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.appointment_product_view_form
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.business_resource_type_view_form
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.business_resource_view_form
+msgid "edit full website description"
+msgstr "تعديل الوصف الكامل للموقع"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+#, fuzzy
+msgid ""
+"has been successfully \n"
+"                                    scheduled."
+msgstr "تم جدولته بنجاح\n"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+msgid ""
+"have been successfully \n"
+"                                    scheduled."
+msgstr "تم جدولته بنجاح\n"
+
+#. module: business_appointment_website
+#: model:ir.model.fields.selection,name:business_appointment_website.selection__business_resource_type__allowed_cancellation_uom__hours
+#, fuzzy
+msgid "hours"
+msgstr "ساعات"
+
+#. module: business_appointment_website
+#: model:ir.model.fields.selection,name:business_appointment_website.selection__business_resource_type__allowed_cancellation_uom__months
+msgid "months"
+msgstr "اشهر"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.done_search_appointments
+msgid "or"
+msgstr "او"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_confirmation_page
+msgid "seconds"
+msgstr "ثواني"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_contact_info
+msgid "select..."
+msgstr "اختر..."
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_layout
+msgid "this button"
+msgstr "هذا الزر"
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_appointments
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_resources
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_services
+#, fuzzy
+msgid "to clear search filters"
+msgstr "لمحو بحث المرشحات "
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_progress_timer
+#, fuzzy
+msgid "to confirm appointments."
+msgstr "لتأكيد المواعيد."
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_progress_timer
+msgid "to finish scheduling."
+msgstr "لإنهاء الجدولة."
+
+#. module: business_appointment_website
+#: model_terms:ir.ui.view,arch_db:business_appointment_website.ba_public_thankyou
+msgid ""
+"to set up the password for the portal \n"
+"                                where you will be able to control your appointments."
+msgstr ""
+"لإعداد كلمة المرور للبوابة الإلكترونية\n"
+"                                حيث ستتمكن من التحكم في مواعيدك."
+
+#. module: business_appointment_website
+#: model:ir.model.fields.selection,name:business_appointment_website.selection__business_resource_type__allowed_cancellation_uom__weeks
+msgid "weeks"
+msgstr "أسابيع"
+
+#. module: business_appointment_website
+#: model:ir.model.fields.selection,name:business_appointment_website.selection__business_resource_type__allowed_cancellation_uom__years
+msgid "years"
+msgstr "سنين"
+
+#. module: business_appointment_website
+#: model:mail.template,subject:business_appointment_website.email_template_confirmation_code
+msgid "{{ object.website_id.company_id.name }}: Confirmation Code"
+msgstr "{{object.website_id.company_id.name}}: رمز التأكيد"
+
+#. module: business_appointment_website
+#: model:mail.template,subject:business_appointment_website.email_ba_public_invitation
+msgid "{{ object.website_id.company_id.name }}: Invitation"
+msgstr "{{object.website_id.company_id.name}}: دعوة"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/models/website_business_appointment.py:0
+#, fuzzy, python-format
+msgid "{}: Confirmation Code"
+msgstr "{}: تأكيد الكود"
+
+#. module: business_appointment_website
+#: code:addons/business_appointment_website/models/website_business_appointment.py:0
+#, python-format
+msgid "{}: Invitation"
+msgstr "{}: دعوة"

@@ -1,0 +1,54 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* business_appointment_website_sale
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220530\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-09 08:54+0000\n"
+"PO-Revision-Date: 2022-06-10 02:10+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.1\n"
+
+#. module: business_appointment_website_sale
+#: model_terms:ir.ui.view,arch_db:business_appointment_website_sale.portal_appointment_page
+msgid "<strong>Order:</strong>"
+msgstr "<strong> الامر: </ strong>"
+
+#. module: business_appointment_website_sale
+#: model:ir.model,name:business_appointment_website_sale.model_res_config_settings
+msgid "Config Settings"
+msgstr "ضبط الاعدادات"
+
+#. module: business_appointment_website_sale
+#: model_terms:ir.ui.view,arch_db:business_appointment_website_sale.res_config_settings_view_form
+msgid ""
+"If turned on, service cards would contain price information according to "
+"the customer price list"
+msgstr ""
+"إذا تم تشغيل بطاقات الخدمة ، فستحتوي على معلومات الأسعار وفقًا لـقائمة أسعار "
+"العملاء"
+
+#. module: business_appointment_website_sale
+#: model:ir.model.fields,field_description:business_appointment_website_sale.field_res_config_settings__ba_pricelists_prices
+#: model:ir.model.fields,field_description:business_appointment_website_sale.field_website__ba_pricelists_prices
+msgid "Pricelists and Prices"
+msgstr "قائمة الاسعار والاسعار"
+
+#. module: business_appointment_website_sale
+#: model:ir.model,name:business_appointment_website_sale.model_website
+msgid "Website"
+msgstr "الموقع الإلكتروني"
+
+#. module: business_appointment_website_sale
+#: model_terms:ir.ui.view,arch_db:business_appointment_website_sale.ba_products_full
+#: model_terms:ir.ui.view,arch_db:business_appointment_website_sale.service_searchbar
+msgid "ml-2"
+msgstr ""
