@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <template id="otp_mobile_portal_my_details" inherit_id="portal.portal_my_details" name="OTP Mobile Portel" priority="20">
+        <xpath expr="//div[hasclass('o_portal_details')]/div/div[hasclass('row')]/div[4]" position="after">
+            <div t-attf-class="form-group #{error.get('mobile') and 'o_has_error' or ''} col-xl-6">
+                <label class="col-form-label" for="mobile">Mobile</label>
+                <input type="tel" name="mobile" t-attf-class="form-control #{error.get('mobile') and 'is-invalid' or ''}" t-att-value="mobile or partner.mobile" readonly='readonly'/>
+            </div>
+        </xpath>
+    </template>
+</odoo>

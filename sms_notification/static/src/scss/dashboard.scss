@@ -1,0 +1,173 @@
+.o_action_manager {
+	overflow: auto !important;
+}
+
+/* .o_web_client {
+	background-color: #f6f7ff;
+} */
+
+main select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.data_cell:hover {
+	box-shadow: 0 0 6px 0 #00000026;
+}
+
+.dropdown-menu ._action:hover {
+	background-color: #DEE2E6;
+}
+
+[class*="btn_"] {
+	opacity: 0.9;
+	box-shadow: 0 2px 4px #00000026;
+}
+
+header .btn-light {
+	border-color: #DEE2E6;
+	border-width: 1px;
+}
+
+header .btn-light:hover {
+	color: #3547CE;
+}
+
+.button-group u {
+	font-size: 13.5px;
+}
+
+main .card-body {
+	height: 300px;
+}
+
+main .badge {
+	font-size: 100%;
+}
+.stage_heading{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 11px;
+	text-transform: capitalize;
+	color: #7B8EB7;
+}
+
+.stage_count{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	text-transform: capitalize;
+	color: #000105;
+}
+
+.gateway_card{
+	background: #FDFDFF;
+	border: 1px solid #CACAF1;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.gateway_name{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: #4C5862;
+}
+
+.gateway_count_name{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 19px;
+	color: #7B8EB7;
+	.gateway_count{
+		color: #4C5862;
+	}
+}
+
+.sub_headings{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	color: #192A3E;
+}
+
+.main_heading{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 36px;
+	line-height: 54px;
+	text-transform: capitalize;
+	color: #000000;
+}
+
+.summary{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+	color: #555555;
+}
+
+.dashboard_buttons{
+	background: #FFFFFF;
+	border: 2px solid #4A6EEF;
+	box-sizing: border-box;
+	border-radius: 4px;
+	transition-duration: 0.4s;
+  	cursor: pointer;
+
+}
+.dashboard_buttons:hover {
+	background: #4A6EEF;
+	color: #FFFFFF;
+	.dashboard_buttons_text {
+		color: #FFFFFF;
+	}
+}
+.dashboard_buttons_text{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #4A6EEF;
+}
+
+.gateway_user_guide{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-transform: capitalize;
+	color: #4A6EEF;
+	.gateway_edit{
+		color: #6A707E;
+	}
+}
+
+.gateway_extra_links{
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 25px;
+	color: #1E1E1E;
+	.hover{
+		color: #4A6EEF;
+	}
+}

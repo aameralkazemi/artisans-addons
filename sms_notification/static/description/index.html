@@ -1,0 +1,997 @@
+<section class="oe_container" id="wk_header">
+  <div class="mt32 mb32">
+      <h2 class="text-center" style="color:#000">
+          Odoo SMS Notification
+      </h2>
+  </div>
+  <div class="row ml16 mr16 mt16 mb16 py-2 m-1" style="font-weight:500; font-size:18px; color:#484848; font-family:'Open Sans', sans-serif;">
+      <div class="container col-md-6  border-right" style="font-weight:500;line-height: 24px;font-size:16px;color:#484848;font-family:'Open Sans', sans-serif; vertical-align: middle; display: grid;">
+          <p class="mb4 mt4 mr8">
+              The module acts as a base module to integrate and manage SMS gateways with Odoo. It provides the essential features such as SMS template, SMS form, groups SMS, delivery status, etc so you can send and track SMS with Odoo using the compatible gateway modules.
+          </p>
+      </div>
+      <div class="container col-md-6 ">
+          <h4 class="ml-md-3">Information</h4>
+          <div class="mt-2 ml-md-3" style="display:flex">
+              <span class="ml-1 mr-2 my-auto"><img src="icon-youtube.png" alt="video-tutorial"></span>
+              <div style="font-weight: 600;font-size: 14px;line-height: 10px;" class="mt-3">
+                  Video Tutorial
+              </div>
+          </div>
+          <div class="ml-md-3" style="display:flex;">
+              <span style="font-size:15px; margin-top:0.2rem"> https://www.youtube.com/watch?v=wYCwiTkdGGE&feature=youtu.be</span>
+          </div>
+          <div class="mt-2 ml-md-3" style="display:flex">
+              <span class="ml-1 mr-2 my-auto"><img src="icon-user-guide.png" alt="user-guide"></span>
+              <div style="font-weight: 600;font-size: 14px;line-height: 10px;" class="mt-3">
+                  User Guide
+              </div>
+          </div>
+          <div class="ml-md-3" style="display:flex;">
+              <span style="font-size:15px; margin-top:0.2rem"> https://webkul.com/blog/odoo-sms-notification/</span>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="card p-4 oe_spaced mw-100">
+	<h2 class="text-center" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 20px;line-height: 27px;text-align: center;color: #333333;">Odoo SMS Gateways</h2>
+	<span class="d-block w-100 text-center text-muted" style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 30px;text-align: center;color: #747474;">
+		Here is the complete list of our SMS gateway integration modules for Odoo
+	</span>
+	<div id="carousel_sms_gateway" class="carousel slide oe_spaced pointer-event" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active" style="min-height: 190px;">
+				<div class="row justify-content-center">
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/msg91_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="MSG91.png" alt="msg91_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo MSG91<br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/twilio_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="Twilio.png" alt="twilio_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Twilio<br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/plivo_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="Plivo.png" alt="plivo_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Plivo <br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/netelip_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="Netelip.png" alt="netelip_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Netelip <br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/textlocal_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="Textlocal.png" alt="textlocal_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Textlocal <br>SMS Gateway</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item" style="min-height: 190px;">
+				<div class="row justify-content-center">
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/clicksend_gateway" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="ClickSend.png" alt="clicksend_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo ClickSend <br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/skebby_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="skebby.png" alt="skebby_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo skebby <br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/messagebird_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="MessageBird.png" alt="messagebird">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo MessageBird <br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/mobily_gateway" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="mobily.png" alt="mobily">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Mobily <br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/nexmo_gateway" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="nexmo.png" alt="nexmo_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Nexmo <br>SMS Gateway</span>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="carousel-item" style="min-height: 190px;">
+				<div class="row justify-content-center">
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/infobip_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="infobip.png" alt="infobip_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Infobip<br>SMS Gateway</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/14.0/smshub_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="smshub.png" alt="smshub_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">SMS Gatewayhub</span>
+						</div>
+					</div>
+					<div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/15.0/msegat_gateway/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="msegat.png" alt="msegat_gateway">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Odoo Msegat <br>SMS Gateway</span>
+						</div>
+					</div>
+                    <div class="col-auto px-4">
+						<div class="d-flex flex-column" style="width:max-content">
+							<a href="https://apps.odoo.com/apps/modules/15.0/twilio_whatsapp_integration/" target="_blank">
+								<img class="img-thumbnail m-auto" style="width:120px" src="twilio_whatsapp_integration.png" alt="twilio_whatsapp_integration">
+							</a>
+							<span class="text-center mt-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 22px;text-align: center;color: #333333;">Twilio Whatsapp Integration</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carousel_sms_gateway" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon">
+				<i class="fa fa-angle-left fa-4x text-dark"></i>
+			</span>
+		</a>
+		<a class="carousel-control-next" href="#carousel_sms_gateway" role="button" data-slide="next">
+			<span class="carousel-control-next-icon">
+				<i class="fa fa-angle-right fa-4x text-dark"></i>
+			</span>
+		</a>
+	</div>
+</section>
+
+<div class="row ml16 mr16 mb16 mt32 card" style="background: #FFFFFF;">
+    <div class="col-12">
+        <div>
+            <div class="row">
+                <div class="col-1.5 ml16 mt16">
+                    <a><img src="icon-1.png"></a>
+                </div>
+                <h3 class="col-10 mt32" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 18px;line-height: 38px;color: #333333;">Connect with your customers with Mobile SMS Notifications</h3>
+                <span style="margin-left:20px;font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 30px;color: #747474;">
+                    <li>The module installs the essential features in your Odoo do you can send SMS notifications to your Customers directly from Odoo.</li>
+                    <li>Send mobile messages to single customer or in bulk to many customers and vendors with a click.</li>
+                    <li>Save Odoo SMS templates to use them in the SMS you send.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row ml16 mr16 mb16 mt32 card" style="background: #FFFFFF;">
+    <div class="col-12">
+        <div>
+            <div class="row">
+                <div class="col-1.5 ml16 mt16">
+                    <a><img src="icon-2.png"></a>
+                </div>
+                <h3 class="col-10 mt32" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 18px;line-height: 38px;color: #333333;">Send Order Updates and Notifications texts on their Mobile Phones</h3>
+                <span style="margin-left:20px;font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 30px;color: #747474;">
+                    <li>Increase customer satisfaction and keep them notified about their orders, updates etc with mobile messages.</li>
+                    <li>Create Odoo SMS templates for different Conditions. These SMS are automatically sent when the assigned condition(s) is(are) fulfilled in Odoo.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row ml16 mr16 mb16 mt32 card" style="background: #FFFFFF;">
+    <div class="col-12">
+        <div>
+            <div class="row">
+                <div class="col-1.5 ml16 mt16">
+                    <a><img src="icon-3.png"></a>
+                </div>
+                <h3 class="col-10 mt32" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 18px;line-height: 38px;color: #333333;">Send Discount, Deals, and Important Updates in your Store right to the phones</h3>
+                <span style="margin-left:20px;font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 30px;color: #747474;">
+                    <li>Improve Customer Engagement and personalization by reaching them via mobile phone.</li>
+                    <li>Create Odoo SMS template for Upcoming Sales, season discount, customers’ birthdays, etc. and send them to one or more people using Odoo SMS Notification Module.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row ml16 mr16 mb16 mt32 card" style="background: #FFFFFF;">
+    <div class="col-12">
+        <div>
+            <div class="row">
+                <div class="col-1.5 ml16 mt16">
+                    <a><img src="icon-4.png"></a>
+                </div>
+                <h3 class="col-10 mt32" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 18px;line-height: 38px;color: #333333;">Integrate Multiple SMS Gateways into Same Odoo</h3>
+                <span style="margin-left:20px;font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 30px;color: #747474;">
+                    <li>Simple Integration steps facilitates quick integration of various SMS Gateways with Odoo.</li>
+                    <li>You can set the priority of the integrated SMS Gateways to choose which one to use while sending the SMS.</li>
+                    <li>Odoo SMS Notification is a base module for Sending SMS in Odoo. It is designed to provide the structure and flow to enable the SMS feature in Odoo.</li>
+                    <li>In addition to Odoo SMS Notification module, you would also need to integrate an SMS gateway with Odoo to send SMS notifications to your customers.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row ml16 mr16 mb16 mt32 card" style="background: #FFFFFF;">
+    <div class="col-12">
+        <div>
+            <div class="row">
+                <h3 class="col-12 mt8" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 18px;line-height: 38px;color: #333333;">Get All the Information Easily on the SMS Dashboard!</h3>
+                <span style="margin-left:20px;font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 30px;color: #747474;">
+                    <li>Useful to get the detailed information of total messages, sent message, delivered message, failed message for the analysis purpose</li>
+                    <li>Plots the relevant Data on the desired Graph with SMS Dashboard.</li>
+                    <li>Sort the Graph according to the provided filters and also with SMS Gateways.</li>
+                    <li>Check the whole list of integrated SMS Gateways.</li>
+                    <li>Send SMS in a single click.</li>
+                    <li>Redirect to the various pages like helpdesk, store page, etc.</li>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb4 ml16">
+    <h3 class="pt-2 mb-0" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 18px;line-height: 38px;color: #333333;">Detailed Feature List</h3>
+    <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">Here is the detailed list of features for Odoo SMS Notification Module.</span>
+</div>
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Provides Structure to Odoo SMS module</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> The module install all the necessary functions to send SMS from Odoo.</li>
+                    <li> Send mobile message notifications and updates to customers, vendors or both.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Integrate Multiple SMS Gateways</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li>Integrate various SMS Gateways with Odoo such as Skebby, Plivio, etc.</li>
+                    <li>Set Gateway priority so Odoo automatically picks desired Gateway to send SMS.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Create Odoo SMS Groups</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li>Create SMS groups to send the message in bulk to people.</li>
+                    <li>Single group or multiple groups can be selected to send the Odoo SMS.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Create Odoo SMS Templates in Advance</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li>Create and Save SMS templates to use later while sending the SMS.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Enable/disable SMS Feature on User Basis</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> You can give access to Odoo SMS feature at user level.</li>
+                    <li> Only user with Odoo SMS feature enabled can send messages to people in Odoo.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Send Single or bulk Sms to customers / send SMS individually or in bulk</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Send message to single customer/vendor using the SMS form.</li>
+                    <li> Or choose entire groups or multiple people to send the Odoo SMS.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Set SMS Templates For Global or on Conditions-based Use</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> The templates can be set for use at - Global level or Condition-based.</li>
+                    <li> Global Odoo SMS templates are available for all the Odoo SMS.</li>
+                    <li> Condition-based are triggered for Odoo SMS only when the set condition is met.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Auto send SMS to people</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Assign conditions to automatically send SMS to customers from Odoo.</li>
+                    <li> Odoo automatically picks the set SMS template once the condition is met in Odoo.</li>
+                    <li> The SMS is then automatically sent to the specific customer(s).</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Creating Conditions Based SMS Templates</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Choose from different given conditions to set for the Odoo SMS template.</li>
+                    <li> Set conditions such as; order confirmed, invoice validated, order placed, etc.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Manage Sent SMS history/records</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> The records of all the sent Odoo SMS is maintained in Odoo.</li>
+                    <li> The User can view the details of each sent SMS by opening the record.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Auto-Delete the Record</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Enable Auto-delete Feature for Odoo SMS.</li>
+                    <li> Auto-delete can be set at individual template level.</li>
+                    <li> If enabled, sent SMS list and delivery status are not stored in Odoo for those SMS.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">View Delivery Status of Sent SMS</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> The delivery status of the sent Odoo SMS is available in Odoo.</li>
+                    <li> Check the delivery status for SMS as -&nbsp; sent, failed or delivered.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">SMS Gateway Dashboard</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Analyze the data of sending SMS to the People.</li>
+                    <li>Get detailed information about total SMS, Sent SMS, Delivered, Undelivered and Failed SMS.</li>
+                    <li>Get the whole List of integrated SMS Gateways.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Plot desired Graph in Seconds</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Use the Predefined options to create any desired plot/graph in seconds.</li>
+                    <li>Differentiate the graph on the basis of SMS Gateways as well.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+
+<div class="row no-gutters mw-100 py-2">
+    <div class="col-md-6 col-sm-12 pb-2 pb-md-0 pr-md-2">
+        <div class="shadow card oe_padded h-100 ml-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Quick Edit for SMS Gateways</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Edit the SMS Gateways quickly in a few steps.</li>
+                    <li>Also check the User Guide of the Corresponding SMS Gateways.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 pt-2 pt-md-0 pl-md-2">
+        <div class="shadow card oe_padded h-100 mr-md-3">
+            <h3 class="pl-4" style="font-family:'Open Sans', sans-serif;font-weight: 600;font-size: 16px;line-height: 27px;color: #333333;">Easily access the Other related Pages</h3>
+            <span style="font-family:'Open Sans', sans-serif;font-weight: normal;font-size: 16px;line-height: 29px;color: #555555;">
+                <ul class="mx-auto w-100">
+                    <li> Send SMS, check the user guide and configure the SMS gateways in a single click.</li>
+                    <li>SMS dashboard also redirects to various pages simply by clicking on the related tabs.</li>
+                    <li>It helps to reach out the helpdesk, review page and store page.</li>
+                </ul>
+            </span>
+        </div>
+    </div>
+</div>
+
+    <section class="oe_container mp_tabs">
+        <div class="mp-nav-center" style="background: #F3F3F3;text-align: center; padding-top:10px;">
+            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist" style="background-color:transparent">
+			<li class="nav-item border-left" style="color:white; background-color:rgb(68, 113, 240);">
+				<span class="nav-link font-weight-bold active" id="dashboard-tab" data-toggle="tab" style="padding:7px 20px" href="#odoo_nexmo_view_tab1" role="tab" aria-controls="dashboard" aria-selected="false">
+					Admin View
+				</span>
+			</li>
+			<li class="nav-item border-left" style="color:white; background-color:rgb(68, 113, 240);">
+				<span class="nav-link font-weight-bold" id="configuration-tab" data-toggle="tab" style="padding:7px 20px" href="#odoo_nexmo_view_tab2" role="tab" aria-controls="configuration" aria-selected="true">
+					SMS Form
+				</span>
+			</li>
+            <li class="nav-item border-left" style="color:white; background-color:rgb(68, 113, 240);">
+				<span class="nav-link font-weight-bold" id="configuration-tab" data-toggle="tab" style="padding:7px 20px" href="#odoo_sms_dashboard" role="tab" aria-controls="configuration" aria-selected="true">
+					SMS Dashboard
+				</span>
+			</li>
+			<li class="nav-item border-left" style="color:white; background-color:rgb(68, 113, 240);">
+				<span class="nav-link font-weight-bold" id="backend-tab" data-toggle="tab" style="padding:7px 20px" href="#odoo_nexmo_view_tab3" role="tab" aria-controls="backend" aria-selected="false">
+					SMS GateWay Configuration
+				</span>
+			</li>
+			<li class="nav-item border-left" style="color:white; background-color:rgb(68, 113, 240);">
+				<span class="nav-link font-weight-bold" id="amazon" data-toggle="tab" style="padding:7px 20px" href="#sms_notification_change_log_tab" role="tab" aria-controls="amazon" aria-selected="false">
+					Change Log
+				</span>
+			</li>
+		</ul>
+        </div>
+        <div id="my-tab-content" class="tab-content">
+            <div class="tab-pane container active" id="odoo_nexmo_view_tab1" style="background: #FFFFFF;box-shadow: 0 0 2px 1px rgba(0,0,0,0.14);padding:1% 5%;">
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Create SMS Templates</h3>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                    Create Odoo SMS templates in advance and use them when you send SMS notifications to the customers or vendors.
+                                </p>
+                                <p style="font-size: 18px;color: #484848;text-align: center;">
+                                        Choose SMS template for Global Use Or Condition-Based Use.
+                                </p>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <p>
+                                    <li>Global</li>
+                                </p>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                    It can be selected in the SMS form to send messages notifications.
+                                </p>
+                                <a href="1.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="1.png">
+                                </a>
+                                <br>
+
+                                <p class="mt16">
+                                    <li>Condition Based</li>
+                                </p>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                        Used to trigger conditions to automatically send Odoo SMS notifications to the customer when the condition is fulfilled in Odoo.
+                                    </p>
+                                <a href="2.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Enable/Disable Auto-Delete</h3>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                    Enable Auto-Delete so the sent Odoo SMS and their Delivery report is not saved in Odoo.
+                                </p>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <p>
+                                    <li>Enable Auto-delete In SMS templates</li>
+                                </p>
+                                <a href="3.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="3.png">
+                                </a>
+                                <br>
+
+                                <p class="mt16">
+                                    <li>Enable Auto-Delete for each SMS / bulk SMS.</li>
+                                </p>
+                                <a href="4.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="4.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Save Odoo SMS Drafts</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%;">
+                                <a href="5.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="5.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Odoo SMS History and Delivery Reports</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <p class="mt16">
+                                    <li>Maintain Sent Odoo SMS Notifications History</li>
+                                </p>
+                                <a href="6.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="6.png">
+                                </a>
+                                <br>
+                                <p class="mt16">
+                                    <li>Delivery reports For Odoo SMS</li>
+                                </p>
+                                <a href="7.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="7.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Create SMS Groups to Send Bulk Odoo SMS Notifications</h3>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                    Create SMS groups include only Customers or vendors, or both.
+                                </p>
+                            </div>
+                            <div class="panel-body" style="padding: 2%;">
+                                <a href="8.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="8.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane container" id="odoo_nexmo_view_tab2" style="background: #FFFFFF;box-shadow: 0 0 2px 1px rgba(0,0,0,0.14);padding:1% 5%;">
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Use SMS form to send Odoo SMS alerts to customers and/or vendors</h3>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                    Choose recipients as a
+                                </p>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <p>
+                                    <li>Group</li>
+                                </p>
+                                <a href="9.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="9.png">
+                                </a>
+                                <br>
+                                <p>
+                                    <li style="padding-top: 2%;">Multiple recipients</li>
+                                </p>
+                                <a href="10.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="10.png">
+                                </a>
+                                <br>
+                                <p>
+                                    <li style="padding-top: 2%;">Single recipient</li>
+                                </p>
+                                <a href="11.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="11.png">
+                                </a>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container ">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Select relevant SMS Gateway</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%;">
+                                <a href="12.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="12.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane container" id="odoo_sms_dashboard" style="background: #FFFFFF;box-shadow: 0 0 2px 1px rgba(0,0,0,0.14);padding:1% 5%;">
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">All in One SMS Gateway Dashboard</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <a href="d1.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="d1.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Send SMS Via Dashboard</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <a href="d2.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="d2.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Configure SMS Gateways Via Dashboard</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <a href="d3.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="d3.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Plot Graph to Analyze the Related Data</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <a href="d4.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="d4.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Complete List of Integrated SMS Gateways, Check the user guide of the corresponding SMS Gateway and also edit the configuration simply by clicking on edit button.</h3>
+                            </div>
+                            <div class="panel-body" style="padding: 2%; font-size: 18px;color: #484848;text-align: center;">
+                                <a href="d5.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="d5.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane container" id="odoo_nexmo_view_tab3" style="background: #FFFFFF;box-shadow: 0 0 2px 1px rgba(0,0,0,0.14);padding:1% 5%;">
+
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Prerequisites</h3>
+                                <p style="color: #555555;font-size: 16px; text-align:center; text-align:center;" class="mx-5">
+                                    First you need to Install the relevant Odoo SMS Gateway to configure the module.
+                                </p>
+                            </div>
+                            <div class="panel-body" style="padding: 2%;">
+                                <a href="13.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="13.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="oe_container mb-4 mt-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">SMS Gateway Configuration Form</h3>
+                                <ul style="color: #555555;font-size: 16px;" class="mx-5">
+                                    <li class="mx-5">Priority setting is for Odoo to determine which SMS Gateway to use while sending SMS.</li>
+                                    <li class="mx-5">The Odoo SMS gateway with priority set as 1 is used.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-body" style="padding: 2%;">
+                                <a href="14.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="14.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="oe_container mb-4">
+                    <div class="oe_container">
+                        <div class="panel panel-primary" id="wkid0">
+                            <div class="panel-heading">
+                                <h3 class="panel-title" style="font-size: 18px;color: #333333;text-align: center;">Test SMS Gateway Connection</h3>
+                                <ul style="color: #555555;font-size: 16px;" class="mx-5">
+                                    <li class="mx-5">Choose the SMS Gateway from the list. (Only installed Gateway shows up on the list)</li>
+                                    <li class="mx-5">Choose the mobile number to send the test SMS.</li>
+                                </ul>
+                            </div>
+                            <div class="panel-body" style="padding: 2%;">
+                                <a href="15.png">
+                                    <img class="img-border img-responsive thumbnail img-fluid" style="border: 1px solid #E0E0E0;" src="15.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane container" id="sms_notification_change_log_tab" style="background: #FFFFFF;box-shadow: 0 0 2px 1px rgba(0,0,0,0.14);padding:1% 5%;">
+                <section class="oe_container oe_dark">
+                    <div class="row">
+                        <div class='col-12' >
+                            <div class="panel panel-primary" id="wkid0">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><b>Module Change Log</b></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        All notable changes related to this module will be documented in this file.
+                                    </p>
+                                    <h4 > Legend</h4>
+                                    <ul class="list-unstyled ">
+                                        <li><i class="fa fa-plus text-success" ></i> [Features Added]</li>
+                                        <li><i class="fa fa-minus text-danger" ></i> [Features Removed]</li>
+                                        <li><i class="fa fa-bug text-warning" ></i> [Bug Fixed]</li>
+                                    </ul>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.3.1 to 1.3.2 </b>
+                                        <b style="float:right">Released In April, 2020 </b>
+                                    </div>
+                                    <div class='col-12' style="width: 795px;">
+                                        <p><i class="fa fa-bug text-success"></i>  Fixed SMS template translation issue.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.3.0 to 1.3.1 </b>
+                                        <b style="float:right">Released In November, 2019 </b>
+                                    </div>
+                                    <div class='col-12' style="width: 795px;">
+                                        <p><i class="fa fa-plus text-success"></i>  Add new SMS gateway's Nexmo, TextLocal &amp; MessageBird.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.2.5 to 1.3.0  </b>
+                                        <b style="float:right">Released In November, 2019 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-bug text-warning"></i> Major fixes to make this module compatible with Odoo13.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.2.4 to 1.2.5  </b>
+                                        <b style="float:right">Released In December, 2018 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-bug text-warning"></i>  Minor fixes to make this module compatible with Marketplace SMS Notification module.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.2.3 to 1.2.4  </b>
+                                        <b style="float:right">Released In October, 2018 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-plus text-success"></i>  Minor updates to make this module compatible with Marketplace SMS Notification module.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.2.2 to 1.2.3  </b>
+                                        <b style="float:right">Released In August, 2018 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-plus text-success"></i>  Add new SMS gateway Netelip.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.2.1 to 1.2.2  </b>
+                                        <b style="float:right">Released In June, 2018 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-plus text-success"></i>  Add new SMS gateway Skebby.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.2.0 to 1.2.1  </b>
+                                        <b style="float:right">Released In May, 2018 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-plus text-success"></i> Minor updates to make this module compatible with POS SMS Gateway Integration module.</p>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                            <i class="fa fa-plus-circle"></i>
+                                            <b>App Updated from version 1.1.4 to 1.2.0  </b>
+                                            <b style="float:right">Released In December, 2017 </b>
+                                        </div>
+                                        <div class='span12' style="width: 795px;">
+                                            <p><i class="fa fa-plus text-success"></i> Add seprate menu for SMS.</p>
+                                            <p><i class="fa fa-plus text-success"></i>  Add new SMS gateway Mobily.</p>
+                                        </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-plus-circle"></i>
+                                        <b>App Updated from version 1.0.0 to 1.1.0  </b>
+                                        <b style="float:right">Released In October, 2017 </b>
+                                    </div>
+                                    <div class='span12' style="width: 795px;">
+                                        <p><i class="fa fa-plus text-success"></i> Added SMS template feature.</p>
+                                        <p><i class="fa fa-plus text-success"></i>  Admin can add global and condition based SMS templates.</p>
+                                        <p><i class="fa fa-plus text-success"></i> SMS will automatically sent to customer for conditional(object based) SMS templates.</p>
+                                        <p><i class="fa fa-plus text-success"></i> Added SMS group creation feature.</p>
+                                        <p><i class="fa fa-plus text-success"></i> Added send SMS to group or multiple users or individual Member/Number features.</p>
+                                        <p><i class="fa fa-plus text-success"></i> Added history features to track sent SMS and delivery reports.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="mb-5 pb32 pt32" id="webkul_support">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">Help and Support</h2>
+            <p class="mb-2 text-center" style="font-size:16px; color:#333; font-weight:400">Get Immediate support for any of your query</p>
+        </div>
+        <div class="col-12">
+            <p class="text-center px-5" style="font-size:14px; color:#555; font-weight:normal;">You will get 90 days free support for any doubt, queries, and bug fixing (excluding data recovery) or any type of issue related to this module.</p>
+        </div>
+        <div class="mx-auto col-lg-9 mb-4 oe_screenshot">
+            <div class="row align-items-center justify-content-center mx-0 p-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 sol-sm-2 text-center pr-0" style="">
+                    <img src="mail.png" alt="mail" class="img img-fluid">
+                </div>
+                <div class="col-xl-7 col-lg-10 col-md-10 col-sm-10 ">
+                    <p class="my-2" style="color:#555; font-weight:bold;">Write a mail to us:</p>
+                    <b class="text-primary" style="font-size:18px" >support@webkul.com</b>
+                    <p class="my-2" style="font-size:14px; color:#777; font-weight:normal;">Any queries or want any extra features? Just drop a mail to our support.</p>
+                </div>
+                <div class="col-xl-3 col-lg-4 text-center mt16 d-none d-xl-block d-md-block">
+                    <a href="mailto:support@webkul.com" style="padding:10px 22px; background-color:#2335D7; font-size:14px; color:#fff"><i class="fa fa-pencil-square-o" style="color:white; margin-right:4px"></i>Write To US</a>
+                </div>
+                <div class="col-xl-7 col-lg-10 col-md-10 col-sm-10 text-left mt16 d-xl-none d-block d-md-none d-lg-none">
+                    <a href="mailto:support@webkul.com" style="padding:10px 22px; background-color:#2335D7; font-size:14px; color:#fff"><i class="fa fa-pencil-square-o" style="color:white; margin-right:4px"></i>Write To US</a>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto col-lg-9 oe_screenshot">
+            <div class="row align-items-center justify-content-center mx-0 p-3">
+                <div class="col-xl-2 col-lg-2 col-md-2 sol-sm-2 text-center pr-0">
+                    <img src="support-icon.png" alt="support-icon" class="img img-fluid">
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 ">
+                    <p class="my-2" style="font-weight:bold; color:#555">Get in touch with our Expert:</p>
+                    <b class="text-primary text-break" style="font-size:18px">https://webkul.uvdesk.com/en/customer/create-ticket/</b>
+                    <p class="my-2" style="font-weight:normal; font-size:14px; color:#777">Have any technical queries, want extra features, or anything else? Our team is here to answer all your questions. Just Raise A Support Ticket.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="span12">
+        <!-- Piwik Image Tracker-->
+        <img src="http://odooimg.webkul.com/analytics/piwik/piwik.php?idsite=3&rec=1&action_name=SMS-NOTIFICATION&url=https://apps.openerp.com/apps/modules/14.0/sms_notification&uid=sms_notification" style="border:0" alt="" />
+<!-- End Piwik -->
+    </div>
+</section>

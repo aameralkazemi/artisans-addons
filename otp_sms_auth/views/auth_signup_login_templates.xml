@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+
+    <template id="wk_auth_signup_mobile_fields" inherit_id="auth_signup.fields" name="OTP SMS Fields" priority="20">
+        <xpath expr="//div[hasclass('field-password')]" position="before">
+            <div class="form-group field-mobile" id="wkmobile">
+                <label for="mobile" class="control-label">Mobile</label>
+                <input id="mobile" name="mobile" class="form-control form-control-sm" placeholder="e.g. 05XXXXXXXX"
+                    type="text" maxlength="10"/>
+            </div>
+            <t t-set='shipping_address' t-value="request.env['ir.default'].sudo().get('res.config.settings', 'shipping_address')"/>
+            <t t-if="not shipping_address">
+                <div class="form-group field-country">
+                    <t t-set="countries" t-value="request.env['res.country'].sudo().search([])"/>
+                    <t t-set="country" t-value="website.user_id.sudo().partner_id.company_id.country_id"/>
+                    <label class="control-label" for="country_id">Country</label>
+                    <select id="country_id" name="country_id" class="form-control form-control-sm" t-att-required="'disabled' if set_seller or signup_from_seller_page else None">
+                        <option value="">Country...</option>
+                        <t t-foreach="countries" t-as="c">
+                            <option t-att-value="c.id" t-att-selected="c.id == (country and country.id or -1)">
+                                <t t-esc="c.name" />
+                            </option>
+                        </t>
+                    </select>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

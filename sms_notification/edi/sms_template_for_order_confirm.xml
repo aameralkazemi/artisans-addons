@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="sms_template_for_order_conform" model="wk.sms.template">
+            <field name="name">SMS notification to customer When order get confirm</field>
+            <field name="condition">order_confirm</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html"><![CDATA[
+              Hello {{object.partner_id.name}},Here is your {{object.state in ('draft', 'sent') and 'quotation' or 'order confirmation'}} from {{object.company_id.name}}:
+              REFERENCES
+              Order number: {{object.name}}
+              Order total: {{object.amount_total}} {{object.pricelist_id.currency_id.name}}
+              Order date: {{format_datetime(object.date_order, tz=user.tz, dt_format='M/d/Y, H:mm:ss')}}
+                            ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

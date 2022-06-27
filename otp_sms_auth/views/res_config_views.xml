@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+
+<odoo>
+    <record id="view_website_otp_setting_form_inherit" model="ir.ui.view">
+        <field name="name">website.otp.settings.form.inherit</field>
+        <field name="model">website.otp.settings</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="otp_auth.website_otp_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//footer" position="before">
+                <group>
+                    <label for="otp_notification_mode"/>
+                    <b><field name="otp_notification_mode"/></b>
+                </group>
+                <br/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

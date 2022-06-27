@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <record id="sms_mail_server_formview" model="ir.ui.view">
+            <field name="name">sms.mail.server.config</field>
+            <field name="model">sms.mail.server</field>            
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>                
+                        <group string='SMS Configuration' col='4'>
+                            <field name="description"/>
+                            <field name="sequence"/>  
+                        </group>
+                        <group string="Connection Information" col='4' name="conn_info">                      
+                            <field name="sms_debug"/>
+                            <field name="gateway" />      
+                            <field name="user_mobile_no" required="True" placeholder="e.g. +919898989898"/>
+                            <p string="" colspan="2"><strong>(Enter only one mobile number with country code e.g. +918888888888)</strong></p>
+                        </group>     
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="sms_mail_server_treeview" model="ir.ui.view">
+            <field name="name">sms.mail.server.tree.config</field>
+            <field name="model">sms.mail.server</field>            
+            <field name="arch" type="xml">
+                <tree> 
+                    <field name="sequence"/>                          
+                    <field name="description"/>                     
+                    <field name="gateway"/>                                    
+                </tree>
+            </field>
+        </record>
+        <!-- Actions -->
+
+        <record id="gateway_config" model="ir.actions.act_window">
+            <field name="name">SMS Gateway Configuration</field>
+            <field name="res_model">sms.mail.server</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="sms_mail_server_treeview"/>
+        </record>
+
+
+        <!-- Menu -->
+
+        <menuitem id="asms" name="SMS" parent="base.menu_custom" sequence='1' groups="base.group_no_one"/>
+            <menuitem id="sms_gateway_config" name="Gateway Configuration" action="gateway_config" parent="asms"/>
+
+    </data>
+</odoo>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>        
+        
+        <record id="sms_group_formview" model="ir.ui.view">
+            <field name="name">wk.sms.group</field>
+            <field name="model">sms.group</field>            
+            <field name="arch" type="xml">
+                <form string="Group Form">
+                    <sheet> 
+                        <div style="float:right;width:100px;" attrs="{'invisible':[('total_members','=',0)]}">
+                            <label for="total_members" string="Total Members" />
+                            <field name="total_members"  />
+                        </div> 
+                        <div>
+                            <label for="name" string="Group Name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="Enter Group Name..." />
+                            </h1>
+                        </div> 
+                        <group>
+                            <field name="member_type"  placeholder="----Select Member Type----"/>
+                        </group>
+                        <label for="member_ids" string="Members" />
+                        <field name="member_ids">
+                            <tree>
+                                <field name="name"/>
+                                <field name="mobile"/>
+                                <field name="email"/>
+                            </tree>
+                        </field>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="sms_group_treeview" model="ir.ui.view">
+            <field name="name">wk.sms.group</field>
+            <field name="model">sms.group</field>            
+            <field name="arch" type="xml">
+                <tree string="Message Group" >
+                    <field name="name"/>
+                    <field name="member_type"/>
+                    <field name="member_ids"/>
+                </tree>
+            </field>            
+        </record> 
+
+        <record id="view_messaging_group_search" model="ir.ui.view">
+           <field name="name">sms.group.search</field>
+           <field name="model">sms.group</field>
+           <field name="arch" type="xml">
+               <search string="Groups">
+                    <field name="name"/>
+                    <field name="member_type"/>
+                    <field name="member_ids"/>
+                    <filter name="customer" string="Customer" domain="[('member_type','=','customer')]" help="Customer" />
+                    <filter name="supplier" string="Supplier" domain="[('member_type','=','supplier')]" help="Supplier" />
+                    <filter name="any" string="Any" domain="[('member_type','=','any')]" help="Any" />
+                    <group expand="0" string="Group by...">
+                        <filter name="group_by_type" string="Type" domain="[]" context="{'group_by':'member_type'}" icon="terp-accessories-archiver"/>
+                    </group>
+               </search>
+           </field>
+        </record>
+
+        <record id="messaging_group" model="ir.actions.act_window">
+            <field name="name">Messaging Group</field>
+            <field name="res_model">sms.group</field>
+            <field name="view_mode">form,tree</field>
+           
+            <field name="view_id" ref="sms_group_treeview"/>
+        </record>
+
+        
+        <menuitem id="menu_sms_sub_menu_5" name="SMS Group" parent="base.menu_sms" sequence="5" action="messaging_group"/>
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="sms_template_for_account_voucher_register" model="wk.sms.template">
+            <field name="name">SMS notification to customer when invoice payment register</field>
+            <field name="condition">invoice_paid</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html"><![CDATA[
+              Hello {{object.partner_id.name}}, Payment registered:
+              Details:
+              Amount: {{object.amount_total}} {{object.currency_id.name}},
+              Date: {{object.invoice_date}} 
+            ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

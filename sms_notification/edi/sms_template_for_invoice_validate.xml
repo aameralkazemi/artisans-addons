@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="sms_template_for_invoice_validate" model="wk.sms.template">
+            <field name="name">SMS Notification to customer when invoice gets validate</field>
+            <field name="condition">invoice_vaildate</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html"><![CDATA[
+                Hello {{object.partner_id.name}}, A new invoice is available for you:
+                REFERENCES:
+                Invoice number: {{object.name}},
+                Invoice total: {{object.amount_total}} {{object.currency_id.name}},
+                Invoice date: {{object.invoice_date}}
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

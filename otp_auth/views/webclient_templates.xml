@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <template id="wk_web_login" inherit_id="web.login" name="OTP Login" priority="20">
+        <xpath expr="//div[hasclass('field-login')]" position="after">
+
+            <t t-set='enable_signin_auth' t-value="request.env['ir.default'].sudo().get('website.otp.settings', 'signin_auth')"/>
+            <t t-if="enable_signin_auth == 1">
+                <t t-set='otp_type' t-value="request.env['ir.default'].sudo().get('website.otp.settings', 'otp_type')"/>
+                <input type="hidden" class="otp_type" name="otp_type" t-att-value="otp_type" />
+                <div class="form-group field-otp-option" style="display: none;">
+                    <div id="wk_otp_label">
+                        Select verification method
+                    </div>
+                    <div>
+                        <label class="radio-container">Send OTP
+                            <input type="radio" value="radiotp" name="radio-otp"/>
+                            <span class="otpcheck"></span>
+                        </label>
+                        <label class="radio-container">I have a password
+                            <input type="radio" value="radiopwd" name="radio-otp" checked="checked"/>
+                            <span class="otpcheck"></span>
+                        </label>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//button[@type='submit']" position="before">
+            <t t-set='enable_signin_auth' t-value="request.env['ir.default'].sudo().get('website.otp.settings', 'signin_auth')"/>
+            <t t-if="enable_signin_auth == 1">
+                <button type="button" class="btn btn-primary wk_next_btn">Next</button>
+            </t>
+        </xpath>
+        <xpath expr="//p[hasclass('alert-success')]" position="after">
+            <t t-set='enable_signin_auth' t-value="request.env['ir.default'].sudo().get('website.otp.settings', 'signin_auth')"/>
+            <t t-if="enable_signin_auth == 1">
+                <span id="otplogincounter"/>
+            </t>
+            <div id="wk_loader"/>
+        </xpath>
+        <xpath expr="//div[hasclass('field-password')]" position="replace">
+            <t t-set='enable_signin_auth' t-value="request.env['ir.default'].sudo().get('website.otp.settings', 'signin_auth')"/>
+            <!-- <t t-esc="enable_signin_auth"/> -->
+            <t t-if="enable_signin_auth == 1">
+                <div class="form-group field-password d-none">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+                </div>
+            </t>
+            <t t-else="">
+                <div class="form-group field-password ">
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//button[@type='submit']" position="replace">
+        <t t-if="enable_signin_auth == 1">
+            <button type="submit" class="btn btn-primary btn-block d-none">Log in</button>
+        </t>  
+        <t t-else="">
+           <button type="submit" class="btn btn-primary btn-block">Log in</button>
+        </t>    
+        </xpath>
+
+    </template>
+</odoo>

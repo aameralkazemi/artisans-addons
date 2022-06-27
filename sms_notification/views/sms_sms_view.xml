@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+
+    <data>
+        <record id="send_sms" model="ir.ui.view">
+            <field name="name">wk.sms</field>
+            <field name="model">wk.sms.sms</field>
+            <field name="arch" type="xml">
+                <form string="Messaging Form">
+                    <header>
+                        <button name="send_now" string="Send Now" type="object" class="oe_highlight" states="new"/>
+                        <button name="retry" string="Retry" type="object" states="undelivered"/>
+                        <button name="save_as_draft" string="Save As Draft" type="object" attrs="{'invisible':[('id','!=',False)]}"/>
+                        <field name="state" widget="statusbar" statusbar_visible="new,sent,delivered,undelivered" />
+                    </header>
+                    <sheet>
+                        <field name="id" invisible="1"/>
+                        <div class="oe_right oe_button_box" name="buttons">
+                            <button class="oe_inline oe_stat_button" type="object" name="action_view_sent_sms" icon="fa-envelope-o fa-1x" attrs="{'invisible':[('total_sent_sms','=',0)]}">
+                                <field name="total_sent_sms" widget="statinfo"/>
+                            </button>
+                            <button class="oe_inline oe_stat_button" type="object" name="action_view_delivered_sms" icon="fa-check-square-o" attrs="{'invisible':[('total_delivered_sms','=',0)]}">
+                                <field name="total_delivered_sms" widget="statinfo"/>
+                            </button>
+                            <button class="oe_inline oe_stat_button" type="object" name="action_view_undelivered_sms" icon="fa-times" attrs="{'invisible':[('total_undelivered_sms','=',0)]}">
+                                <field name="total_undelivered_sms" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <group string='Messaging' >
+                            <group>
+                                <field name="group_type" widget='radio'  attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                            </group>
+                            <group >
+                                <field name="partner_id" attrs="{'invisible':[('group_type' , '!=','individual')],'readonly':[('state','in',('sent','delivered'))]}" />
+                                <field name="partner_ids" attrs="{'invisible':[('group_type' , '!=','multiple')],'readonly':[('state','in',('sent','delivered'))]}" widget="many2many_tags"/>
+                                <field name="group_ids"  attrs="{'invisible':[('group_type', '!=', 'group')],'readonly':[('state','in',('sent','delivered'))],'required':[('group_type','=','group')]}"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="sms_gateway_config_id" attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                            <field name="to" placeholder="Receiver Numbers" attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                        </group>
+                        <field name="auto_delete" help="Permanently delete this SMS after sendind it,to save space." attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                        <label for="auto_delete" />
+                        <notebook>
+                            <page name="sms_body" string="SMS">
+                                <br/>
+                                <group>
+                                    <field name="template_id"/>
+                                </group>
+                                <label for="msg"/>
+                                <field name="msg" placeholder="Type your message here..!!!" attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                            </page>
+                            <page name="delivery_report" string="Delivery Report" attrs="{'invisible':[('id','=',False)]}">
+                                <label for="sms_report_ids" attrs="{'invisible':[('state','=','new')]}"/>
+                                <field name="sms_report_ids" attrs="{'invisible':[('state','=','new')]}" readonly="1"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="sms_report_treeview" model="ir.ui.view">
+            <field name="name">wk.sms.report</field>
+            <field name="model">wk.sms.sms</field>
+            <field name="arch" type="xml">
+                <tree string="Message Report" decoration-success="state=='sent'">
+                    <field name="group_type" string="SMS To"/>
+                    <field name="sms_gateway_config_id"/>
+                    <field name="state"/>
+                    <button name="send_now" string="Send Now" type="object" icon="fa-paper-plane text-success" states="new" help="Send Now"/>
+                    <button name="retry" string="Retry" type="object" icon="fa-repeat text-success" states="undelivered" help="Retry"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Filters -->
+
+        <record id="view_sms_report_search" model="ir.ui.view">
+           <field name="name">wk.sms.sms.search</field>
+           <field name="model">wk.sms.sms</field>
+           <field name="arch" type="xml">
+               <search string="SMS">
+                    <field name="state"/>
+                    <field name="group_type"/>
+                    <field name="group_ids"/>
+                    <field name="partner_id"/>
+                    <field name="partner_ids"/>
+                    <field name="sms_report_ids"/>
+                    <field name="template_id"/>
+                    <filter name="new" string="Draft" domain="[('state','=','new')]" help="Draft" />
+                    <filter name="sent" string="Sent" domain="[('state','=','sent')]" help="Sent" />
+                    <filter name="error" string="Error" domain="[('state','=','error')]" help="Error" />
+                    <filter name="group" string="Group" domain="[('group_type','=','group')]" help="Group" />
+                    <filter name="multiple" string="Multiple Members" domain="[('group_type','=','multiple')]" help="Multiple Members" />
+                    <filter name="individual" string="Individual Member/Number" domain="[('group_type','=','individual')]" help="Individual Member/Number" />
+                    <group expand="0" string="Group by...">
+                        <filter name="group_by_type" string="Group Type" domain="[]" context="{'group_by':'group_type'}" icon="terp-accessories-archiver"/>
+                        <filter name="group_by_state"  string="State" domain="[]" context="{'group_by':'state'}" icon="terp-accessories-archiver"/>
+                    </group>
+               </search>
+           </field>
+        </record>
+
+        <record id="messaging_report" model="ir.actions.act_window">
+            <field name="name">Messaging Report</field>
+            <field name="res_model">wk.sms.sms</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="sms_report_treeview"/>
+        </record>
+        <record id="send_group_sms" model="ir.actions.act_window">
+            <field name="name">Send SMS</field>
+            <field name="res_model">wk.sms.sms</field>
+            <field name="view_mode">form,tree</field>
+            <field name="target">inline</field>
+            <field name="view_id" ref="send_sms"/>
+        </record>
+        <record id="draft_sms_sms" model="ir.actions.act_window">
+            <field name="name">Draft SMS</field>
+            <field name="res_model">wk.sms.sms</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','new')]</field>
+            <field name="view_id" ref="sms_report_treeview"/>
+        </record>
+        <record id="sent_sms_sms" model="ir.actions.act_window">
+            <field name="name">Sent SMS</field>
+            <field name="res_model">wk.sms.sms</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','sent')]</field>
+            <field name="view_id" ref="sms_report_treeview"/>
+        </record>
+
+        <!-- <menuitem id="sms_report" name="Send SMS" sequence="1" parent="sms_notification.asms" action="send_group_sms"/> -->
+
+        <record id="sms_notification_dashboard" model="ir.actions.client">
+           <field name="name">Dashboard</field>
+           <field name="tag">sms_notification.dashboard</field>
+           <field name="res_model">wk.sms.sms</field>
+       </record>
+
+        <menuitem id="base.menu_sms" name="SMS" groups="sms_notification"/>
+        <menuitem id="menu_sms_dashboard" name="Dashboard" parent="base.menu_sms" sequence="1" action="sms_notification_dashboard"/>
+        <menuitem id="menu_sms_sub_menu_1" name="Send SMS" parent="base.menu_sms" sequence="2" action="send_group_sms"/>
+        <menuitem id="menu_sms_sub_menu_2" name="Draft SMS" parent="base.menu_sms" sequence="3" action="draft_sms_sms"/>
+        <menuitem id="menu_sms_sub_menu_3" name="History" parent="base.menu_sms" sequence="4"/>
+        <menuitem id="menu_sms_sub_menu_3_sub_menu_1" name="Sent SMS" parent="menu_sms_sub_menu_3" sequence="3" action="sent_sms_sms"/>
+    </data>
+</odoo>

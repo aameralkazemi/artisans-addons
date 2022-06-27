@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="sms_template_for_delivery_done" model="wk.sms.template">
+            <field name="name">SMS notification to customer when order gets delivered</field>
+            <field name="condition">order_delivered</field>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html"><![CDATA[
+                Hello {{object.partner_id.name}},Here is your Delivery Order from {{object.company_id.name}}:REFERENCES:Picking number:{{object.name}} State :{{object.state}}
+                            ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

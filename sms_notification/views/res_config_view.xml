@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <record id="add_preferences_users" model="ir.ui.view">
+            <field name="name">Inheritance In SMS</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+				    <div class="app_settings_block o_not_app" data-string="SMS" data-key="sms_notification">
+				        <h2>SMS</h2>
+                        <div id="sms">
+                            <div class="row mt16 o_settings_container" id="sms_gateway">
+                                <div class="col-xs-12 col-md-12 o_setting_box"  title="By default, new users get highest access rights for all installed apps." id="access_rights">
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_phone_code_enable"/>
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="is_phone_code_enable"/>
+                                        <div class="text-muted fa fa-info-circle">
+                                            If not enabled then it will pick country calling code from the country selected by the customer. In case, customer has not selected any country then it will pick country calling code from company's country.
+                                        </div>
+                                        <div class="content-group" >
+                                            <div class="mt16">
+                                                <button name="%(gateway_config)d" string="Configure SMS Gateway Account" type="action" class="oe_link"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_twilio_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_twilio_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_twilio_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_twilio_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_plivo_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_plivo_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_plivo_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_plivo_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_clicksend_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_clicksend_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_clicksend_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_clicksend_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_msg91_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_msg91_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_msg91_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_msg91_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_mobily_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_mobily_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_mobily_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_mobily_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_skebby_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_skebby_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_skebby_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_skebby_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_netelip_in_addon','=',False)]}" >
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_netelip_in_addon" attrs="{'invisible':True}"  />
+                                        <field name="module_netelip_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_netelip_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_nexmo_in_addon','=',False)]}">
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_nexmo_in_addon" attrs="{'invisible':True}" />
+                                        <field name="module_nexmo_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_nexmo_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_messagebird_in_addon','=',False)]}">
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_messagebird_in_addon" attrs="{'invisible':True}" />
+                                        <field name="module_messagebird_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_messagebird_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_textlocal_in_addon','=',False)]}">
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_textlocal_in_addon" attrs="{'invisible':True}" />
+                                        <field name="module_textlocal_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_textlocal_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_smshub_in_addon','=',False)]}">
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_smshub_in_addon" attrs="{'invisible':True}" />
+                                        <field name="module_smshub_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_smshub_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_ismart_in_addon','=',False)]}">
+                                    <div class="o_setting_left_pane">
+                                        <field name="is_ismart_in_addon" attrs="{'invisible':True}" />
+                                        <field name="module_ismart_gateway" />
+                                    </div>
+                                    <div class="o_setting_right_pane">
+                                        <label for="module_ismart_gateway"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6 o_setting_box" attrs="{'invisible':[('is_msegat_in_addon','=',False)]}">
+                                   <div class="o_setting_left_pane">
+                                       <field name="is_msegat_in_addon" attrs="{'invisible':True}" />
+                                       <field name="module_msegat_gateway" />
+                                   </div>
+                                   <div class="o_setting_right_pane">
+                                       <label for="module_msegat_gateway"/>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_sms_notification_config_settings" model="ir.actions.act_window">
+            <field name="name">Configurations</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_id" ref="add_preferences_users"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'sms_notification', 'bin_size': False}</field>
+        </record>
+
+        <record id="res_config_settings_view_form_inherit_sms_notification" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.sms.notification</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="sms_notification.add_preferences_users"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@data-key='sms_notification']" position="attributes">
+                    <attribute name="class">app_settings_block</attribute>
+                </xpath>
+            </field>
+        </record>
+
+        <menuitem id="menu_sms_config" name="Configuration" parent="base.menu_sms" sequence="28" action="sms_notification.sms_notification_dashboard"/>
+        <menuitem id="menu_sms_config_settings" name="Settings" parent="sms_notification.menu_sms_config" sequence="1" action="sms_notification.action_sms_notification_config_settings"/>
+        <menuitem id="menu_sms_config_gateways" name="Gateway Configuration" parent="sms_notification.menu_sms_config" sequence="2" action="sms_notification.gateway_config"/>
+    </data>
+</odoo>

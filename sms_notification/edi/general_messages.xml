@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="sms_template_christmas" model="wk.sms.template">
+            <field name="name">Christmas Wishes</field>
+            <field name="globally_access" eval="True"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html">Wishing you and your family a very Merry Christmas. May this joyful season greet you with health and happiness.
+            </field>
+        </record>
+        <record id="sms_template_new_year" model="wk.sms.template">
+            <field name="name">Happy New Year Wishes</field>
+            <field name="globally_access" eval="True"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html">Wishing you a Happy New Year with the hope that you will have many blessings in the year to come.
+            </field>
+        </record>
+        <record id="sms_template_birthday" model="wk.sms.template">
+            <field name="name">Birthday Wishes</field>
+            <field name="globally_access" eval="True"/>
+            <field name="auto_delete" eval="True"/>
+            <field name="sms_body_html">May your memories today be awesome, your dreams become a reality, your joy last forever. Have a wonderful birthday.
+            </field>
+        </record>
+    </data>
+</odoo>

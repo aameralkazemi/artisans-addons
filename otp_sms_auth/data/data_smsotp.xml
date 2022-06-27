@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<odoo>
+    <data noupdate="1">
+        <function  model="ir.default" name="set"
+        eval="('website.otp.settings', 'otp_notification_mode', 'both')"/>
+    </data>
+</odoo>

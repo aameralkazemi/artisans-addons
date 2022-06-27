@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2016-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- License URL : https://store.webkul.com/license.html/ -->
+<odoo>
+    <data>
+        <record id="sms_report_form_view" model="ir.ui.view">
+            <field name="name">wk.sms.repor.form</field>
+            <field name="model">sms.report</field>
+            <field name="arch" type="xml">
+                <form string="SMS Report Form">
+                    <header>
+                        <button name="send_now" string="Send Now" type="object" class="oe_highlight" states="new"/>
+                        <button name="retry" string="Retry" type="object" states="undelivered"/>
+                        <field name="state" widget="statusbar" statusbar_visible="new,sent,delivered,undelivered" />
+                    </header>
+                    <sheet>
+                       <group>
+                        <field name="sms_gateway_config_id" attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                            <field name="to" placeholder="Receiver Numbers" attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                        </group>
+                        <field name="auto_delete" help="Permanently delete this SMS after sendind it,to save space." attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                        <label for="auto_delete" />
+                        <notebook>
+                            <page name="sms_body" string="SMS">
+                                <br/>
+                                <label for="msg"/>
+                                <field name="msg" placeholder="Type your message here..!!!" attrs="{'readonly':[('state','in',('sent','delivered'))]}"/>
+                            </page>
+                            <page name="sms_info" string="Other Info" attrs="{'invisible':[('id','=',False)]}">
+                                <label for="message"/>
+                                <field name="message" attrs="{'invisible':['|',('state','in',['new','sent','delivered']),('message','=',False)]}" readonly="1"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="wk_sms_report_tree_view" model="ir.ui.view">
+            <field name="name">wk.sms.report</field>
+            <field name="model">sms.report</field>
+            <field name="arch" type="xml">
+                <tree string="SMS Report" decoration-warning="state in ('sent')" decoration-info="state=='outgoing'" decoration-danger="state=='undelivered'"  decoration-success="state=='delivered'">
+                    <field name="to"/>
+                    <field name="msg"/>
+                    <field name="state"/>
+                    <button name="send_now" string="Send Now" type="object" icon="fa-paper-plane text-success" states="new" help="Send Now"/>
+                    <button name="retry" string="Retry" type="object" icon="fa-repeat text-success" states="undelivered" help="Retry"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Filters -->
+
+        <record id="sms_report_filter" model="ir.ui.view">
+            <field name="name">sms report filter</field>
+            <field name="model">sms.report</field>
+            <field name="arch" type="xml">
+                <search string="sms report">
+                    <field name="state"/>
+                    <filter name="outgoing_sms_filter" string="Outgoing" domain="[('state','=','new')]" help="Outgoing SMS"/>
+                    <separator/>
+                    <filter name="delivered_sms_filter" string="Delivered"  domain="[('state','=','delivered')]"  help="Delivered SMS" />
+                    <separator/>
+                    <filter name="sent_sms" string="Sent" domain="[('state','=','sent')]"  help="Sent SMS"/>
+                    <separator/>
+                    <filter name="undelivered" string="Undelivered" domain="[('state','=','undelivered')]"  help="Undelivered SMS"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_by_state" string="Status" context="{'group_by':'state'}"/>
+                    </group>
+               </search>
+            </field>
+        </record>
+
+        <record id="sms_report_action" model="ir.actions.act_window">
+            <field name="name">SMS Report</field>
+            <field name="res_model">sms.report</field>
+            <field name="view_mode">form,tree</field>
+            <field name="view_id" ref="wk_sms_report_tree_view"/>
+        </record>
+
+        <menuitem id="sms_report_new" name="Delivery Report" sequence="2" parent="sms_notification.asms" action="sms_report_action"/>
+        <menuitem id="sms_report_in_sale" name="Delivery Report" parent="sms_notification.menu_sms_sub_menu_3" action="sms_report_action" sequence="4"/>
+
+    </data>
+</odoo>

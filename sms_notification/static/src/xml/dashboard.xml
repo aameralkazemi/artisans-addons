@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2015-Present Webkul Software Pvt. Ltd. (<https://webkul.com/>) -->
+<!-- See LICENSE file for full copyright and licensing details. -->
+<!-- "License URL : <https://store.webkul.com/license.html/>" -->
+<templates xml:space="preserve">
+	<t t-name="dashboard_template">
+		<div>
+			<header class="container bg-white">
+				<div class="row py-2">
+					<div class="col-md-6 col-sm-12">
+						<img
+							src="/sms_notification/static/description/banner_img.png"
+							alt="Not Found!"
+							class="img-fluid"
+						/>
+					</div>
+					<div class="d-flex flex-column justify-content-center col-md-6 col-sm-12">
+						<div>
+							<h1 class="main_heading d-inline-block mt-2 mr-2">SMS Gateway Dashboard</h1>
+							<a
+								class="bg-dark rounded d-inline align-top px-2"
+								href="#"
+								onclick="$('.o_action_manager').animate({
+									scrollTop: $('#instance_container').offset().top
+								});
+								return false;"
+							>
+								<t t-esc="widget.connected_count"/> Connected
+							</a>
+							<p class="summary">
+								Odoo SMS Gateway Dashboard helps you to analyze the data of SMS sent to people. You can check the total number of SMS, Send SMS, Delivered Messages, Undelivered Messages, and even failed messages. There are several graphs to analyze the stats.
+							</p>
+							<div class="d-flex flex-column flex-md-row mt-4 mb-2">
+								<button
+									class="_action btn rounded-sm m-2 px-4 py-2 dashboard_buttons"
+									data-action="send_sms"
+								>
+									<span class="dashboard_buttons_text">SEND SMS</span>
+								</button>
+								<a class="dashboard_buttons btn text-uppercase m-2 px-4 py-2" role="button" target="_blank" href="https://webkul.com/blog/odoo-sms-notification/"> <span class="dashboard_buttons_text">USER GUIDE</span></a>
+                                <button
+									class="_action dashboard_buttons btn rounded-sm m-2 px-4 py-2"
+									data-action="configuration"
+								>
+									<span class="dashboard_buttons_text">CONFIGURATION</span>
+								</button>
+							</div>
+                            <br/>
+							<div class="btn-group gateway_extra_links">
+								<a
+									class="btn btn-light bg-transparent pr-4 py-1"
+									href="https://webkul.uvdesk.com/en/customer/create-ticket/"
+									style="border-style:none solid none none"
+									target="_blank"
+								>
+									<i class="fa fa-life-ring fa-2x" style="vertical-align:-15%;"/>
+									<u>Need Assistance</u>
+								</a>
+								<a
+									class="btn btn-light bg-transparent px-4 py-1"
+									href="https://store.webkul.com/Odoo-SMS-Notification.html#reviews"
+									style="border-style:none solid"
+									target="_blank"
+								>
+									<span class="fa-stack">
+										<i class="fa fa-circle fa-stack-2x"/>
+										<i class="fa fa-align-left fa-flip-vertical fa-inverse fa-stack-1x"/>
+									</span>
+									<u>Review</u>
+								</a>
+								<a
+									class="btn btn-light bg-transparent px-4 py-1"
+									href="https://store.webkul.com/Odoo/Communication.html"
+									style="border-style:none none none solid"
+									target="_blank"
+								>
+									<i
+										class="fa fa-arrow-circle-up fa-2x"
+										style="transform:rotate(45deg);vertical-align:-15%;"
+									/>
+									<u>Extensions</u>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="container mb-5">
+                <section class="row">
+                    <t t-call="sms_dashboard_count_template"/>
+                </section>
+				<section class="row">
+					<t t-call="sms_dashboard_line_chart_template"/>
+					<t t-call="sms_dashboard_pie_chart_template"/>
+				</section>
+			</main>
+
+			<footer class="container bg-white mb-md-5 mb-1 d-flex flex-column">
+				<h2 class="mb-4 sub_headings my-4">SMS Gateways</h2>
+				<div class="row" id="instance_container">
+					<t t-call="sms_dashboard_gateways_template"/>
+				</div>
+			</footer>
+		</div>
+	</t>
+
+    <div t-name="sms_dashboard_count_template" class="col-12 p-4">
+        <div class="row">
+            <div class="col-2 card">
+                <div class="row py-3">
+                    <div class="col-3">
+                        <img
+                            src="/sms_notification/static/stages/stage-1.png"
+                            alt="Total Messages"
+                        />
+                    </div>
+                    <div class="col-9">
+                        <span class="stage_heading">Total Messages</span><br/>
+                        <span class="stage_count"><t t-esc="widget.total_count"/></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 card">
+                <div class="row py-3">
+                    <div class="col-3">
+                        <img
+                            src="/sms_notification/static/stages/stage-2.png"
+                            alt="Total Messages"
+                        />
+                    </div>
+                    <div class="col-9">
+                        <span class="stage_heading">Sent Messages</span><br/>
+                        <span class="stage_count"><t t-esc="widget.sent_count"/></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="row py-3">
+                    <div class="col-3">
+                        <img
+                            src="/sms_notification/static/stages/stage-3.png"
+                            alt="Total Messages"
+                        />
+                    </div>
+                    <div class="col-9">
+                        <span class="stage_heading">Delivered Messages</span><br/>
+                        <span class="stage_count"><t t-esc="widget.delivered_count"/></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <div class="row py-3">
+                    <div class="col-3">
+                        <img
+                            src="/sms_notification/static/stages/stage-4.png"
+                            alt="Total Messages"
+                        />
+                    </div>
+                    <div class="col-9">
+                        <span class="stage_heading">Undelivered Messages</span><br/>
+                        <span class="stage_count"><t t-esc="widget.undelivered_count"/></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 card">
+                <div class="row py-3">
+                    <div class="col-3">
+                        <img
+                            src="/sms_notification/static/stages/stage-5.png"
+                            alt="Total Messages"
+                        />
+                    </div>
+                    <div class="col-9">
+                        <span class="stage_heading">Failed Messages</span><br/>
+                        <span class="stage_count"><t t-esc="widget.failed_count"/></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div t-name="sms_dashboard_line_chart_template" class="col-md-6 col-12 px-2">
+		<div class="card rounded border-0">
+			<div class="card-header font-weight-bold bg-transparent py-3">
+				<div class="row justify-content-between">
+					<div class="col-auto">
+						<span id="line_chart_label" class="sub_headings">Total SMS</span>
+					</div>
+					<div class="col-auto">
+						<select class="custom-select w-auto" id="line_obj_change">
+							<option value="new" selected="true">New</option>
+							<option value="sent">Sent</option>
+							<option value="delivered">Delivered</option>
+							<option value="undelivered">Undelivered</option>
+                            <option value="failed">Failed</option>
+						</select>
+                        <select class="custom-select w-auto" id="line_date_change">
+							<option value="7" selected="true">Last 7 days</option>
+							<option value="30">Last 30 Days</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<canvas id="line_chart"/>
+			</div>
+		</div>
+	</div>
+
+	<div t-name="sms_dashboard_pie_chart_template" class="col-md-6 col-12 px-2">
+		<div class="card rounded border-0">
+			<div class="card-header font-weight-bold bg-transparent py-3">
+				<div class="row justify-content-between">
+					<div class="col-auto">
+						<span id="pie_chart_label">Stages</span>
+					</div>
+					<div class="col-auto">
+						<select class="custom-select w-auto" id="pie_obj_change">
+							<option value="total" selected="true">All</option>
+                            <option value="new">New</option>
+							<option value="sent">Sent</option>
+							<option value="delivered">Delivered</option>
+							<option value="undelivered">Undelivered</option>
+                            <option value="failed">Failed</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<canvas id="pie_chart"/>
+			</div>
+		</div>
+	</div>
+
+	<div
+		t-name="sms_dashboard_gateways_template"
+		t-foreach="widget.gateway_data"
+		t-as="instance"
+		class="col-md-4 col-sm-12 p-2"
+	>
+		<div class="card gateway_card">
+			<div class="p-0">
+				<div class="d-flex">
+					<button class="_action btn" t-att-data-gateway="instance">
+						<img
+							t-att-src="widget.gateway_data[instance].image"
+							t-att-alt="widget.gateway_data[instance].name"
+						/>
+					</button>
+					<div class="d-flex flex-column px-2 py-4">
+						<button
+							class="_action btn p-0"
+							t-att-data-gateway="instance"
+						>
+							<h5 class="card-title text-dark m-0 gateway_name" t-esc="widget.gateway_data[instance].name"/>
+						</button>
+					</div>
+                    <div class="position-absolute dropleft" style="right:0;top:0;">
+    					<button
+    						class="btn o-no-caret fa fa-ellipsis-v"
+    						data-toggle="dropdown"
+    						aria-haspopup="true"
+    						aria-expanded="false"
+    					/>
+    					<div class="dropdown-menu">
+    						<div class="container p-0" style="width:150px">
+    							<div class="d-flex justify-content-around py-1">
+    								<div class="gateway_user_guide"><a t-att-href="widget.gateway_data[instance].blog_link" target="_blank">User Guide</a>
+    								<hr/><a t-att-href="widget.gateway_data[instance].edit_link" target="_blank" class="gateway_edit">Edit</a>
+    								</div>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+				</div>
+			</div>
+            <hr style="margin:0;"/>
+			<div class="card-body container px-1 py-2">
+				<div class="row m-0">
+					<t t-call="sms_dashboard_sent_data_template"/>
+					<t t-call="sms_dashboard_delivered_data_template"/>
+					<t t-call="sms_dashboard_undelivered_data_template"/>
+                    <t t-call="sms_dashboard_failed_data_template"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div t-name="sms_dashboard_sent_data_template" class="col-6 p-1">
+		<button
+			class="_action data_cell btn d-flex justify-content-between w-100 px-4 py-2"
+		>
+		<span class="label gateway_count_name">Sent</span>
+		<span
+			class="gateway_count"
+			t-esc="widget.gateway_data[instance].sent_count"
+		/>
+		</button>
+	</div>
+
+    <div t-name="sms_dashboard_delivered_data_template" class="col-6 p-1">
+		<button
+			class="_action data_cell btn d-flex justify-content-between w-100 px-4 py-2"
+		>
+			<span class="label gateway_count_name">Delivered</span>
+			<span
+				class="gateway_count"
+				t-esc="widget.gateway_data[instance].delivered_count"
+			/>
+		</button>
+	</div>
+
+    <div t-name="sms_dashboard_undelivered_data_template" class="col-6 p-1">
+		<button
+			class="_action data_cell btn d-flex justify-content-between w-100 px-4 py-2"
+		>
+			<span class="label gateway_count_name">Undelivered</span>
+			<span
+				class="gateway_count"
+				t-esc="widget.gateway_data[instance].undelivered_count"
+			/>
+		</button>
+	</div>
+
+    <div t-name="sms_dashboard_failed_data_template" class="col-6 p-1">
+		<button
+			class="_action data_cell btn d-flex justify-content-between w-100 px-4 py-2"
+		>
+			<span class="label gateway_count_name">Failed</span>
+			<span
+				class="gateway_count"
+				t-esc="widget.gateway_data[instance].failed_count"
+			/>
+		</button>
+	</div>
+</templates>
