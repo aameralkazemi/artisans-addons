@@ -5,9 +5,11 @@
 @media screen and (min-width: 540px) and (max-width: 860px) {
     .ba_hidden_tablet {display: none !important}
 }
-.ba_portal_row {
-    margin-left: 15px;
-    margin-right: 15px;
+@media screen and (min-width: 860px) {
+    .ba_portal_row {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 .ba_portal_searchbar {padding-left: 10px;}
 .ba_website_grid {padding: 0px 15px;}

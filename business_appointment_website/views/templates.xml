@@ -23,14 +23,15 @@
               customize_show="True"              
     >
         <xpath expr="//div[@id='progress_bar_widget']" position="replace">
-            <div t-attf-class="row ba_portal_row ba_hidden_mobile ba_hidden_tablet mt32 mb4 #{hidden_steps == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and 'ba_hidden' or ''}" id="progress_bar_widget">
+            <div t-attf-class="row ba_portal_row mt32 mb4 #{hidden_steps == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] and 'ba_hidden' or ''}" id="progress_bar_widget">
                 <div class="col-md-12 ba_progress_container" id="ba_progress_container_div">
                     <a href="/appointments/1"
                        t-attf-class="ba_progress_step #{1 in hidden_steps and 'ba_hidden' 
                                                         or progress_step &lt; 1 and 'ba_progress_disabled'
                                                         or progress_step == 1 and 'ba_progress_active'
                                                         or progress_step &gt; 1 and active_step == 1 and 'ba_progress_return'
-                                                        or 'ba_progress_complete'}"     
+                                                        or 'ba_progress_complete'}"  
+                       t-attf-title="{{website.ba_step1}}"   
                     >
                         <div class="ba_progress_dot">
                             <span t-attf-class="fa fa_ba_white #{progress_step &lt; 1 and 'fa-circle'
@@ -39,7 +40,7 @@
                                                 or 'fa-check-circle'}"
                             ></span>
                         </div>
-                        <div class="ba_progress_header">
+                        <div class="ba_progress_header ba_hidden_mobile ba_hidden_tablet">
                             <span t-field="website.ba_step1"/>
                         </div>
                     </a>
@@ -49,6 +50,7 @@
                                                         or progress_step == 2 and 'ba_progress_active'
                                                         or progress_step &gt; 2 and active_step == 2 and 'ba_progress_return'
                                                         or 'ba_progress_complete'}"     
+                       t-attf-title="{{website.ba_step2}}"
                     >
                         <div class="ba_progress_dot">
                             <span t-attf-class="fa fa_ba_white #{progress_step &lt; 2 and 'fa-circle'
@@ -57,7 +59,7 @@
                                                      or 'fa-check-circle'}"
                             ></span>
                         </div>
-                        <div class="ba_progress_header">
+                        <div class="ba_progress_header ba_hidden_mobile ba_hidden_tablet">
                             <span t-field="website.ba_step2"/>
                         </div>
                     </a>
@@ -67,6 +69,7 @@
                                                         or progress_step == 3 and 'ba_progress_active'
                                                         or progress_step &gt; 3 and active_step == 3 and 'ba_progress_return'
                                                         or 'ba_progress_complete'}"   
+                       t-attf-title="{{website.ba_step3}}"
                     >
                         <div class="ba_progress_dot">
                             <span t-attf-class="fa fa_ba_white #{progress_step &lt; 3 and 'fa-circle'
@@ -75,7 +78,7 @@
                                                      or 'fa-check-circle'}"
                             ></span>
                         </div>
-                        <div class="ba_progress_header">
+                        <div class="ba_progress_header ba_hidden_mobile ba_hidden_tablet">
                             <span t-field="website.ba_step3"/>
                         </div>
                     </a>
@@ -84,7 +87,8 @@
                                                         or progress_step &lt; 4 and 'ba_progress_disabled'
                                                         or progress_step == 4 and 'ba_progress_active'
                                                         or progress_step &gt; 4 and active_step == 4 and 'ba_progress_return'
-                                                        or 'ba_progress_complete'}"    
+                                                        or 'ba_progress_complete'}"
+                       t-attf-title="{{website.ba_step4}}"    
                     >
                         <div class="ba_progress_dot">
                             <span t-attf-class="fa fa_ba_white #{progress_step &lt; 4 and 'fa-circle'
@@ -93,7 +97,7 @@
                                                      or 'fa-check-circle'}"
                             ></span>
                         </div>
-                        <div class="ba_progress_header">
+                        <div class="ba_progress_header ba_hidden_mobile ba_hidden_tablet">
                             <span t-field="website.ba_step4"/>
                         </div>
                     </a>
@@ -102,7 +106,8 @@
                                                         or progress_step &lt; 5 and 'ba_progress_disabled'
                                                         or progress_step == 5 and 'ba_progress_active'
                                                         or progress_step &gt; 5 and active_step == 5 and 'ba_progress_return'
-                                                        or 'ba_progress_complete'}"    
+                                                        or 'ba_progress_complete'}"
+                       t-attf-title="{{website.ba_step5}}"
                     >
                         <div class="ba_progress_dot">
                             <span t-attf-class="fa fa_ba_white #{progress_step &lt; 5 and 'fa-circle'
@@ -111,7 +116,7 @@
                                                      or 'fa-check-circle'}"
                             ></span>
                         </div>
-                        <div class="ba_progress_header">
+                        <div class="ba_progress_header ba_hidden_mobile ba_hidden_tablet">
                             <span t-field="website.ba_step5"/>
                         </div>
                     </a>
@@ -120,7 +125,8 @@
                                                         or progress_step &lt; 6 and 'ba_progress_disabled'
                                                         or progress_step == 6 and 'ba_progress_active'
                                                         or progress_step &gt; 6 and active_step == 6 and 'ba_progress_return'
-                                                        or 'ba_progress_complete'}"    
+                                                        or 'ba_progress_complete'}"
+                       t-attf-title="{{website.ba_step6}}" 
                     >
                         <div class="ba_progress_dot">
                             <span t-attf-class="fa fa_ba_white #{progress_step &lt; 6 and 'fa-circle'
@@ -129,7 +135,7 @@
                                                      or 'fa-check-circle'}"
                             ></span>
                         </div>
-                        <div class="ba_progress_header">
+                        <div class="ba_progress_header ba_hidden_mobile ba_hidden_tablet">
                             <span t-field="website.ba_step6"/>
                         </div>
                     </a>

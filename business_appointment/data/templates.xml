@@ -61,7 +61,7 @@
                                     <li>Resource: <t t-out="object.resource_id.name or ''"/></li>
                                     <li>Service: <t t-out="object.service_id.name or ''"/></li>
                                     <li t-if="object.resource_id.location or object.service_id.location">
-                                        <t t-out="bject.service_id.location or object.resource_id.location or ''"/>
+                                        <t t-out="object.service_id.location or object.resource_id.location or ''"/>
                                     </li>
                                 </ul>
                             </div>
@@ -136,7 +136,7 @@
         <li>Resource: <t t-out="object.resource_id.name or ''"/></li>
         <li>Service: <t t-out="object.service_id.name or ''"/></li>
         <li t-if="object.resource_id.location or object.service_id.location">
-            <t t-out="bject.service_id.location or object.resource_id.location or ''"/>
+            <t t-out="object.service_id.location or object.resource_id.location or ''"/>
         </li>
     </ul>  
 </div>
@@ -176,7 +176,7 @@
                                     <li>Resource: <t t-out="object.resource_id.name or ''"/></li>
                                     <li>Service: <t t-out="object.service_id.name or ''"/></li>
                                     <li t-if="object.resource_id.location or object.service_id.location">
-                                        <t t-out="bject.service_id.location or object.resource_id.location or ''"/>
+                                        <t t-out="object.service_id.location or object.resource_id.location or ''"/>
                                     </li>
                                     <li>Scheduled Time: <t t-out="object.return_scheduled_time_tz(True) or ''"/></li>
                                 </ul>

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Universal Appointments and Time Reservations",
-    "version": "15.0.1.0.16",
+    "version": "15.0.1.0.17",
     "category": "Extra Tools",
     "author": "faOtools",
     "website": "https://faotools.com/apps/15.0/universal-appointments-and-time-reservations-607",
@@ -93,7 +93,7 @@ For the full details look at static/description/index.html
     "images": [
         "static/description/main.png"
     ],
-    "price": "399.0",
+    "price": "359.0",
     "currency": "EUR",
     "live_test_url": "https://faotools.com/my/tickets/newticket?&url_app_id=129&ticket_version=15.0&url_type_id=3",
 }

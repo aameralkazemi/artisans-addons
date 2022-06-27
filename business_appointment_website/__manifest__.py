@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Universal Appointments: Portal and Website",
-    "version": "15.0.1.0.2",
+    "version": "15.0.1.0.3",
     "category": "Website",
     "author": "faOtools",
     "website": "https://faotools.com/apps/15.0/universal-appointments-portal-and-website-611",
@@ -58,7 +58,7 @@ For the full details look at static/description/index.html
     "images": [
         "static/description/main.png"
     ],
-    "price": "99.0",
+    "price": "89.0",
     "currency": "EUR",
     "live_test_url": "https://faotools.com/my/tickets/newticket?&url_app_id=130&ticket_version=15.0&url_type_id=3",
 }
