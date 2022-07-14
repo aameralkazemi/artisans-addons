@@ -1,0 +1,185 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* otp_sms_auth
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-04 14:29+0000\n"
+"PO-Revision-Date: 2022-07-04 17:38+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 3.1\n"
+
+#. module: otp_sms_auth
+#: model:wk.sms.template,sms_body_html:otp_sms_auth.sms_template_for_order_conform
+msgid ""
+"\n"
+"              Dear {{ctx['name']}},\n"
+"\n"
+"We thank you for your interest in {{user.company_id.name}}.\n"
+"\n"
+"Your OTP is: {{ctx['otp']}}\n"
+"\n"
+"For any queries or clarifications, please call us on our toll-free no. {{user.company_id.phone}} or e-mail us at {{user.company_id.email}} and we shall be glad to assist.\n"
+"\n"
+"Best regards,\n"
+"                            \n"
+"            "
+msgstr ""
+
+#. module: otp_sms_auth
+#: model:ir.model.fields.selection,name:otp_sms_auth.selection__website_otp_settings__otp_notification_mode__both
+msgid "Both"
+msgstr ""
+
+#. module: otp_sms_auth
+#: model:ir.model.fields,help:otp_sms_auth.field_wk_sms_template__condition
+msgid "Condition on which the template has been applied."
+msgstr ""
+
+#. module: otp_sms_auth
+#: model:ir.model.fields,field_description:otp_sms_auth.field_wk_sms_template__condition
+msgid "Conditions"
+msgstr ""
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_auth_signup_mobile_fields
+msgid "Country"
+msgstr "البلدة"
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_auth_signup_mobile_fields
+msgid "Country..."
+msgstr "دولة..."
+
+#. module: otp_sms_auth
+#: model:ir.model.fields.selection,name:otp_sms_auth.selection__website_otp_settings__otp_notification_mode__email
+msgid "Email"
+msgstr "البريد الاكتروني"
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_web_mobile_login
+msgid "Email ID"
+msgstr "البريد الاكتروني"
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Failed to login !! Please ensure that you have given correct Mobile No."
+msgstr "فشل في تسجيل الدخول !! يرجى التأكد من أنك أعطيت رقم الهاتف المحمول الصحيح."
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Failed to login !! Please ensure that you have given correct login ID."
+msgstr "فشل في تسجيل الدخول !! يرجى التأكد من إدخال معرف تسجيل الدخول الصحيح."
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Failed to login !! Please enter a mobile no./login ID"
+msgstr "فشل في تسجيل الدخول !! الرجاء إدخال رقم الهاتف المحمول / معرف تسجيل الدخول"
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Failed to send OTP !! Please ensure that you have given correct Mobile No."
+msgstr "فشل إرسال OTP !! يرجى التأكد من أنك أعطيت رقم الهاتف المحمول الصحيح."
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Failed to send OTP !! Please ensure that you have given correct email ID."
+msgstr "فشل إرسال OTP !! يرجى التأكد من أنك قدمت معرف البريد الإلكتروني الصحيح."
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_web_mobile_login
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.view_users_form_inherit
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_auth_signup_mobile_fields
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_web_mobile_login
+msgid "Mobile"
+msgstr "التليفون المحمول"
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_web_mobile_login
+msgid "Mobile No"
+msgstr "رقم الموبايل"
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Mobile No. : {}."
+msgstr "رقم الموبايل. : {}."
+
+#. module: otp_sms_auth
+#: model:ir.model.fields.selection,name:otp_sms_auth.selection__wk_sms_template__condition__otp
+msgid "OTP"
+msgstr "OTP"
+
+#. module: otp_sms_auth
+#: model:ir.model.fields,field_description:otp_sms_auth.field_website_otp_settings__otp_notification_mode
+msgid "OTP Notification Mode"
+msgstr "وضع إعلام OTP"
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "OTP can't send because email OTP notification is not enabled."
+msgstr "لا يمكن لـ OTP الإرسال لأنه لم يتم تمكين إشعار OTP عبر البريد الإلكتروني."
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "OTP has been sent to given Mobile No. : {}."
+msgstr "تم إرسال OTP إلى رقم الجوال المحدد: {}."
+
+#. module: otp_sms_auth
+#: code:addons/otp_sms_auth/controllers/main.py:0
+#, python-format
+msgid "Please enter a mobile no"
+msgstr "الرجاء إدخال رقم الهاتف المحمول"
+
+#. module: otp_sms_auth
+#: model:ir.model.fields.selection,name:otp_sms_auth.selection__website_otp_settings__otp_notification_mode__sms
+msgid "SMS"
+msgstr "رسالة قصيرة"
+
+#. module: otp_sms_auth
+#: model:ir.model,name:otp_sms_auth.model_wk_sms_template
+msgid "SMS Templates"
+msgstr ""
+
+#. module: otp_sms_auth
+#: model:ir.model.fields,help:otp_sms_auth.field_website_otp_settings__otp_notification_mode
+msgid ""
+"Send OTP to customer via.\n"
+"                                    * [SMS] OTP will be send to the user via SMS\n"
+"                                    * [Email] OTP will be send to the user via Email\n"
+"                                    * [Both] OTP will be send to the user via SMS/Email Mode"
+msgstr ""
+
+#. module: otp_sms_auth
+#: model:ir.model,name:otp_sms_auth.model_send_otp
+msgid "Send Otp"
+msgstr "إرسال Otp"
+
+#. module: otp_sms_auth
+#: model:ir.model,name:otp_sms_auth.model_website_otp_settings
+msgid "Website Otp Settings"
+msgstr "إعدادات موقع الويب Otp"
+
+#. module: otp_sms_auth
+#: model_terms:ir.ui.view,arch_db:otp_sms_auth.wk_auth_signup_mobile_fields
+msgid "e.g. 05XXXXXXXX"
+msgstr "على سبيل المثال 05XXXXXXXX"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sms_mail_server_msegat_formview" model="ir.ui.view">
+            <field name="name">sms.mail.server.msegat.config</field>
+            <field name="model">sms.mail.server</field>
+            <field name="inherit_id" ref="sms_notification.sms_mail_server_formview"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='conn_info']" position="after">
+                    <group string='Security And Authentication' attrs="{'invisible':[('gateway','!=','msegat')]}">
+                        <field name="msegat_api_key" attrs="{'required':[('gateway','=','msegat')]}" password="True"/>
+                        <field name="username" attrs="{'required':[('gateway','=','msegat')]}"/>
+                        <field name="userSender" attrs="{'required':[('gateway','=','msegat')]}"/>
+                        <button name="test_conn_msegat" string="Test Connection" type="object"  />
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

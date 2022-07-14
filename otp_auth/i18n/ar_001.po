@@ -1,0 +1,2121 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* otp_auth
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-04 14:27+0000\n"
+"PO-Revision-Date: 2022-07-04 14:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: otp_auth
+#: model:mail.template,body_html:otp_auth.email_template_edi_otp
+msgid ""
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <table cellspacing=\"0\" cellpadding=\"0\" style=\"width:600px;border-collapse:collapse;background:inherit;color:inherit\">\n"
+"        <tbody><tr>\n"
+"            <td valign=\"center\" width=\"200\" style=\"padding:10px 10px 10px 5px;font-size: 12px\">\n"
+"                <img src=\"/logo.png\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" alt=\"{{user.company_id.name}}\"/>\n"
+"            </td>\n"
+"        </tr></tbody>\n"
+"    </table>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto;background: #FFFFFF repeat top /100%;color:#777777\">\n"
+"    <p>Dear <t t-out=\"ctx['name']\"/>,</p>\n"
+"    <p>\n"
+"        We thank you for your interest in <t t-out=\"user.company_id.name\"/>.\n"
+"    </p>\n"
+"    <p>Your OTP is: <t t-out=\"ctx['otp']\"/></p>\n"
+"    <p>\n"
+"        For any queries or clarifications, please call us on our toll free no. <t t-out=\"user.company_id.phone\"/> or e-mail us at <a href=\"{{user.company_id.email}}\" target=\"_blank\"><t t-out=\"user.company_id.email\"/></a> and we shall be glad to assist.\n"
+"    </p>\n"
+"    <p>Best regards,</p>\n"
+"</div>\n"
+"<div style=\"padding:0px;width:600px;margin:auto; margin-top: 10px; background: #fff repeat top /100%;color:#777777\">\n"
+"    <t t-out=\"user.signature\"/>\n"
+"    <p style=\"font-size: 11px; margin-top: 10px;\">\n"
+"        <strong>Sent by <t t-out=\"user.company_id.name\"/> using <a href=\"www.odoo.com\" style=\"text-decoration:none; color: #875A7B;\">Odoo</a></strong>\n"
+"    </p>\n"
+"</div>"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__terms_url
+msgid "A preview will be available at this URL."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__cart_abandoned_delay
+msgid "Abandoned Delay"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__unsplash_access_key
+msgid "Access Key"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_taxcloud
+msgid "Account TaxCloud"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_cash_basis_base_account_id
+msgid ""
+"Account that will be set on lines created in cash basis journal entry and "
+"used to keep track of the tax base amount."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_accountant
+msgid "Accounting"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__snailmail_cover
+msgid "Add a Cover Page"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__group_stock_adv_location
+msgid ""
+"Add and customize route operations to process product moves in your warehouse(s): e.g. unload > quality control > stock for incoming products, pick > pack > ship for outgoing products. \n"
+" You can also set putaway strategies on warehouse locations in order to send incoming products into specific child locations straight away (e.g. specific bins, racks)."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_check_printing_margin_left
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_check_printing_margin_right
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_check_printing_margin_top
+msgid ""
+"Adjust the margins of generated checks to make it fit your printer's "
+"settings."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_sale_pricelist
+msgid "Advanced Pricelists"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_pos_adyen
+msgid "Adyen Payment Terminal"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_stock_landed_costs
+msgid ""
+"Affect landed costs on reception operations and split them among products to"
+" update their cost price."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_confirmation_retry_trials
+msgid "After exceeding the button 'Resend Code' would not be shown"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_max_approval_trials
+msgid ""
+"After exceeding this number all steps would be cancelled and should be "
+"started from scratch"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_max_approval_time
+msgid "After this period, not confirmed appointments would be cancelled"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_agree_to_terms_and_conditions
+msgid "Agree on terms and conditions"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_agree_to_terms_text
+msgid "Agree on terms text"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_confirmation_retry_period
+msgid "Agter this period it would be possible to resend the confirmation code"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__alias_domain
+msgid "Alias Domain"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_product_margin
+msgid "Allow Product Margin"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_check_printing
+msgid "Allow check printing and deposits"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_mail_plugin
+msgid "Allow integration with the mail plugins"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_pos_coupon
+msgid "Allow the use of coupon and promotion programs in PoS."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_pos_gift_card
+msgid "Allow the use of gift card"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_google_calendar
+msgid "Allow the users to synchronize their calendar  with Google Calendar"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_microsoft_calendar
+msgid "Allow the users to synchronize their calendar with Outlook Calendar"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_base_import
+msgid "Allow users to import data from CSV/XLS/XLSX/ODS files"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__group_sale_pricelist
+msgid ""
+"Allows to manage different prices based on rules per category of customers.\n"
+"                Example: 10% for retailers, promotion of 5 EUR on this product, etc."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__group_multi_currency
+msgid "Allows to work in a multi currency environment"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_l10n_fr_fec_import
+msgid ""
+"Allows you to import FEC files.\n"
+"-This installs the l10n_fr_fec_import module."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__group_proforma_sales
+msgid "Allows you to send pro-forma invoice."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_sale_amazon
+msgid "Amazon Sync"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_analytic_accounting
+msgid "Analytic Accounting"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_analytic_tags
+msgid "Analytic Tags"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__annual_inventory_month
+msgid "Annual Inventory Month"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__annual_inventory_month
+msgid ""
+"Annual inventory month for products not in a location with a cyclic "
+"inventory date. Set to no month if no automatic annual inventory."
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.website_otp_view
+msgid "Apply"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_website
+msgid "Appointments in Portal and Website"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__specific_user_account
+msgid "Are newly created user accounts website specific"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_voip
+msgid "Asterisk (VoIP)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__update_stock_quantities
+msgid ""
+"At the session closing: A picking is created for the entire session when it's closed\n"
+" In real time: Each order sent to the server create its own picking"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_google_drive
+msgid "Attach Google documents to any record"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_auto_sale_order
+msgid "Auto Sale Order"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_currency_rate_live
+msgid "Automatic Currency Rates"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__automatic_invoice
+msgid "Automatic Invoice"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_journal_suspense_account_id
+msgid "Bank Suspense Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_journal_suspense_account_id
+msgid ""
+"Bank Transactions are posted immediately after import or synchronization. Their counterparty is the bank suspense account.\n"
+"Reconciliation replaces the latter by the definitive account(s)."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_stock_barcode
+msgid "Barcode Scanner"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_cash_basis_base_account_id
+msgid "Base Tax Received Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_show_uom_price
+msgid "Base Unit Price"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_stock_picking_batch
+msgid "Batch Transfers"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_invoice_extract
+msgid "Bill Digitalization"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_budget
+msgid "Budget Management"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_turn_on_appointments
+msgid "Business appointments in portal"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_turn_on_appointments_public
+msgid "Business appointments on website"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__cdn_url
+msgid "CDN Base URL"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__cdn_filters
+msgid "CDN Filters"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.website_otp_view
+msgid "Cancel"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__cart_recovery_mail_template
+msgid "Cart Recovery Email"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__tax_exigibility
+msgid "Cash Basis"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_cash_rounding
+msgid "Cash Rounding"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_check_printing_layout
+msgid "Check Layout"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_check_printing_margin_left
+msgid "Check Left Margin"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_check_printing_margin_right
+msgid "Check Right Margin"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_check_printing_margin_top
+msgid "Check Top Margin"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_pad
+msgid "Collaborative Pads"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__company_id
+msgid "Company"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__company_informations
+msgid "Company Informations"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__company_name
+msgid "Company Name"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__appoin_comp_tz
+msgid "Company Timezone"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_chart_of_accounts
+msgid "Company has a chart of accounts"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_extra_products_backend
+msgid "Complementary Products Offer"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_extra_products_frontend
+msgid "Complementary Products for Reservation"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_otp_config
+msgid "Configuration"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model,name:otp_auth.model_webkul_website_addons
+msgid "Configuration settings for Website Webkul Addons"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_social_network
+msgid "Configure Social Network"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__confirmation_mail_template_id
+msgid "Confirmation Email Template"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_tracking_owner
+msgid "Consignment"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_google_search_console
+msgid "Console Google Search"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__cdn_activated
+msgid "Content Delivery Network (CDN)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__allow_out_of_stock_order
+msgid "Continue selling when out-of-stock"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_cookies_bar
+msgid "Cookies Bar"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__country_code
+msgid "Country Code"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_country_group_ids
+msgid "Country Groups"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_pos_coupon
+msgid "Coupon and Promotion Programs"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_sale_coupon
+msgid "Coupons & Promotions"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp__create_uid
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp__create_date
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__currency_exchange_journal_id
+msgid "Currency Exchange Journal"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__external_email_server_default
+msgid "Custom Email Servers"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_custom_fields
+msgid "Custom Fields"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_portal_appointments_filters_ids
+msgid "Custom Portal Appointment Filters"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_portal_appointments_search_ids
+msgid "Custom Portal Appointment Search"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_resources_portal_filters_ids
+msgid "Custom Portal Resource Filters"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_resources_portal_search_ids
+msgid "Custom Portal Resource Search"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_rtypes_portal_filters_ids
+msgid "Custom Portal Resource Types Filters"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_rtypes_portal_search_ids
+msgid "Custom Portal Resource Types Search"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_services_portal_filters_ids
+msgid "Custom Portal Service Filters"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_service_portal_search_ids
+msgid "Custom Portal Service Search"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__report_footer
+msgid "Custom Report Footer"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__portal_allow_api_keys
+msgid "Customer API Keys"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__auth_signup_uninvited
+msgid "Customer Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_sale_delivery_address
+msgid "Customer Addresses"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__customer_credit_limit
+msgid "Customer Credit Limit"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery_dhl
+msgid "DHL Express Connector"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__annual_inventory_day
+msgid "Day of the month"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__annual_inventory_day
+msgid ""
+"Day of the month when the annual inventory should occur. If zero or negative, then the first day of the month will be selected instead.\n"
+"        If greater than the last day of a month, then the last day of the month will be selected instead."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__user_default_rights
+msgid "Default Access Rights"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_default_pos_receivable_account_id
+msgid "Default Account Receivable (PoS)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__purchase_tax_id
+msgid "Default Purchase Tax"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__use_quotation_validity_days
+msgid "Default Quotation Validity"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__quotation_validity_days
+msgid "Default Quotation Validity (Days)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__sale_tax_id
+msgid "Default Sale Tax"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_default_image
+msgid "Default Social Share Image"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__company_so_template_id
+msgid "Default Template"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__use_invoice_terms
+msgid "Default Terms & Conditions"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__incoterm_id
+msgid "Default incoterm"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_default_lang_id
+msgid "Default language"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_default_lang_code
+msgid "Default language code"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__deposit_default_product_id
+msgid "Default product used for payment advances"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_max_multi_scheduling_portal
+msgid "Define how many time slots might be selected during scheduling"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_auto_sale_order
+msgid ""
+"Define wheter sale order should be auto created / confirmed, when "
+"appointment is confirmed"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery
+msgid "Delivery Methods"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__deposit_default_product_id
+msgid "Deposit Product"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__business_appointment_timezone_option
+msgid "Different Time Zones"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__digest_id
+msgid "Digest Email"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__digest_emails
+msgid "Digest Emails"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_website_sale_digital
+msgid "Digital Content"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_discount_per_so_line
+msgid "Discounts"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_lot_on_delivery_slip
+msgid "Display Lots & Serial Numbers on Delivery Slips"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_lot_on_invoice
+msgid "Display Lots & Serial Numbers on Invoices"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp__display_name
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__qr_code
+msgid "Display SEPA QR-code"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__website_cookies_bar
+msgid "Display a customizable cookies bar on your website."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__preview_ready
+msgid "Display preview button"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__website_logo
+msgid "Display this logo on the website."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__external_report_layout_id
+msgid "Document Template"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_reports
+msgid "Dynamic Reports"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__website_domain
+msgid "E.g. https://www.mydomain.com"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_l10n_eu_oss
+msgid "EU Intra-community Distance Selling"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery_easypost
+msgid "Easypost Connector"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__stock_move_email_validation
+msgid "Email Confirmation picking"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__stock_mail_confirmation_template_id
+msgid "Email Template confirmation picking"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__stock_mail_confirmation_template_id
+msgid "Email sent to the customer once the order is done."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__confirmation_mail_template_id
+msgid "Email sent to the customer once the order is paid."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_hr
+msgid "Employees as Resources"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__auth_signup_reset_password
+msgid "Enable password reset from Login page"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_auth_signup_fields
+msgid "Enter OTP"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_product_expiry
+msgid "Expiration Dates"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_facebook
+msgid "Facebook Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__fail_counter
+msgid "Fail Mail"
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid ""
+"Failed to send OTP !! Please ensure that you have given correct Email "
+"Address."
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid "Failed to send OTP !! Please enter an email address."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__favicon
+msgid "Favicon"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery_fedex
+msgid "FedEx Connector"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__report_footer
+msgid "Footer text displayed at the bottom of all reports."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__income_currency_exchange_account_id
+msgid "Gain Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_base_geolocalize
+msgid "GeoLocalize"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_product_images
+msgid "Get product pictures using barcode"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_website_sale_gift_card
+msgid "Gift Card"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_pos_gift_card
+msgid "Gift Cards"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_github
+msgid "GitHub Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_google_analytics
+msgid "Google Analytics"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_google_analytics_dashboard
+msgid "Google Analytics Dashboard"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__google_analytics_key
+msgid "Google Analytics Key"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__google_management_client_id
+msgid "Google Client ID"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__google_management_client_secret
+msgid "Google Client Secret"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_google_maps
+msgid "Google Maps"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__google_maps_api_key
+msgid "Google Maps API Key"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__google_search_console
+msgid "Google Search Console"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_google_spreadsheet
+msgid "Google Spreadsheet"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__google_search_console
+msgid "Google key, or Enable to access first reply"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__group_stock_picking_wave
+msgid "Group your move operations in wave transfer to process them together"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_accounting_entries
+msgid "Has Accounting Entries"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
+msgid "I have a password"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp__id
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__social_default_image
+msgid "If set, replaces the website logo as the default social share image."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_approval_type
+msgid "If sms is chosen but not available, then email would be used."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__alias_domain
+msgid ""
+"If you have setup a catch-all email domain redirected to the Odoo server, "
+"enter the domain name here."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__use_twilio_rtc_servers
+msgid "If you want to use twilio as TURN/STUN server provider"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_bank_statement_import_qif
+msgid "Import .qif files"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_l10n_fr_fec_import
+msgid "Import FEC files"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_bank_statement_import_csv
+msgid "Import in .csv format"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_bank_statement_import_ofx
+msgid "Import in .ofx format"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_bank_statement_import_camt
+msgid "Import in CAMT.053 format"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_journal_payment_debit_account_id
+msgid ""
+"Incoming payments are posted on an Outstanding Receipts Account. In the bank reconciliation widget, they appear as blue lines.\n"
+"Bank transactions are then reconciled on the Outstanding Receipts Accounts rather than the Receivable Account."
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid "Incorrect OTP"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_display_incoterm
+msgid "Incoterms"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_instagram
+msgid "Instagram Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__partner_autocomplete_insufficient_credit
+msgid "Insufficient credit"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__transfer_account_id
+msgid ""
+"Intermediary account used when moving from a liquidity account to another."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__transfer_account_id
+msgid "Internal Transfer Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__incoterm_id
+msgid ""
+"International Commercial Terms are a series of predefined commercial terms "
+"used in international transactions."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_intrastat
+msgid "Intrastat"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_mail_template_id
+msgid "Invoice Email Template"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_payment
+msgid "Invoice Online Payment"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account
+msgid "Invoicing"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__default_invoice_policy
+msgid "Invoicing Policy"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_auth_ldap
+msgid "LDAP Authentication"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_step1
+msgid "Label for step 1: Choose resource type"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_step2
+msgid "Label for step 2: Choose resource"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_step3
+msgid "Label for step 3: Choose service"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_step4
+msgid "Label for step 4: Chose time"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_step5
+msgid "Label for step 5: Account Details"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_step6
+msgid "Label for step 6: Confirmation"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_stock_landed_costs
+msgid "Landed Costs"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__language_ids
+msgid "Languages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp____last_update
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp__write_uid
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_send_otp__write_date
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__show_line_subtotals_tax_selection
+msgid "Line Subtotals Tax Display"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_sale
+msgid "Link Appointments to Sale Orders"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_linkedin
+msgid "LinkedIn Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_auto_done_setting
+msgid "Lock Confirmed Sales"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
+msgid "Log in"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__expense_currency_exchange_account_id
+msgid "Loss Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_production_lot
+msgid "Lots & Serial Numbers"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__currency_id
+msgid "Main currency of the company."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_inter_company_rules
+msgid "Manage Inter Company"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_contact_info_mandatory_ids
+msgid "Mandatory Account Details"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__use_security_lead
+msgid ""
+"Margin of error for dates promised to customers. Products will be scheduled "
+"for delivery that many days earlier than the actual promised date, to cope "
+"with unexpected delays in the supply chain."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__security_lead
+msgid ""
+"Margin of error for dates promised to customers. Products will be scheduled "
+"for procurement and delivery that many days earlier than the actual promised"
+" date, to cope with unexpected delays in the supply chain."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_sale_margin
+msgid "Margins"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_max_multi_scheduling
+msgid "Maximum Appointments (Backend)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_max_multi_scheduling_portal
+msgid "Maximum Appointments (Portal)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_max_approval_trials
+msgid "Maximum Number of Attempts to Confirm"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_confirmation_retry_trials
+msgid "Maximum Number of Code Refreshing"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_max_approval_time
+msgid "Maximum Period for Confirmation (h.)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_max_preresevation_time
+msgid "Maximum Period for Pre-Reservation"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__recaptcha_min_score
+msgid "Minimum score"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_multi_scheduling
+msgid "Multi Scheduling"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_multi_currency
+msgid "Multi-Currencies"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_check_printing_multi_stub
+msgid "Multi-Pages Check Stub"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_adv_location
+msgid "Multi-Step Routes"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_multi_website
+msgid "Multi-website"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__product_pricelist_setting
+msgid ""
+"Multiple prices: Pricelists with fixed price rules by product,\n"
+"Advanced rules: enables advanced price rules for pricelists."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_confirmation_retry_period
+msgid "New Confirmation Code Minimum Period (s.)"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
+msgid "Next"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__active_user_count
+msgid "Number of Active Users"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__company_count
+msgid "Number of Companies"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__language_count
+msgid "Number of Languages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__cart_abandoned_delay
+msgid "Number of hours after which the cart is considered abandoned."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_language_count
+msgid "Number of languages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_webkul_website_addons__module_otp_auth
+msgid "OTP Authentication"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.website_otp_view
+msgid "OTP Configuration"
+msgstr ""
+
+#. module: otp_auth
+#: model:mail.template,name:otp_auth.email_template_edi_otp
+#: model:mail.template,subject:otp_auth.email_template_edi_otp
+msgid "OTP Confirmation"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__otp_time_limit
+msgid "OTP Time Limit"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__otp_time_limit
+msgid "OTP expiry time"
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid "OTP has been sent to given Email Address : {}"
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid "OTP has been sent to given Email Address : {}."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__otp_type
+msgid "OTP type"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__otp_type
+msgid ""
+"OTP type for user view.\n"
+"                                    * [Text] OTP will be visible as text type to the user\n"
+"                                    * [Password] OTP will be visible as password type to the user"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__portal_confirmation_pay
+msgid "Online Payment"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__portal_confirmation_sign
+msgid "Online Signature"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_contact_info_optional_ids
+msgid "Optional Account Details"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_journal_payment_credit_account_id
+msgid ""
+"Outgoing Payments are posted on an Outstanding Payments Account. In the bank reconciliation widget, they appear as blue lines.\n"
+"Bank transactions are then reconciled on the Outstanding Payments Account rather the Payable Account."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_journal_payment_credit_account_id
+msgid "Outstanding Payments Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_journal_payment_debit_account_id
+msgid "Outstanding Receipts Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_tracking_lot
+msgid "Packages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_partner_autocomplete
+msgid "Partner Autocomplete"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields.selection,name:otp_auth.selection__website_otp_settings__otp_type__3
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
+msgid "Password"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__default_picking_policy
+msgid "Picking Policy"
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid "Please enter an email address"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_custom_fields_website
+msgid "Portal and Website Custom Fields"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_product_pricelist
+msgid "Pricelists"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__product_pricelist_setting
+msgid "Pricelists Method"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_pricelists_prices
+msgid "Pricelists and Prices"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_is_print
+msgid "Print"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__snailmail_duplex
+msgid "Print Both sides"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__account_check_printing_date_label
+msgid "Print Date Label"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__snailmail_color
+msgid "Print In Color"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_proforma_sales
+msgid "Pro-Forma Invoice"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_website_sale_comparison
+msgid "Product Comparison Tool"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_sale_product_configurator
+msgid "Product Configurator"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_packaging
+msgid "Product Packagings"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__profiling_enabled_until
+msgid "Profiling enabled until"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_show_purchase_receipts
+msgid "Purchase Receipt"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_quality_control
+msgid "Quality"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_quality_control_worksheet
+msgid "Quality Worksheet"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_sale_quotation_builder
+msgid "Quotation Builder"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_sale_order_template
+msgid "Quotation Templates"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_reception_report
+msgid "Reception Report"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__restrict_template_rendering
+msgid "Restrict Template Rendering"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_sepa
+msgid "SEPA Credit Transfer (SCT)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_stock_sms
+msgid "SMS Confirmation"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__stock_sms_confirmation_template_id
+msgid "SMS Template"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__stock_move_sms_validation
+msgid "SMS Validation with stock move"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__stock_sms_confirmation_template_id
+msgid "SMS sent to the customer once the order is done."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_warning_sale
+msgid "Sale Order Warnings"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_show_sale_receipts
+msgid "Sale Receipt"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_sale_product_matrix
+msgid "Sales Grid Entry"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__salesteam_id
+msgid "Sales Team"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__salesperson_id
+msgid "Salesperson"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__recaptcha_private_key
+msgid "Secret Key"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__security_lead
+msgid "Security Lead Time"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__use_security_lead
+msgid "Security Lead Time for Sales"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_check_printing_layout
+msgid ""
+"Select the format corresponding to the check paper you will be printing your checks on.\n"
+"In order to disable the printing feature, select 'None'."
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
+msgid "Select verification method"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_is_email
+msgid "Send Email"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_auth_signup
+#: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
+msgid "Send OTP"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model,name:otp_auth.model_send_otp
+msgid "Send Otp"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_is_snailmail
+msgid "Send by Post"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_delivery_invoice_address
+msgid "Shipping Address"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__sale_delivery_settings
+msgid "Shipping Management"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__recaptcha_min_score
+msgid ""
+"Should be between 0.0 and 1.0.\n"
+"1.0 is very likely a good interaction, 0.0 is very likely a bot"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__show_effect
+msgid "Show Effect"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_auto_reception_report
+msgid "Show Reception Report at Validation"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__available_threshold
+msgid "Show Threshold"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__show_availability
+msgid "Show availability Qty"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_show_line_subtotals_tax_included
+msgid "Show line subtotals with taxes (B2C)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_show_line_subtotals_tax_excluded
+msgid "Show line subtotals without taxes (B2B)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__show_ba_resource_full_details
+msgid "Show resources full details pages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__show_ba_services_full_details
+msgid "Show services full details pages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__show_ba_rtypes_full_details
+msgid "Show types full details pages"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__signin_auth
+msgid "Sign-in Authentication"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__signup_auth
+msgid "Sign-up Authentication"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_sign_delivery
+msgid "Signature"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__recaptcha_public_key
+msgid "Site Key"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_pos_six
+msgid "Six Payment Terminal"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_snailmail_account
+msgid "Snailmail"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_product_email_template
+msgid "Specific Email"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__specific_user_account
+msgid "Specific User Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__cart_add_on_page
+msgid "Stay on page after adding to cart"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_storage_categories
+msgid "Storage Categories"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_multi_locations
+msgid "Storage Locations"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__group_stock_multi_locations
+msgid ""
+"Store products in specific locations of your warehouse (e.g. bins, racks) "
+"and to track inventory accordingly."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__tax_cash_basis_journal_id
+msgid "Tax Cash Basis Journal"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__tax_calculation_rounding_method
+msgid "Tax calculation rounding method"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__chart_template_id
+msgid "Template"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__auth_signup_template_user_id
+msgid "Template user for new users created through signup"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_terms
+msgid "Terms & Conditions"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_terms_html
+msgid "Terms & Conditions as a Web page"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__terms_type
+msgid "Terms & Conditions format"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_agree_to_terms_public_only
+msgid "Terms for public users only"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields.selection,name:otp_auth.selection__website_otp_settings__otp_type__4
+msgid "Text"
+msgstr ""
+
+#. module: otp_auth
+#: code:addons/otp_auth/controllers/main.py:0
+#: code:addons/otp_auth/controllers/main.py:0
+#, python-format
+msgid "Thanks for the registration."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__currency_exchange_journal_id
+msgid ""
+"The accounting journal where automatic exchange differences will be "
+"registered"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__automatic_invoice
+msgid ""
+"The invoice is generated automatically and available in the customer portal when the transaction is confirmed by the payment acquirer.\n"
+"The invoice is marked as paid and the payment is registered in the payment journal defined in the configuration of the payment acquirer.\n"
+"This mode is advised if you issue the final invoice at the order and not after the delivery."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_pos_adyen
+msgid ""
+"The transactions are processed by Adyen. Set your Adyen credentials on the "
+"related payment method."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_pos_six
+msgid ""
+"The transactions are processed by Six. Set the IP address of the terminal on"
+" the related payment method."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_pos_mercury
+msgid ""
+"The transactions are processed by Vantiv. Set your Vantiv credentials on the"
+" related payment method."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_account_batch_payment
+msgid ""
+"This allows you grouping payments into a single batch and eases the reconciliation process.\n"
+"-This installs the account_batch_payment module."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__favicon
+msgid "This field holds the image used to display a favicon on the website."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__website_default_lang_code
+msgid "This field is used to set/get locales for user"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_check_printing_multi_stub
+msgid ""
+"This option allows you to print check details (stub) on multiple pages if "
+"they don't fit on a single page."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__account_check_printing_date_label
+msgid ""
+"This option allows you to print the date label on the check as per CPA.\n"
+"Disable this if your pre-printed check includes the date label."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__ba_max_multi_scheduling
+msgid ""
+"This setting is applied only to backend. \n"
+"        For portal and website maximum number, please look at website specific options"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_time_tracking
+msgid "Time Tracking"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__module_product_expiry
+msgid ""
+"Track following dates on lots & serial numbers: best before, removal, end of life, alert. \n"
+" Such dates are set automatically at lot/serial number creation based on values set on the product (in days)."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_base_gengo
+msgid "Translate Your Website with Gengo"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__twilio_account_token
+msgid "Twilio Account Auth Token"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__twilio_account_sid
+msgid "Twilio Account SID"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_twitter
+msgid "Twitter Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery_ups
+msgid "UPS Connector"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__terms_url
+msgid "URL"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__cdn_filters
+msgid "URL matching those filters will be rewritten using the CDN Base URL"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery_usps
+msgid "USPS Connector"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_uom
+msgid "Units of Measure"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_web_unsplash
+msgid "Unsplash Image Library"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__update_stock_quantities
+msgid "Update quantities in stock"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_business_appointment_rating
+msgid "Use Rating for Appointments"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_sepa_direct_debit
+msgid "Use SEPA Direct Debit"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__use_twilio_rtc_servers
+msgid "Use Twilio ICE servers"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__has_default_share_image
+msgid "Use a image by default for sharing"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_account_batch_payment
+msgid "Use batch payments"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_auth_oauth
+msgid "Use external authentication providers (OAuth)"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__website_country_group_ids
+msgid "Used when multiple websites have the same domain."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model,name:otp_auth.model_res_users
+msgid "Users"
+msgstr "المستخدمون"
+
+#. module: otp_auth
+#: model:ir.model.fields,help:otp_auth.field_website_otp_settings__restrict_template_rendering
+msgid ""
+"Users will still be able to render templates.\n"
+"However only Mail Template Editors will be able to create new dynamic templates or modify existing ones."
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_pos_mercury
+msgid "Vantiv Payment Terminal"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_product_variant
+msgid "Variants"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__product_volume_volume_in_cubic_feet
+msgid "Volume unit of measure"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_warehouse_id
+msgid "Warehouse"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_warning_stock
+msgid "Warnings for Stock"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_warning_account
+msgid "Warnings in Invoices"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__group_stock_picking_wave
+msgid "Wave Transfers"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__ba_approval_type
+msgid "Website / Portal Confirmation"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_company_id
+msgid "Website Company"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_domain
+msgid "Website Domain"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_logo
+msgid "Website Logo"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_name
+msgid "Website Name"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.actions.act_window,name:otp_auth.action_website_otp_conf
+#: model_terms:ir.ui.view,arch_db:otp_auth.website_otp_view
+msgid "Website OTP"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model,name:otp_auth.model_website_otp_settings
+msgid "Website Otp Settings"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_business_appointment_website_sale
+msgid "Website Sales"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__appointment_website_id
+msgid "Website for appointments"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__product_weight_in_lbs
+msgid "Weight unit of measure"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_website_sale_wishlist
+msgid "Wishlists"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__social_youtube
+msgid "Youtube Account"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_delivery_bpost
+msgid "bpost Connector"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_website_sale_delivery
+msgid "eCommerce Shipping Costs"
+msgstr ""
+
+#. module: otp_auth
+#: model_terms:ir.ui.view,arch_db:otp_auth.website_otp_view
+msgid "or"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_google_recaptcha
+msgid "reCAPTCHA"
+msgstr ""
+
+#. module: otp_auth
+#: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__website_id
+msgid "website"
+msgstr ""

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="sms_report_inherited_in_msegat_form_view" model="ir.ui.view">
+            <field name="name">wk.sms.repor.form.inherited.msegat</field>
+            <field name="model">sms.report</field>
+            <field name="inherit_id" ref="sms_notification.sms_report_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='sms_info']" position="inside">
+                    <group string="Msegat Related Inforamtion" attrs="{'invisible':[('sms_gateway','!=','msegat')]}">
+                        <field name="id" invisible="1"/>
+                        <field name="sms_gateway" invisible="1"/>
+                        <field name="message" readonly="1"/>
+                        <field name="msegat_sms_id" readonly="1"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
