@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+        <!--        Customer Invoice-->
+        <report
+                id="report_account_invoices_custom"
+                model="account.move"
+                string="Invoice"
+                report_type="qweb-pdf"
+                name="customer_invoice_pdf_report.custom_icon_invoice"
+                file="customer_invoice_pdf_report.custom_icon_invoice"
+                menu="True"
+                print_report_name="(object._get_report_base_filename())"
+        />
+
+        <record id="report_account_invoices_custom" model="ir.actions.report">
+            <field name="paperformat_id" ref="paperformat_euro"/>
+        </record>
+    </data>
+</odoo>

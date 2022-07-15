@@ -818,7 +818,7 @@ msgstr ""
 #. module: otp_auth
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_auth_signup_fields
 msgid "Enter OTP"
-msgstr ""
+msgstr "ادخل رمز التحقق"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__module_product_expiry
@@ -957,7 +957,7 @@ msgstr ""
 #. module: otp_auth
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
 msgid "I have a password"
-msgstr ""
+msgstr "لدي كلمة مرور"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_send_otp__id
@@ -1170,7 +1170,7 @@ msgstr ""
 #. module: otp_auth
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
 msgid "Log in"
-msgstr ""
+msgstr "تسجيل الدخول"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__expense_currency_exchange_account_id
@@ -1293,7 +1293,7 @@ msgstr ""
 #. module: otp_auth
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
 msgid "Next"
-msgstr ""
+msgstr "التالي"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__active_user_count
@@ -1350,18 +1350,18 @@ msgstr ""
 #: code:addons/otp_auth/controllers/main.py:0
 #, python-format
 msgid "OTP has been sent to given Email Address : {}"
-msgstr ""
+msgstr "تم إرسال رمز التحقق إلى عنوان البريد الإلكتروني المحدد : {}"
 
 #. module: otp_auth
 #: code:addons/otp_auth/controllers/main.py:0
 #, python-format
 msgid "OTP has been sent to given Email Address : {}."
-msgstr ""
+msgstr "تم إرسال رمز التحقق إلى عنوان البريد الإلكتروني المحدد : {}"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__otp_type
 msgid "OTP type"
-msgstr ""
+msgstr "نوع رمز التحقق"
 
 #. module: otp_auth
 #: model:ir.model.fields,help:otp_auth.field_website_otp_settings__otp_type
@@ -1417,7 +1417,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:otp_auth.selection__website_otp_settings__otp_type__3
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
 msgid "Password"
-msgstr ""
+msgstr "كلمة المرور"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__default_picking_policy
@@ -1605,23 +1605,23 @@ msgstr ""
 #. module: otp_auth
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
 msgid "Select verification method"
-msgstr ""
+msgstr "اختر نوع التحقق"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_is_email
 msgid "Send Email"
-msgstr ""
+msgstr "ارسل بريد الكتروني"
 
 #. module: otp_auth
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_auth_signup
 #: model_terms:ir.ui.view,arch_db:otp_auth.wk_web_login
 msgid "Send OTP"
-msgstr ""
+msgstr "ارسل رمز التحقق"
 
 #. module: otp_auth
 #: model:ir.model,name:otp_auth.model_send_otp
 msgid "Send Otp"
-msgstr ""
+msgstr "ارسل رمز التحقق"
 
 #. module: otp_auth
 #: model:ir.model.fields,field_description:otp_auth.field_website_otp_settings__invoice_is_snailmail
