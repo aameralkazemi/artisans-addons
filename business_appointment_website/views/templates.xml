@@ -772,18 +772,7 @@
                                 </select>
                             </div>
                             <div class="clearfix" />
-                            <div t-attf-class="form-group #{error.get('partner_name') and 'o_has_error' or ''} col-xl-6"
-                                 t-if="not existing_partner"
-                            >
-                                <label class="col-form-label label-optional" for="partner_name">
-                                    Company Name
-                                </label>                           
-                                <input type="text" 
-                                       name="partner_name" 
-                                       t-attf-class="form-control #{error.get('partner_name') and 'is-invalid' or ''}"
-                                       t-att-value="partner_name"
-                                />
-                            </div>
+                
                             <div t-attf-class="form-group #{error.get('function') and 'o_has_error' or ''} col-xl-6"
                                  t-if="'function' in all_fields"   
                             >
@@ -881,17 +870,6 @@
                                 </select>
                             </div>
                             <div class="clearfix col-xl-12"/>
-                            <div name="extra_notes_div"
-                                 t-attf-class="form-group #{error.get('description') and 'o_has_error' or ''} col-xl-12"
-                            >
-                                <label class="col-form-label label-optional" for="description">
-                                    Extra comments
-                                </label>
-                                <textarea type="text" 
-                                          name="description" 
-                                          t-attf-class="form-control #{error.get('description') and 'is-invalid' or ''}" 
-                                ><t t-esc="description"/></textarea>
-                            </div>
                             <div class="clearfix col-xl-12"/>
                             <div name="terms_and_conditions"
                                  t-if="agree_terms_text"

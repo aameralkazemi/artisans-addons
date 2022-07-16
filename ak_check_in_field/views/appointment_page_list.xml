@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="checkin_field_list" model="ir.ui.view">
+            <field name="name">checkin.list</field>
+            <field name="model">business.appointment</field>
+            <field name="inherit_id" ref="business_appointment.business_appointment_view_tree"/>
+            <field name="arch" type="xml">
+                <field name="state" position="after">
+                    <field name="checkin"/>
+                 </field>
+             </field>
+        </record>
+
+</odoo>
