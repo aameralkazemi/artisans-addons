@@ -94,17 +94,17 @@ div.day_slot_div > h5 {
     white-space: nowrap;
 }
 div.timeslot_box {
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 8px;
     margin: 5px;
-    background-color: #00A09D;
+    background-color: #000011;
     color: #fff;
     font-weight: bold;
     white-space: nowrap;
 }
 div.timeslot_box:hover {
-    color: #212529;
-    opacity: 0.8;
+    color: #cdcdcd;
+    opacity: 0.3;
     cursor: pointer;
 }
 .all_ba_resources {margin-right: 5px}

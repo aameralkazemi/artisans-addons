@@ -136,7 +136,7 @@
                         <td colspan="4"/>
                         <td colspan="7">
                             <span>
-                                <t t-esc="o.partner_id.altName"/>
+                                <t t-esc="o.partner_id.name"/>
                             </span>
                         </td>
 <!--                        <td colspan="1"/>-->
@@ -221,7 +221,7 @@
                         </td>
                     </tr>
 
-                    <tr t-if="o.partner_id.cr_no">
+                    <!-- <tr t-if="o.partner_id.cr_no">
                         <td>
                             <span>CR : </span>
                         </td>
@@ -240,7 +240,7 @@
                         <td style="text-align: right">
                             <span>السجل التجاري</span>
                         </td>
-                    </tr>
+                    </tr> -->
                     <tr>
                         <td>
                             <span>client PO NO</span>
@@ -374,7 +374,7 @@
                                             <span><t t-esc="line.product_id.name"/></span>
                                        </td>
                                          <td style="width: 26%">
-                                           <span><t t-esc="line.product_id.englishName"/></span>
+                                           <span><t t-esc="line.product_id.name"/></span>
                                        </td>
                                         <td style="width: 6%">
                                              <span><t t-esc="line.product_uom_id.name"/></span>
@@ -424,10 +424,10 @@
                             </td>
                             <td>&amp;nbsp;</td>
                             <td style="text-align: center;border: 1px solid black;">
-                                <span>
+                                <!-- <span>
                                     <t t-esc="o.currency_id.symbol"/>
                                     <t t-esc="'%.2f'% o.discount_amt"/>
-                                </span>
+                                </span> -->
                             </td>
                         </tr>
 
@@ -465,7 +465,7 @@
                             <td colspan="3">
                                 <span>Total: </span>
                                 <span>
-                                    <t t-esc="o.num_word"/>
+                                    <!-- <t t-esc="o.num_word"/> -->
                                 </span>
                             </td>
                             <td>

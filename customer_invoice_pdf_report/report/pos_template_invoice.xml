@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template id="pos_invoice_template">
+            <div t-attf-class="'header'">
+                <div class="o_background_header">
+                    <t t-set="o" t-value="o.with_context(lang=lang)"/>
+                    <div class="clearfix" style="width:98%">
+                        <!--                        <div class="leftbox" style="float:left;width:35%;height:100px;">-->
+
+                        <!--                            <h6 style="font-size: 20px">-->
+                        <!--                                <b>Ceramic Gallary for trading</b>-->
+                        <!--                            </h6>-->
+                        <!--                            <h6 style="font-size: 13px;color: black">-->
+                        <!--                                <b>-->
+                        <!--                                    <t t-esc="o.company_id.street2"/> &amp;nbsp;-->
+                        <!--                                </b>-->
+                        <!--                            </h6>-->
+                        <!--                            <h6 style="font-size: 13px;">-->
+                        <!--                                <b>Phone Number:-->
+                        <!--                                    <t t-esc="o.company_id.phone"/>-->
+                        <!--                                </b>-->
+                        <!--                            </h6>-->
+                        <!--                            <h6 style="float:"></h6>-->
+
+                        <!--                        </div>-->
+
+                        <div class="divcenter" style="margin-left: auto; margin-right: 50%;width:100%;height:100px;">
+                            <img style="display: block; margin-left: 15%; margin-right: 50%; margin-bottom: auto;margin-top: auto; width: 100%; max-width: 80; max-height: 80;" src="/customer_invoice_pdf_report/static/src/img/Logo.jpg"/>
+                        </div>
+
+                        <div class="divcenter" style="width:100%;height:100px;">
+                            <h6 style="font-size: 20px; margin-left: 17%; margin-right: 40%;">
+                                <b>Simlified Tax Invoice</b>
+                            </h6>
+                            <h6 style="font-size: 20px; margin-left: 15%; margin-right: 40%;">
+                                <b>فاتورة ضريبية مبسطة</b>
+                            </h6>
+                            <!--                            <h6 style="text-align: right;font-size: 13px;color: black">-->
+                            <!--                                <b>-->
+                            <!--                                    <t t-esc="o.company_id.street"/>-->
+                            <!--                                </b>-->
+                            <!--                            </h6>-->
+                            <h6 style="font-size: 23px; margin-left: 12%; margin-right: 40%;font-weight: bold;">
+                                <b>Your choice of a better snack
+                                </b>
+                            </h6>
+                            <h6 style="text-align: right;font-size: 17px;"/>
+                        </div>
+                        <table style="width: 80%;">
+                            <colgroup>
+                                <col width="25%"/>
+                                <col width="20%"/>
+                                <col width="35%"/>
+                            </colgroup>
+                            <tr style="font-size: 15px;font-weight: bold;">
+                                <td class="text-left">VAT</td>
+                                <td class="text-left">
+                                    <span t-esc="o.company_id.vat"/>
+                                </td>
+                                <td class="text-left">الرقم الضريبي</td>
+                            </tr>
+                            <tr style="font-size: 15px;font-weight: bold;">
+                                <td class="text-left">Cashier</td>
+                                <td class="text-left">
+                                    <span t-esc="o.invoice_user_id.name"/>
+                                </td>
+                                <td class="text-left">مقدم الخدمة</td>
+                            </tr>
+                            <tr style="font-size: 15px;font-weight: bold;">
+                                <td class="text-left">Invoice Number</td>
+                                <td class="text-left">
+                                    <span t-esc="o.name"/>
+                                </td>
+                                <td class="text-left">رقم الفاتورة</td>
+                            </tr>
+                            <tr style="font-size: 15px;font-weight: bold;">
+                                <td class="text-left">Invoice Date</td>
+                                <td class="text-left">
+                                    <div>
+                                        <span t-esc="o.invoice_date"/>
+                                    </div>
+                                </td>
+                                <td class="text-left">تاريخ الفاتورة</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                    <div class="clearfix mb8"/>
+                </div>
+            </div>
+
+            <table class="border-collapse" style="width: 100%; ">
+                <br/>
+                <style>
+                    table.receipt-orderlines th,table.receipt-orderlines tr,table.receipt-orderlines td{
+                    border:1px solid black;
+                    }
+                </style>
+                <div class="orderlines">
+                    <table class='table table-bordered' style="border:1px solid black;">
+                        <tr style="border:1px solid black;">
+                            <th style='text-align:left;font-weight: bold;font-size: 15px;'>
+                                <div style="font-size: 20px;">Product Name</div>
+                                <div>اسم الصنف</div>
+                            </th>
+                            <th style='text-align:left;font-weight: bold;font-size: 15px;'>
+                                <div style="font-size: 20px;">Qty</div>
+                                <div>الكمية</div>
+                            </th>
+                            <th style='text-align:left;font-weight: bold;font-size: 15px;'>
+                                <div style="font-size: 20px;">Rate</div>
+                                <div>السعر</div>
+                            </th>
+                            <th style='text-align:left;font-weight: bold;font-size: 15px;'>
+                                <div style="font-size: 20px;">Total</div>
+                                <div>المجموع</div>
+                            </th>
+                        </tr>
+                        <tr t-foreach="o.invoice_line_ids" t-as="line" t-key="line.id"
+                            style="border:1px solid black;">
+                            <td>
+                                <div style="font-weight: bold;font-size: 15px;">
+                                    <t t-esc="line.product_id.display_name"/><br/>
+                                     <t t-esc="line.product_id.description"/>
+                                </div>
+                                <div t-if="line.product_id.description" style="font-weight: bold;font-size: 15px;">
+                                    <t t-esc="line.product_id.description"/>
+                                </div>
+                            </td>
+                            <td style='text-align:center;font-weight: bold;font-size: 15px;'>
+                                <t t-esc="line.quantity"/>
+                            </td>
+                            <td style='text-align:center;font-weight: bold;font-size: 15px;'>
+                                <t t-esc="line.price_unit"/>
+                            </td>
+                            <td style='text-align:center;font-weight: bold;font-size: 15px;'>
+                                <t t-esc="line.price_total"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+
+                    <table style="width: 100%;">
+                        <colgroup>
+                            <col width='80%'/>
+                            <col width='25%'/>
+                        </colgroup>
+                        <tr style="margin-top: 20px;margin-bottom: 20px;">
+                            <td class="pos-receipt-left-align" style="float:left;margin-bottom: 10px;font-weight: bold;font-size: 15px;">
+                                <div style="font-size: 20px;">Sub Total</div>
+                                <div>الاجمالي الفرعي</div>
+                            </td>
+                            <td style="font-weight: bold;font-size: 15px;">
+                                <span>
+                                    <t t-esc="o.currency_id.symbol"/>
+                                </span>
+                                <span t-esc="'%.2f'% o.amount_untaxed"
+                                      class="pos-receipt-right-align" style="margin-top:5px"/>
+                            </td>
+                        </tr>
+                        <tr style="margin-top: 20px;margin-bottom: 20px;">
+                            <td class="pos-receipt-left-align" style="float:left;font-weight: bold;font-size: 15px;">
+                                <div style="font-size: 20px;">Total VAT</div>
+                                <div>مجموع ضريبة القيمة المضافة</div>
+                            </td>
+                            <td style="font-weight: bold;font-size: 15px;">
+                                <t t-esc="o.currency_id.symbol"/>
+                                <span t-esc="'%.2f'% o.amount_tax"
+                                      class="pos-receipt-right-align" style="margin-top:5px"/>
+                            </td>
+                        </tr>
+
+                        <tr style="margin-top: 20px;margin-bottom: 20px;border-bottom: 1px dashed black;">
+                            <td class="pos-receipt-left-align" style="float:left;font-weight: bold;font-size: 15px;">
+                                <div style="font-size: 20px;">Total</div>
+                                <div>الاجمالي شامل الضريبة</div>
+                            </td>
+                            <td style="font-weight: bold;font-size: 15px;">
+                                <span>
+                                    <t t-esc="o.currency_id.symbol"/>
+                                </span>
+                                <span t-esc="'%.2f'% o.amount_total"
+                                      class="pos-receipt-right-align" style="margin-top:5px"/>
+                            </td>
+                        </tr>
+                        <tr style="margin-top: 20px;margin-bottom: 20px;">
+                            <td class="pos-receipt-left-align" style="float:left;font-weight: bold;font-size: 15px;">
+                                <div style="font-size: 20px;">VISA</div>
+                                <div></div>
+                            </td>
+                            <td style="font-weight: bold;font-size: 15px;">
+                                <t t-esc="o.currency_id.symbol"/>
+                                <span t-esc="'%.2f'% o.amount_total"
+                                      class="pos-receipt-right-align" style="margin-top:5px"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="qrcode" t-if="o.l10n_sa_qr_code_str" style="margin-top:20px;">
+                        <img t-if="o.l10n_sa_qr_code_str" style="display: block; margin-left: 36%; margin-right: 50%; margin-bottom: auto;margin-top: auto; max-width: 80; max-height: 80;width:200px;height:150px;" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s'%('QR', o.l10n_sa_qr_code_str, 130, 130)"/>
+                    </div>
+                    <div class="text-center" style="font-weight: bold;">
+                        <h6 style="font-size: 20px; margin-left: 35%; margin-right: 30%;">
+                            <b>Company Namat al-Hayah For sweets and nuts</b>
+                        </h6>
+                    </div>
+                    <div class="text-center" style="font-weight: bold;">
+                        <h6 style="font-size: 20px; margin-left: 35%; margin-right: 30%;">
+                            <b>footer placement</b>
+                        </h6>
+                    </div>
+
+
+                </div>
+            </table>
+
+
+        </template>
+
+        <template id="custom_pos_receipt">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <t>
+                        <div class="page">
+                            <t t-call="customer_invoice_pdf_report.pos_invoice_template"/>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>

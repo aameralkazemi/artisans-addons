@@ -29,7 +29,7 @@
     ],
     'data': [
         'data/report_paperformat_data.xml',
-
+        'report/pos_template_invoice.xml',
         'report/invoice.xml',
         'report/customer_invoice.xml',
 

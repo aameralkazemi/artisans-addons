@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<odoo>
+
+    <record id="business_resource_type_view_form" model="ir.ui.view">
+        <field name="name">business.resource.type.form</field>
+        <field name="model">business.resource.type</field>
+        <field name="inherit_id" ref="business_appointment.business_resource_type_view_form"/>
+        <field name="arch" type="xml">
+            <group name="resource_and_services" position="inside">
+                <field name="pricing_method"/>
+            </group>
+        </field>
+    </record>
+
+</odoo>
